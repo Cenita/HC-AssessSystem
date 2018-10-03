@@ -1,4 +1,7 @@
 <html lang="en">
+<?php
+error_reporting(E_ALL^E_NOTICE^E_WARNING);
+?>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +12,7 @@
     <script src="../nav/nav.js"></script>
     <script src="../nav/login.js"></script>
     <script src="../nav/register.js"></script>
+    <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
     <link rel="stylesheet" href="../../lib/tool/Semantic/semantic.min.css"/>
     <link rel="stylesheet" href="../../lib/tool/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../nav/nav.css">

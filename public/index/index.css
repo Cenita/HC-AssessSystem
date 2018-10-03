@@ -95,11 +95,15 @@ h1,h2,h3,h4 {
 #portfolio .introduction {
 	background-color: #f0f5f5;
 	text-align: center;
+	height: 250px;
 	margin:20px 0 77px 0;
+	transition: box-shadow 100ms;
+	border-radius:20px;
 }
 #portfolio .introduction:hover {
 	/*border: 1px solid #000000;*/
-	border-radius: 3px;
+	box-shadow: 0px 0px 20px rgba(86, 197, 200,0.5);
+
 	cursor: pointer;
 }
 #portfolio .col-md-2 img {
@@ -222,12 +226,21 @@ h1,h2,h3,h4 {
 {
 	border-radius: 10px;
 }
+.md-modal
+{
+	width: 600px!important;
+	height: 180px!important;
+	margin: auto!important;
+	border-radius: 20px!important;
+	line-height: 40px;
+}
 #show1,#show2,#show3,#show4,#show5 {
+	font-family: "Microsoft YaHei";
+	margin: auto!important;
+	margin-top: 20px;
+	font-size: 15px;
 	background: #FFFFFF;
-	margin: 30px;
-	padding: 30px;
-	width: 500px;
-	line-height: 35px;
+	width: 570px;
 }
 #footSelect a
 {

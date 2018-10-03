@@ -8,13 +8,13 @@
 		<script src="../../lib/tool/jquery.min.js"></script>
 		<script src="../../lib/tool/wow.js"></script>
 		<script type="text/javascript">new WOW().init();</script>
-        <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
         <link rel="stylesheet" href="../../lib/tool/animate.css"/>
-        <link rel="stylesheet" href="../../lib/tool/windows.css"/>
+        <link rel="stylesheet" href="../index/index.css"/>
 	</head>
 	<body>
 		<!--轮播图-->
 		<?php include '../nav/nav.php'; ?>
+        <script src="index.js"></script>
         <link rel="stylesheet" href="index.css">
 	<!-- 考核方向 -->
 		<div id="portfolio" class="section">
@@ -27,19 +27,16 @@
 					</h2>
 				</div>
 				<div class="col-md-2 col-xs-4 wow fadeInUp animated col-md-offset-1" data-wow-delay="0.6s" style=" animation-delay: 1s; ">
-						<div class="introduction md-trigger" data-modal="modal-1">
-							<img src="../../lib/img/sort/ps1.png" class="img-responsive" alt="portfolio img">
+						<div class="introduction md-trigger" data-content="学习PS、AI、AE等，关注产品设计趋势以及互联网动态，学习平面相关及网页设计规范、网页设计、UI设计，了解排版设计知识等 ，完成设计工作。" data-position="bottom center">
+							<img src="../../lib/img/sort/ps1.png"  class="img-responsive" alt="portfolio img">
 							<span>学习PS、AI、AE等</span>
 							<span>学习网页设计、UI设计</span>
-						</div>
+                </div>
 
 				</div>
 				<div class="col-md-2 col-xs-4 wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-
-
-						<div class="introduction md-trigger" data-modal="modal-2">
+						<div class="introduction md-trigger" data-content="Web前端开发，主要学习HTML/CSS/JavaScript等各种web技术，学习Vue、React等流行框架，深入研究JavaScript技术。后端开发，学习C/S,B/S架构，主流web框架，缓存技术。研究sql，MySQL语言，了解MVC开发框架。" data-position="bottom center">
 							<img src="../../lib/img/sort/web1.png" class="img-responsive" alt="portfolio img">
-
 							<span>主要学习HTML/CSS/JavaScript</span>
 						</div>
 
@@ -47,7 +44,7 @@
 				<div class="col-md-2 col-xs-4 wow fadeInUp animated" data-wow-delay="1.4s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
-						<div class="introduction md-trigger" data-modal="modal-3">
+						<div class="introduction md-trigger" data-content="学习开发桌面应用和游戏，包括学习Qt、C#等技术，研究算法和数据结构， 具有扎实的编程基本功，学习常用的机器学习和数据挖掘原理与算法，如模拟退火算法、遗传算法、蚁群算法等；" data-position="bottom center">
 							<img src="../../lib/img/sort/zhuo1.png" class="img-responsive" alt="portfolio img">
 
 							<span>学习开发桌面应用和游戏</span>
@@ -58,7 +55,7 @@
 				<div class="col-md-2 col-xs-6 wow fadeInUp animated" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
-						<div class="introduction md-trigger" data-modal="modal-4">
+						<div class="introduction md-trigger" data-content="学习Android/iOS手机应用或游戏开发，研究移动端产品的设计、推进、研究分析等。对Android各方面的技术进行深层理解与应用。" data-position="bottom center">
 							<img src="../../lib/img/sort/phone1.png" class="img-responsive" alt="portfolio img">
 
 							<span>学习Android/IOS手机应用</span>
@@ -69,7 +66,7 @@
 				<div class="col-md-2 col-xs-6 wow fadeInUp animated" data-wow-delay="2.2s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
-						<div class="introduction md-trigger" data-modal="modal-5">
+						<div class="introduction md-trigger" data-content="学习Office办公软件，新媒体平台以及产品运营；分析IT等话题热点， 了解项目的市场运作和管理，用户运营、渠道运营管理；具有良好的数 据分析能力，学习新媒体运营方法论，运用规则、运营算法等。" data-position="bottom center">
 							<img src="../../lib/img/sort/yun1.png" class="img-responsive" alt="portfolio img">
 
 							<span>新媒体平台以及产品运营</span>
@@ -110,7 +107,7 @@
 				<div class="col-md-6 wow fadeInRight animated" data-wow-delay="0.6s" data-wow-duration="2s">
 					<h3>致环创</h3>
 					<span style="color: #747474;">
-						岁月悠悠，往事如昔，四年同创，十五别离。<br />
+						岁月悠悠，往事如昔，四年同创，二十别离。<br />
 						相聚环创，追忆华期。难抒己怀，文以记之。<br />
 						二十年的四年，二十年的牵挂<br />
 						让我们渐行渐远的声影又回到彼此的双眸，<br />
@@ -163,7 +160,7 @@
 						五年来，在全国计算机博弈锦标赛项目中，获得国家级一等奖1项、国
 						家级二等奖17项、国家级三等奖9项，特别在2017年“两江新
 						区·重理工杯”中国大学生计算机博弈大赛暨第十一届中国计算机博
-						弈锦标赛不围棋项目比赛中，3人获得全国季军。<br />
+						弈锦标赛不围棋项目比赛中，3人获得全国季军。在2018年，全国计算机博弈锦标赛中环创工作室获得五个国家级二等奖<br />
 						&emsp;&emsp;从2012年起，工作室成员开始认真准备和参加ITAT全国信息技术应用水平
 						大赛、“蓝桥杯”全国软件和信息技术专业人才大赛。其中，2017年韶关学院
 						代表参加全国“蓝桥杯”大赛选手中，80%来自环创电脑工作室成员。同时，工
@@ -193,13 +190,13 @@
 							<img src="../../lib/img/nation_price.png" />
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>5</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>19</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>20</h4>
 						</div>
 					</div>
 					<div class="row wow fadeInRight animated" data-wow-delay="1.3s">
@@ -207,13 +204,13 @@
 							<img src="../../lib/img/province_price.png" />
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>10</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>16</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>21</h4>
 						</div>
 					</div>
 					<div class="row wow fadeInRight animated" data-wow-delay="1.6s">
@@ -221,16 +218,16 @@
 							<img src="../../lib/img/school_price.png" />
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>4</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>5</h4>
 						</div>
 						<div class="col-md-3 col-xs-3">
-							<h4>2</h4>
+							<h4>14</h4>
 						</div>
 					</div>
-					<h3 class="wow fadeInUp animated" data-wow-delay="1.5s" style="color: #747474;">共获得奖项120项</h3>
+					<h3 class="wow fadeInUp animated" data-wow-delay="1.5s" style="color: #747474;">共获得奖项114项</h3>
 				</div>
 
 		</div>
@@ -269,61 +266,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-	<div class="md-modal md-effect-1" id="modal-1">
-    <div class="md-content">
-      <div id="show1" >
-          	学习PS、AI、AE等，关注产品设计趋势以及互联网动态，
-           	学习平面相关及网页设计规范、网页设计、UI设计，了解排版设计知识等 ，
-                     完成设计工作。
-          <input type="button" class="quxiao md-close" value="取消">
-      </div>
-    </div>
- </div>
-
-  <div class="md-modal md-effect-1" id="modal-2">
-    <div class="md-content">
-      <div id="show2" >
-          Web前端开发，主要学习HTML/CSS/JavaScript等各种web技术，学习Vue、React等流行框架，深入研究JavaScript技术。
-		   后端开发，学习C/S,B/S架构，主流web框架，缓存技术。研究sql，MySQL语言，了解MVC开发框架。
-          <input type="button" class="quxiao md-close" value="取消">
-      </div>
-    </div>
-  </div>
-  <div class="md-modal md-effect-1" id="modal-3">
-    <div class="md-content">
-      <div id="show3" >
-         学习开发桌面应用和游戏，包括学习Qt、C#等技术，研究算法和数据结构，
-         具有扎实的编程基本功，学习常用的机器学习和数据挖掘原理与算法，如模拟退火算法、遗传算法、蚁群算法等；
-          <input type="button" class="quxiao md-close" value="取消">
-      </div>
-    </div>
-  </div>
-  <div class="md-modal md-effect-1" id="modal-4">
-    <div class="md-content">
-      <div id="show4" >
-          学习Android/iOS手机应用或游戏开发，研究移动端产品的设计、推进、研究分析等。对Android各方面的技术进行深层理解与应用。
-          <input type="button" class="quxiao md-close" value="取消">
-      </div>
-    </div>
-  </div>
-  <div class="md-modal md-effect-1" id="modal-5">
-    <div class="md-content">
-      <div id="show5" >
-          学习Office办公软件，新媒体平台以及产品运营；分析IT等话题热点，
-          了解项目的市场运作和管理，用户运营、渠道运营管理；具有良好的数
-          据分析能力，学习新媒体运营方法论，运用规则、运营算法等。
-          <input type="button" class="quxiao md-close" value="取消">
-      </div>
-    </div>
-  </div>
-  <div class="md-overlay"></div>
 </body>
 
 </html>
-<script>
-  var polyfilter_scriptpath = '/js/';
-</script>
-<script src="../../lib/tool/windows.js"></script>

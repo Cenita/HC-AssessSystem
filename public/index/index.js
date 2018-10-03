@@ -1,0 +1,5 @@
+$(
+    function () {
+        $(".introduction").popup();
+    }
+)
