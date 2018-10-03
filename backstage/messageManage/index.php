@@ -12,8 +12,9 @@
 <div id="topicNav">
     <div class="navBackground">
         <div class="topicNavBody">
-            <div class="topic">Message</div>
             <div class="bigTopic" data-content="M">M</div>
+            <div class="topic">Message</div>
+
         </div>
     </div>
 </div>

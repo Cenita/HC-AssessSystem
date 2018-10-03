@@ -36,5 +36,10 @@
 }
 th,td
 {
-
+    text-align: center!important;
+    vertical-align:baseline!important;
+}
+td button
+{
+    width: 100px;
 }
