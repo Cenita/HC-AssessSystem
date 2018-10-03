@@ -1,0 +1,95 @@
+.navbar-header .navbar-brand img{
+	height: 2.5em;
+	width: auto;
+	padding: 0 0 0 100px;
+}
+.loginandregister a
+{
+	margin-top: -20px;
+}
+.navbar-header .navbar-brand{
+	width: auto;
+	height: auto;
+}
+.loginButtom:hover
+{
+	color: rgb(91, 164, 255)!important;
+	transition: color 200ms;
+	cursor: pointer;
+}
+.navbar-nav>li>a{
+	padding-top: 30px;
+}
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-right{
+	margin-right: 40px;
+}
+
+#img_tou
+{
+	height: 40px;
+  width: 40px;
+	border-radius: 100px;
+	border: 1px solid rgba(0, 0, 0,0.2);
+}
+.navbar-right
+{
+  margin-top: 18px!important;
+  margin-right: 150px!important;
+}
+.navbar-right span
+{
+  margin-left: 10px;
+  color: rgb(129, 129, 129);
+}
+#img_sanjiao
+{
+  cursor: pointer;
+  margin-top: -4px;
+  margin-left: 5px;
+  width: 16px;
+  height: auto;
+}
+/*下拉框*/
+nav .dropdown
+{
+  list-style: none;
+  text-decoration: none;
+  background: rgba(0, 0, 0,0.4);
+  position: absolute;
+  right: 140px;
+  width:100px;
+  text-align: center;
+  z-index: 2;
+}
+nav .dropdownSan
+{
+	content:'';
+	width: 0px;
+	height: 0px;
+	border: 15px solid transparent;
+	border-bottom-color: rgba(0, 0, 0,0.4);
+	position: absolute;
+	float: right;
+	right: 173px;
+	top: 28px;
+	display: none;
+	cursor: pointer;
+}
+nav .dropdown >* {
+    padding: 10px 0px;
+    color: white;
+}
+nav .dropdown a {
+	color: #ffffff;
+}
+nav .dropdown a:hover {
+	text-decoration: none;
+}
+nav .dropdown >*:hover
+{
+  cursor: pointer;
+  background: rgba(255, 1, 54, 0.4);
+}
