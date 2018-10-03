@@ -15,7 +15,6 @@
         <div class="topicNavBody">
             <div class="bigTopic" data-content="M">M</div>
             <div class="topic">Message</div>
-
         </div>
     </div>
 </div>

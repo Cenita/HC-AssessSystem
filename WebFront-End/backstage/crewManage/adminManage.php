@@ -24,8 +24,8 @@
         <div class="leftNav">
             <h3>人员管理</h3>
             <div class="list-group">
-                <a href="index.php" class="list-group-item active">所有人管理</a>
-                <a href="adminManage.php" class="list-group-item">管理员管理</a>
+                <a href="index.php" class="list-group-item">所有人管理</a>
+                <a href="adminManage.php" class="list-group-item active">管理员管理</a>
                 <a href="writeManage.php" class="list-group-item">出卷人管理</a>
                 <a href="correctManage.php" class="list-group-item">批改人管理</a>
             </div>

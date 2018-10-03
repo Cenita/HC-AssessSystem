@@ -61,7 +61,7 @@
                     <td>asfas</td>
                     <td>2018-5-8 21:5:6</td>
                     <td>
-                        <button type="button" class="btn btn-primary">编辑</button>
+                        <button type="button" class="btn btn-primary">管理</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>
@@ -74,7 +74,7 @@
                     <td>asfas</td>
                     <td>2018-5-8 21:5:6</td>
                     <td>
-                        <button type="button" class="btn btn-primary">编辑</button>
+                        <button type="button" class="btn btn-primary">管理</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>

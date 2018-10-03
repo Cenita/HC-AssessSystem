@@ -8,6 +8,7 @@ body
 }
 #bnav .nav-tabs
 {
+  border-bottom:0px;
   height: 50px;
   padding-left: 50px!important;
 }
@@ -64,7 +65,7 @@ body
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: #4285f4;
+  background: rgb(102, 166, 224);
   transition: all .3s;
 }
 .nav.selectPart li a:hover::after{
