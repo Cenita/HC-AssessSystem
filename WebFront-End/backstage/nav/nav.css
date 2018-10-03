@@ -1,0 +1,116 @@
+body
+{
+  margin: 0px!important;
+  padding: 0px!important;
+}
+#bnav .nav-tabs
+{
+  height: 50px;
+  padding-left: 50px!important;
+}
+#bnav .logo img
+{
+  width: 200px;
+}
+#bnav .logo
+{
+  float: left;
+  width: 200px;
+  line-height: 40px;
+  margin-left: 150px;
+}
+#bnav
+{
+  z-index: 5000;
+  min-width: 1200px;
+  height: 100px;
+  margin-top: 25px;
+}
+.nav.selectPart
+{
+  margin-top: 5px;
+  font-family: "Microsoft YaHei";
+  font-weight: 800;
+  line-height: 40px;
+  margin-right: 70px;
+  float: right;
+}
+.nav.selectPart li
+{
+  height: 50px;
+  list-style:none;
+  float: left;
+  width: 100px;
+}
+.nav.selectPart li a
+{
+  line-height: 32px;
+  height: 50px;
+  text-align: center;
+  z-index: 500;
+  color: rgb(64, 64, 64);
+  text-decoration: none;
+  padding-bottom: 10px;
+  position:relative;
+}
+
+.nav.selectPart li a::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: #4285f4;
+  transition: all .3s;
+}
+.nav.selectPart li a:hover::after{
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+#topicNav .navBackground
+{
+  min-width: 1200px;
+  margin-top:10px;
+  background: linear-gradient(to right,rgb(102, 166, 224),rgb(102, 166, 224), white);
+  height: 100px;
+}
+#topicNav .topicNavBody
+{
+  width: 500px;
+  float: right;
+  margin-right: 250px;
+}
+#topicNav .topicNavBody .topic
+{
+  float: left;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  letter-spacing:5px;
+}
+#topicNav .topicNavBody .bigTopic
+{
+  font-family: "Verdana";
+  margin-right: 30px;
+  font-weight: 600;
+  float: left;
+  display: inline-block;
+  color: white;
+  position: relative;
+  top: -115px;
+  font-size: 180px;
+  height: 1px;
+}
+#topicNav .topicNavBody .bigTopic::before
+{
+  z-index: 1;
+  color: rgb(149, 193, 233);
+  height: 115px;
+  overflow: hidden;
+  content: attr(data-content);
+  left: 0;
+  top: 0;
+  position: absolute;
+}
