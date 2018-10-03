@@ -5,3 +5,41 @@
     margin: auto;
 
 }
+#mainPart .topNav
+{
+    height: 50px;
+}
+#mainPart .topNav i
+{
+    color: rgba(0,0,0,0.4);
+    font-size: 20px;
+    margin-right: 2px;
+}
+#mainPart .topNav >*
+{
+    text-align: center;
+    width: 100px;
+}
+#mainPart .topNav >*:hover
+{
+    cursor: pointer;
+}
+#mainPart .topNav span
+{
+    color: rgba(0,0,0,0.4);
+    font-size: 10px;
+
+}
+#mainPart .topNav .screen
+{
+    line-height: 50%;
+}
+th,td
+{
+    text-align: center!important;
+    vertical-align:baseline!important;
+}
+td button
+{
+    width: 100px;
+}
