@@ -9,28 +9,14 @@
   <script src="../../lib/tool/vue.min.js"></script>
   <script src="index.js"></script>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-  <div id="bnav">
-    <div class="logo">
-      <img src="../../lib/img/logo2.png" alt="">
-    </div>
-    <div class="nav selectPart">
-      <ul>
-        <li><a href="">题库管理</a></li>
-        <li><a href="">人员管理</a></li>
-        <li><a href="">试卷管理</a></li>
-        <li><a href="">留言动态</a></li>
-        <li><a href="">操作日志</a></li>
-        <li><a href="">管理员</a></li>
-      </ul>
-    </div>
-  </div>
+  <?php include "../nav/index.php"?>
   <div id="topicNav">
     <div class="navBackground">
       <div class="topicNavBody">
         <div class="topic">Index</div>
+        <div class="bigTopic" data-content="G">G</div>
       </div>
     </div>
   </div>
