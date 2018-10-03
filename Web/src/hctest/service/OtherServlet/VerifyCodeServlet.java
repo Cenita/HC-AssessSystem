@@ -1,7 +1,9 @@
 package hctest.service.OtherServlet;
 
+import hctest.dto.VerifyCode;
 import hctest.util.GraphicHelper;
 
+import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,13 +22,25 @@ public class VerifyCodeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        final int width = 180; // 图片宽度
-        final int height = 40; // 图片高度
+        String p_width = request.getParameter("width");
+        String p_height = request.getParameter("height");
+        int width = 180;
+        int height = 40;
+        if(p_width!=null) width = Integer.valueOf(p_width);
+        if(p_height!=null) height = Integer.valueOf(p_height);
+
         final String imgType = "jpeg"; // 指定图片格式 (不是指MIME类型)
-        final OutputStream output = response.getOutputStream(); // 获得可以向客户端返回图片的输出流
-        // (字节流)
-        // 创建验证码图片并返回图片上的字符串
-        String code = GraphicHelper.create(width, height, imgType, output);
-        System.out.println("验证码内容: " + code);
+
+        final OutputStream output = response.getOutputStream();
+
+        //获得一个随机的验证码
+        VerifyCode vcode = GraphicHelper.randRomVerifyCode(width,height);
+
+        try {
+            ImageIO.write(vcode.getImage(), imgType, output);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("验证码内容: " + vcode.getCode());
     }
 }

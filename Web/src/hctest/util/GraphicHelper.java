@@ -1,5 +1,7 @@
 package hctest.util;
 
+import hctest.dto.VerifyCode;
+
 import java.awt.Color;import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
@@ -9,7 +11,6 @@ import java.util.Random;
 import javax.imageio.ImageIO;
 
 public class GraphicHelper {
-
     /**
      * 以字符串形式返回生成的验证码，同时输出一个图片
      *
@@ -17,13 +18,8 @@ public class GraphicHelper {
      *            图片的宽度
      * @param height
      *            图片的高度
-     * @param imgType
-     *            图片的类型
-     * @param output
-     *            图片的输出流(图片将输出到这个流中)
-     * @return 返回所生成的验证码(字符串)
      */
-    public static String create(final int width, final int height, final String imgType, OutputStream output) {
+    public static VerifyCode randRomVerifyCode(final int width, final int height) {
         StringBuffer sb = new StringBuffer();
         Random random = new Random();
 
@@ -48,7 +44,7 @@ public class GraphicHelper {
         }
 
         // 在 "画板"上绘制字母
-        graphic.setFont(new Font("Comic Sans MS", Font.BOLD, 30));
+        graphic.setFont(new Font("Comic Sans MS", Font.BOLD, random.nextInt(10)+25));
         int i;
         for (i = 0; i< 4; i++) {
             final int temp = random.nextInt(26) + 97;
@@ -60,16 +56,14 @@ public class GraphicHelper {
             {
                 s=s.toLowerCase();
             }
-
             graphic.setColor(colors[random.nextInt(colors.length)]);
-            graphic.drawString(s, 15+i * (width / 4), height - (height / 3));
+            graphic.drawString(s, width/8+i * (width / 4), height - (height / 3));
         }
         graphic.dispose();
-        try {
-            ImageIO.write(image, imgType, output);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return sb.toString();
+
+        VerifyCode vcode = new VerifyCode();
+        vcode.setCode(sb.toString());
+        vcode.setImage(image);
+        return vcode;
     }
 }
