@@ -1,3 +1,13 @@
+body
+{
+  margin: 0px!important;
+  padding: 0px!important;
+}
+#bnav .nav-tabs
+{
+  height: 50px;
+  padding-left: 50px!important;
+}
 #bnav .logo img
 {
   width: 200px;
@@ -18,6 +28,7 @@
 }
 .nav.selectPart
 {
+  margin-top: 10px;
   font-family: "Microsoft YaHei";
   font-weight: 800;
   line-height: 40px;
@@ -26,13 +37,16 @@
 }
 .nav.selectPart li
 {
-
+  height: 50px;
   list-style:none;
   float: left;
   width: 100px;
 }
 .nav.selectPart li a
 {
+  line-height: 32px;
+  height: 50px;
+  text-align: center;
   z-index: 500;
   color: rgb(64, 64, 64);
   text-decoration: none;
@@ -73,7 +87,6 @@
   font-size: 30px;
   font-weight: 800;
   color: white;
-  margin-right: 50px;
   letter-spacing:5px;
 }
 #topicNav .topicNavBody .bigTopic
@@ -87,14 +100,13 @@
   position: relative;
   top: -90px;
   font-size: 180px;
-  height: 50%;
-  overflow: hidden;
+  height: 1px;
 }
 #topicNav .topicNavBody .bigTopic::before
 {
   z-index: 1;
   color: rgb(149, 193, 233);
-  height: 42%;
+  height: 90px;
   overflow: hidden;
   content: attr(data-content);
   left: 0;
