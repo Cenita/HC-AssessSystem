@@ -36,72 +36,51 @@
                 <tr>
                     <th>姓名</th>
                     <th>身份</th>
-                    <th>学号</th>
                     <th>方向</th>
-                    <th>年级</th>
-                    <th>专业</th>
-                    <th>注册时间</th>
-                    <th>编辑</th>
+                    <th>添加时间</th>
+                    <th>
+                        <button type="button" class="btn btn-success">新增管理员</button>
+                    </th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>陈慧涛</td>
-                    <td>管理员</td>
-                    <td>17115012002</td>
+                    <td>桌面端管理员</td>
                     <td>桌面端</td>
-                    <td>2017</td>
-                    <td>计算机科学与技术</td>
                     <td>2018年11月12日 24:00:00</td>
                     <td>
+                        <button type="button" class="btn btn-primary">编辑</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>杨荣光</td>
-                    <td>管理员</td>
-                    <td>XXXX</td>
+                    <td>桌面端管理员</td>
                     <td>桌面端</td>
-                    <td>2016</td>
-                    <td>计算机科学与技术</td>
                     <td>2018年11月12日 24:00:00</td>
                     <td>
+                        <button type="button" class="btn btn-primary">编辑</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>吴钧潮</td>
-                    <td>管理员</td>
-                    <td>16115011001</td>
+                    <td>设计端管理员</td>
                     <td>桌面端</td>
-                    <td>2016</td>
-                    <td>计算机科学与技术</td>
                     <td>2018年11月12日 24:00:00</td>
                     <td>
+                        <button type="button" class="btn btn-primary">编辑</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>
                 <tr>
                     <td>楚留香</td>
                     <td>超级管理员</td>
-                    <td>16115011001</td>
                     <td>桌面端</td>
-                    <td>2016</td>
-                    <td>计算机科学与技术</td>
                     <td>2018年11月12日 24:00:00</td>
                     <td>
-                        <button type="button" class="btn btn-danger">删除</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>杨过</td>
-                    <td>考核成员</td>
-                    <td>16115011001</td>
-                    <td>桌面端</td>
-                    <td>2016</td>
-                    <td>计算机科学与技术</td>
-                    <td>2018年11月12日 24:00:00</td>
-                    <td>
+                        <button type="button" class="btn btn-primary">编辑</button>
                         <button type="button" class="btn btn-danger">删除</button>
                     </td>
                 </tr>
