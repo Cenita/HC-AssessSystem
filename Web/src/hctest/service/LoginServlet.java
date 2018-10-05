@@ -59,6 +59,7 @@ public class LoginServlet extends HttpServlet {
                     juser.put("permit", UserInfoUtil.getPremitMessage(user.getPermit()));
                     juser.put("truename",user.getTruename());
                     juser.put("grade",user.getGrade());
+                    juser.put("lasttime",user.getUpdatetime().toString());
                     jo.put("user",juser.toString());
 
                 }

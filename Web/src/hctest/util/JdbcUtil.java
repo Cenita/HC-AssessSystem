@@ -6,6 +6,8 @@ import javax.sql.DataSource;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
+import java.util.UUID;
+
 public class JdbcUtil {
 
     public static DataSource ds = null;
@@ -29,5 +31,10 @@ public class JdbcUtil {
 
     public static void print(){
         System.out.println("helloworld");
+    }
+
+    public static String getUUID()
+    {
+        return UUID.randomUUID().toString().replace("-","");
     }
 }
