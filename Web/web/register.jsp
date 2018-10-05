@@ -18,6 +18,7 @@
     <input type="text" name="motto"><br>
     <input type="text" name="profession"><br>
     <input type="text" name="college"><br>
+    <input type="text" name="code"><br>
     <input type="submit" value="注册">
 </form>
 </body>
