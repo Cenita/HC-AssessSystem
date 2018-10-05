@@ -56,7 +56,7 @@ public class MailUtil {
                 message.setSubject(title);
 
                 // 设置消息体
-                message.setContent(content,"text/html");
+                message.setContent(content,"text/html;charset=utf-8");
 
                 // 发送消息
                 Transport.send(message);

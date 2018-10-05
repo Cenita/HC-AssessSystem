@@ -1,9 +1,10 @@
 package hctest.util;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import org.apache.tomcat.util.codec.binary.Base64;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
 
 public class FileUitl {
 
@@ -19,4 +20,14 @@ public class FileUitl {
         content=new String(buffer,"utf-8");
         return content;
     }
+
+    public static String getImageBinary(BufferedImage bi,String imageType) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        //经测试转换的图片是格式这里就什么格式，否则会失真//
+        ImageIO.write(bi, imageType, baos);
+        byte[] bytes = baos.toByteArray();
+        return new String(bytes);
+//        return Base64.encodeBase64URLSafeString(bytes);
+    }
+
 }

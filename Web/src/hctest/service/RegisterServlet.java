@@ -40,7 +40,6 @@ public class RegisterServlet extends HttpServlet {
         }
         else
         {
-            System.out.println(user.getEmail());
             try {
                 UserDao.addUser(user);
                 String path = getServletContext().getRealPath("registerlink.html");
