@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -21,7 +22,7 @@ public class VerifyCodeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        HttpSession session = request.getSession();
         String p_width = request.getParameter("width");
         String p_height = request.getParameter("height");
         int width = 180;
@@ -38,9 +39,9 @@ public class VerifyCodeServlet extends HttpServlet {
 
         try {
             ImageIO.write(vcode.getImage(), imgType, output);
+            session.setAttribute("VCode",vcode.getCode());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("验证码内容: " + vcode.getCode());
     }
 }

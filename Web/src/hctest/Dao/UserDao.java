@@ -6,6 +6,9 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -30,9 +33,10 @@ public class UserDao{
 
     public static void addUser(User user) throws SQLException {
         String sql = "insert into user " +
-                "(id,username,password,email,motto,college,profession) " +
-                "values (?,?,?,?,?,?,?)";
-
+                "(id,username,password,email,motto,college,profession,createtime,updatetime) " +
+                "values (?,?,?,?,?,?,?,?,?)";
+        Date date = new Date();
+        Timestamp timestamp = new Timestamp(date.getTime());
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
         qr.update(sql,
                 User.getRandonUUID(),
@@ -41,11 +45,23 @@ public class UserDao{
                 user.getEmail(),
                 user.getMotto(),
                 user.getCollege(),
-                user.getProfession());
+                user.getProfession(),
+                timestamp.getTime(),
+                timestamp.getTime());
     }
 
     public static void updateUser(User user) {
 
+    }
+
+    public static void updateUserUpdateTime(String username) throws SQLException {
+
+        String sql = "update user set updatetime = ? where username = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+        Date date = new Date();
+
+        qr.update(sql, new Timestamp(date.getTime()),username);
     }
 
     public static List<User> getAllUsers() {

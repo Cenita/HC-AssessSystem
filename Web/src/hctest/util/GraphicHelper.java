@@ -66,4 +66,8 @@ public class GraphicHelper {
         vcode.setImage(image);
         return vcode;
     }
+
+    public static VerifyCode randRomVerifyCode() {
+        return GraphicHelper.randRomVerifyCode(180,40);
+    }
 }

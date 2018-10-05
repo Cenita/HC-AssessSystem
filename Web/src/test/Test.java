@@ -18,6 +18,7 @@ import javax.sql.DataSource;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -32,16 +33,10 @@ public class Test extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        HttpSession session = request.getSession();
-        Object MailCode = session.getAttribute("MailCode");
-        if(MailCode==null)
-        {
-            System.out.println("没有");
-        }
-        else
-        {
-            System.out.println((String)MailCode);
-        }
+        Date date = new Date();
+        System.out.println(date.getTime());
+        Timestamp timestamp = new Timestamp(date.getTime());
+        System.out.println(date.getTime());
+        System.out.println(timestamp.getTime());
     }
 }

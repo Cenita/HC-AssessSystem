@@ -14,6 +14,7 @@
 <form action="login" method="post">
     <input type="text" name="username"><br>
     <input type="password" name="password"><br>
+    <input type="password" name="code"><br>
     <div>
         <img src="verifyCode" alt="验证码" width="180" height="40">
     </div>
