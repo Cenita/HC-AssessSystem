@@ -4,6 +4,7 @@ import hctest.Dao.UserDao;
 import hctest.domain.User;
 import hctest.dto.VerifyCode;
 import hctest.util.GraphicHelper;
+import hctest.util.UserInfoUtil;
 import net.sf.json.JSONObject;
 
 import javax.servlet.ServletException;
@@ -47,15 +48,19 @@ public class LoginServlet extends HttpServlet {
                 else
                 {
                     UserDao.updateUserUpdateTime(username);
+                    session.setAttribute("login",user.getId());
                     jo.put("status",200);
+                    jo.put("message","登录成功");
                     JSONObject juser = new JSONObject();
                     juser.put("account",user.getUsername());
                     juser.put("motto",user.getMotto());
                     juser.put("profession",user.getProfession());
                     juser.put("college",user.getCollege());
-                    juser.put("permit",user.getPermit());
+                    juser.put("permit", UserInfoUtil.getPremitMessage(user.getPermit()));
+                    juser.put("truename",user.getTruename());
+                    juser.put("grade",user.getGrade());
                     jo.put("user",juser.toString());
-                    jo.put("message","登录成功");
+
                 }
 
 

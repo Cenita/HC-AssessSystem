@@ -5,12 +5,15 @@ import hctest.util.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 
 public class UserDao{
     public static User getUserById(String id) {
@@ -33,8 +36,8 @@ public class UserDao{
 
     public static void addUser(User user) throws SQLException {
         String sql = "insert into user " +
-                "(id,username,password,email,motto,college,profession,createtime,updatetime) " +
-                "values (?,?,?,?,?,?,?,?,?)";
+                "(id,username,password,email,motto,college,profession,createtime,updatetime,grade,truename) " +
+                "values (?,?,?,?,?,?,?,?,?,?,?)";
         Date date = new Date();
         Timestamp timestamp = new Timestamp(date.getTime());
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
@@ -46,8 +49,10 @@ public class UserDao{
                 user.getMotto(),
                 user.getCollege(),
                 user.getProfession(),
-                timestamp.getTime(),
-                timestamp.getTime());
+                timestamp,
+                timestamp,
+                user.getGrade(),
+                user.getTruename());
     }
 
     public static void updateUser(User user) {
@@ -67,4 +72,5 @@ public class UserDao{
     public static List<User> getAllUsers() {
         return null;
     }
+
 }

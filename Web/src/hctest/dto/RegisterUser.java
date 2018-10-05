@@ -9,7 +9,10 @@ public class RegisterUser {
     private String motto;
     private String profession;
     private String college;
+    private String truename;
+    private int grade;
     private String code;
+
 
     public String getUsername() {
         return username;
@@ -59,6 +62,22 @@ public class RegisterUser {
         this.college = college;
     }
 
+    public String getTruename() {
+        return truename;
+    }
+
+    public void setTruename(String truename) {
+        this.truename = truename;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
     public String getCode() {
         return code;
     }
@@ -66,15 +85,19 @@ public class RegisterUser {
     public void setCode(String code) {
         this.code = code;
     }
+
     public User getUser()
     {
-        User user =new User();
+        User user = new User();
         user.setUsername(username);
         user.setPassword(password);
-        user.setEmail(email);
-        user.setMotto(motto);
-        user.setCollege(college);
+        user.setTruename(truename);
         user.setProfession(profession);
-        return  user;
+        user.setMotto(motto);
+        user.setEmail(email);
+        user.setCollege(college);
+        user.setGrade(grade);
+
+        return user;
     }
 }

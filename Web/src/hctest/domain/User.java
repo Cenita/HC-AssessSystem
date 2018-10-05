@@ -13,7 +13,25 @@ public class User {
     private int permit;
     private String college;
     private String profession;
+    private int grade;
 
+    public String getTruename() {
+        return truename;
+    }
+
+    public void setTruename(String truename) {
+        this.truename = truename;
+    }
+
+    private String truename;
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
 
     public String getId() {
         return id;
@@ -93,22 +111,6 @@ public class User {
 
     public void setProfession(String profession) {
         this.profession = profession;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", motto='" + motto + '\'' +
-                ", createtime=" + createtime +
-                ", updatetime=" + updatetime +
-                ", permit=" + permit +
-                ", college='" + college + '\'' +
-                ", profession='" + profession + '\'' +
-                '}';
     }
 
     public static String getRandonUUID(){

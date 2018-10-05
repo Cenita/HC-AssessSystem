@@ -34,14 +34,15 @@ public class RegisterServlet extends HttpServlet {
             e.printStackTrace();
         }
         Object MailCode = session.getAttribute("MailCode");
-        if(reuser.getEmail()==null||reuser.getUsername()==null||reuser.getPassword()==null||MailCode==null||reuser.getCode()==null)
+        Object MailAccount = session.getAttribute("MailAccount");
+        if(reuser.getEmail()==null||reuser.getUsername()==null||reuser.getPassword()==null||MailCode==null||reuser.getCode()==null||reuser.getTruename()==null)
         {
             jo.put("status","600");
             jo.put("message","注册失败");
         }
         else
         {
-            if(!reuser.getCode().equals((String)MailCode))
+            if(!reuser.getCode().equals((String)MailCode)||!reuser.getEmail().equals((String)MailAccount))
             {
                 jo.put("status","600");
                 jo.put("message","验证码错误");
