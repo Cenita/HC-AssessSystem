@@ -1,5 +1,7 @@
 package hctest.domain;
 
+import net.sf.json.JSONObject;
+
 import java.util.Date;
 
 public class Question {
@@ -102,5 +104,22 @@ public class Question {
 
     public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;
+    }
+    public JSONObject toJSONObject()
+    {
+        JSONObject jo = new JSONObject();
+        jo.put("id",id);
+        jo.put("title",title);
+        jo.put("number",number);
+        jo.put("content",content);
+        jo.put("type",type);
+        jo.put("selection",selection);
+        jo.put("answer",answer);
+        jo.put("direction",direction);
+        jo.put("grade",grade);
+        jo.put("createtime",createtime.getTime());
+        jo.put("updatetime",updatetime.getTime());
+
+        return jo;
     }
 }
