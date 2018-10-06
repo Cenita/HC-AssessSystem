@@ -16,8 +16,14 @@ import java.util.List;
 import java.util.Properties;
 
 public class UserDao{
-    public static User getUserById(String id) {
-        return null;
+    public static User getUserById(String id) throws SQLException {
+        String sql = "select *from user where id = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        User user =  qr.query(sql , new BeanHandler<User>(User.class),id);
+
+        return user;
     }
 
     public static User getUserByUserName(String username) throws SQLException {

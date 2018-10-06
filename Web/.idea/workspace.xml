@@ -24,22 +24,22 @@
     <session id="-377626480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="html" value="5" />
+          <entry key="html" value="6" />
           <entry key="iml" value="1" />
-          <entry key="java" value="89" />
+          <entry key="java" value="99" />
           <entry key="jpeg" value="1" />
-          <entry key="jsp" value="13" />
+          <entry key="jsp" value="14" />
           <entry key="properties" value="7" />
           <entry key="test" value="1" />
           <entry key="xml" value="2" />
@@ -48,11 +48,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="89" />
-          <entry key="JSP" value="13" />
+          <entry key="JAVA" value="99" />
+          <entry key="JSP" value="14" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="7" />
           <entry key="XML" value="2" />
@@ -62,9 +62,9 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="dummy" value="17" />
-          <entry key="html" value="110" />
-          <entry key="java" value="13714" />
-          <entry key="jsp" value="618" />
+          <entry key="html" value="116" />
+          <entry key="java" value="13922" />
+          <entry key="jsp" value="654" />
           <entry key="properties" value="174" />
           <entry key="test" value="4" />
         </counts>
@@ -72,9 +72,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="HTML" value="110" />
-          <entry key="JAVA" value="13714" />
-          <entry key="JSP" value="618" />
+          <entry key="HTML" value="116" />
+          <entry key="JAVA" value="13922" />
+          <entry key="JSP" value="654" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="Properties" value="174" />
         </counts>
@@ -88,10 +88,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/Dao/QuestionDao.java">
+        <entry file="file://$PROJECT_DIR$/src/hctest/service/RequestMailToRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+            <state relative-caret-position="231">
+              <caret line="52" column="76" lean-forward="true" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,90 +100,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/service/question/DeleteQuestionServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/hctest/service/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="62" column="52" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="62" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hctest/service/LoginStatusServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/status.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/service/question/getQuestionServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/hctest/Dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/domain/Paper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding>
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#675#676#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#784#785#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1204#1205#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1379#1380#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
-                <element signature="e#1553#1554#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-                <element signature="e#1636#1637#0" expanded="true" />
-                <element signature="e#1680#1681#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
-                <element signature="e#1842#1843#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1908#1909#0" expanded="true" />
-                <element signature="e#1956#1957#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-                <element signature="e#2030#2031#0" expanded="true" />
-                <element signature="e#2060#2061#0" expanded="true" />
-                <element signature="e#2104#2105#0" expanded="true" />
-                <element signature="e#2142#2143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/AddPaperServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+            <state relative-caret-position="293">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/registerVerify.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hctest/service/RegisterServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/DownloadFileServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -198,84 +178,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/getPaperServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/DeletePaperServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="132">
               <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/getQuestion.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hctest/domain/Question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1838">
-              <caret line="117" column="38" lean-forward="true" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#516#517#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1105#1106#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1262#1263#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
-                <element signature="e#1501#1502#0" expanded="true" />
-                <element signature="e#1529#1530#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1593#1594#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1660#1661#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1743#1744#0" expanded="true" />
-                <element signature="e#1787#1788#0" expanded="true" />
-                <element signature="e#1822#1823#0" expanded="true" />
-                <element signature="e#1855#1856#0" expanded="true" />
-                <element signature="e#1905#1906#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -287,17 +193,14 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/resource/db.properties" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/classes/resource/db.properties" />
         <option value="$PROJECT_DIR$/web/register.jsp.html" />
         <option value="$PROJECT_DIR$/web/WEB-INF/classes/mail.properties" />
         <option value="$PROJECT_DIR$/web/registerlink.html" />
@@ -311,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/hctest/dto/VerifyCode.java" />
         <option value="$PROJECT_DIR$/src/hctest/Dao/EventDao.java" />
         <option value="$PROJECT_DIR$/src/hctest/util/FileUitl.java" />
-        <option value="$PROJECT_DIR$/web/registerVerify.html" />
         <option value="$PROJECT_DIR$/src/hctest/util/MailUtil.java" />
         <option value="$PROJECT_DIR$/web/registerSuccessful.html" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
@@ -324,10 +226,7 @@
         <option value="$PROJECT_DIR$/src/hctest/dto/RegisterUser.java" />
         <option value="$PROJECT_DIR$/web/register.jsp" />
         <option value="$PROJECT_DIR$/src/hctest/service/RegisterServlet.java" />
-        <option value="$PROJECT_DIR$/src/hctest/Dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/hctest/service/RequestMailToRegister.java" />
         <option value="$PROJECT_DIR$/src/hctest/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/hctest/service/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/hctest/util/JdbcUtil.java" />
         <option value="$PROJECT_DIR$/src/hctest/dto/QuestionSelect0.java" />
         <option value="$PROJECT_DIR$/src/hctest/dto/QuestionSelect.java" />
@@ -346,6 +245,13 @@
         <option value="$PROJECT_DIR$/src/hctest/service/paper/AlterPaperServlet.java" />
         <option value="$PROJECT_DIR$/src/hctest/service/paper/getPaperServlet.java" />
         <option value="$PROJECT_DIR$/src/hctest/service/paper/DeletePaperServlet.java" />
+        <option value="$PROJECT_DIR$/src/hctest/service/filesystem/DownloadFileServlet.java" />
+        <option value="$PROJECT_DIR$/web/registerVerify.html" />
+        <option value="$PROJECT_DIR$/src/hctest/service/RequestMailToRegister.java" />
+        <option value="$PROJECT_DIR$/src/hctest/service/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/hctest/Dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/hctest/service/LoginStatusServlet.java" />
+        <option value="$PROJECT_DIR$/web/status.jsp" />
       </list>
     </option>
   </component>
@@ -424,30 +330,6 @@
               <item name="HCTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hctest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="OtherServlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HCTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HCTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hctest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="paper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HCTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HCTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hctest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HCTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HCTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hctest" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -479,7 +361,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538747854086" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538798094289" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -495,6 +377,7 @@
       <recent name="E:\code\masterSpring\code\HCTest\src\hctest\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hctest.service.filesystem" />
       <recent name="hctest.service.paper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -628,7 +511,8 @@
       <workItem from="1538547804111" duration="18147000" />
       <workItem from="1538576494234" duration="4292000" />
       <workItem from="1538661172698" duration="8515000" />
-      <workItem from="1538710552155" duration="27111000" />
+      <workItem from="1538710552155" duration="29765000" />
+      <workItem from="1538795643869" duration="1895000" />
     </task>
     <servers />
   </component>
@@ -665,7 +549,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74537000" />
+    <option name="totallyTimeSpent" value="79086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +564,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8866171" visible="true" weight="0.17447917" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8866171" visible="true" weight="0.17447917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -690,7 +574,7 @@
       <window_info id="Web" order="7" sideWeight="0.1133829" side_tool="true" visible="true" weight="0.17447917" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43068784" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43068784" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -721,19 +605,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/resource/db.properties" />
-    <entry file="file://$PROJECT_DIR$/src/resource/db.properties" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/classes/test/Test.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HCTest.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/IDao/IUserDao.java" />
     <entry file="file://$PROJECT_DIR$/src/hctest/util/captcha/servlet/CaptchaServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/hctest/util/captcha/utils/CaptchaUtil.java" />
     <entry file="file://$PROJECT_DIR$/src/hctest/util/captcha/Captcha.java" />
@@ -771,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/registerVerify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/registerSuccessful.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -808,13 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/VisitFileSystemServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -897,36 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/RequestMailToRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="43" column="74" lean-forward="true" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/VerifyLinkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/Dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hctest/util/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -941,30 +768,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/question/AlterQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/question/AlterQuestion.java" />
     <entry file="file://$PROJECT_DIR$/src/hctest/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-132">
@@ -996,13 +800,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/dto/SelectQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/dto/SelectQuestion.java" />
     <entry file="file://$PROJECT_DIR$/src/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1187,13 +985,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/AddPaperServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/getPaperServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="9" column="64" lean-forward="true" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+        <state relative-caret-position="128">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/VerifyLinkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/AddPaperServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/VisitFileSystemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/uploadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/DeleteFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/filesystem/DownloadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -1204,17 +1057,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/getPaperServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/DeletePaperServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="9" column="62" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        <state relative-caret-position="132">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hctest/service/paper/DeletePaperServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/registerVerify.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        <state relative-caret-position="297">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/RequestMailToRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="52" column="76" lean-forward="true" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="62" column="52" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="62" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hctest/service/LoginStatusServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/status.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>

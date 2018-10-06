@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
                     jo.put("status",200);
                     jo.put("message","登录成功");
                     JSONObject juser = new JSONObject();
-                    juser.put("account",user.getUsername());
+                    juser.put("username",user.getUsername());
                     juser.put("motto",user.getMotto());
                     juser.put("profession",user.getProfession());
                     juser.put("college",user.getCollege());
