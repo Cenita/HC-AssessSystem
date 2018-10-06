@@ -7,14 +7,13 @@ public class Paper {
     private String title;
     private String number;
     private String direction;
-    private int score;
     private int grade;
     private int permit;
-    private String questionlist;
     private Date createtime;
     private Date updatetime;
     private Date starttime;
     private Date endtime;
+
 
     public String getId() {
         return id;
@@ -48,14 +47,6 @@ public class Paper {
         this.direction = direction;
     }
 
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
     public int getGrade() {
         return grade;
     }
@@ -70,14 +61,6 @@ public class Paper {
 
     public void setPermit(int permit) {
         this.permit = permit;
-    }
-
-    public String getQuestionlist() {
-        return questionlist;
-    }
-
-    public void setQuestionlist(String questionlist) {
-        this.questionlist = questionlist;
     }
 
     public Date getCreatetime() {

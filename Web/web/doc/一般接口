@@ -78,6 +78,18 @@ height 可选
 方式:POST
 
 参数
-无
+status
+message
+user {
+    username
+    motto
+    profession
+    college
+    permit
+    truename
+    grade
+    lasttime
+}
+
 
 
