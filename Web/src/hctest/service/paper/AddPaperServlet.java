@@ -19,10 +19,6 @@ public class AddPaperServlet extends HttpServlet {
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
 
-
-
-
-
-        response.getWriter().write(jo.toString());
+        response.getWriter().write("jasonpCallback("+jo.toString()+")");
     }
 }

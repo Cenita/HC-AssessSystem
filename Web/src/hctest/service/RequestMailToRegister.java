@@ -4,6 +4,7 @@ import hctest.Dao.UserDao;
 import hctest.dto.VerifyCode;
 import hctest.util.FileUitl;
 import hctest.util.GraphicHelper;
+import hctest.util.HeaderUitl;
 import hctest.util.MailUtil;
 import net.sf.json.JSONObject;
 
@@ -26,6 +27,8 @@ public class RequestMailToRegister extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
+        HeaderUitl.setHeaderAccess(response);
+
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
         String email = request.getParameter("email");

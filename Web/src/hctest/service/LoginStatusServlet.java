@@ -2,6 +2,7 @@ package hctest.service;
 
 import hctest.Dao.UserDao;
 import hctest.domain.User;
+import hctest.util.HeaderUitl;
 import hctest.util.UserInfoUtil;
 import net.sf.json.JSONObject;
 
@@ -13,14 +14,19 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 
 @WebServlet(name = "LoginStatusServlet",urlPatterns = "/status")
 public class LoginStatusServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
+        String realIp = HeaderUitl.getIpuser(request);
+        HeaderUitl.setHeaderAccess(response);
+
         HttpSession session = request.getSession();
         JSONObject jo = new JSONObject();
         Object login = session.getAttribute("login");
+        jo.put("ip",realIp);
         if(login==null)
         {
             jo.put("status","400");
@@ -43,6 +49,7 @@ public class LoginStatusServlet extends HttpServlet {
                 juser.put("lasttime",user.getUpdatetime().toString());
                 jo.put("user",juser.toString());
             } catch (SQLException e) {
+                e.printStackTrace();
                 jo.put("status","400");
                 jo.put("message",".");
             }

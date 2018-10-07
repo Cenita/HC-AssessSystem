@@ -4,6 +4,7 @@ import hctest.Dao.UserDao;
 import hctest.domain.User;
 import hctest.dto.VerifyCode;
 import hctest.util.GraphicHelper;
+import hctest.util.HeaderUitl;
 import hctest.util.UserInfoUtil;
 import net.sf.json.JSONObject;
 
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.Map;
 
 @WebServlet(name = "LoginServlet",
@@ -23,12 +25,16 @@ import java.util.Map;
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
+        String realIp = request.getHeader("X-Real-IP");
+        System.out.println(realIp);
+        HeaderUitl.setHeaderAccess(response);
         HttpSession session = request.getSession();
         JSONObject jo = new JSONObject();
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String code = request.getParameter("code");
         Object VCode= session.getAttribute("VCode");
+        jo.put("ip",realIp);
         if(VCode==null||code==null||!code.equals((String)VCode))
         {
             jo.put("message","验证码错误");

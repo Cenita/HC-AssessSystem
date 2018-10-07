@@ -2,6 +2,7 @@ package hctest.service.OtherServlet;
 
 import hctest.dto.VerifyCode;
 import hctest.util.GraphicHelper;
+import hctest.util.HeaderUitl;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Date;
 
 @WebServlet(name = "VerifyCodeServlet",
         urlPatterns = "/verifyCode"
@@ -23,6 +25,8 @@ public class VerifyCodeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
+        HeaderUitl.setHeaderAccess(response);
+
         String p_width = request.getParameter("width");
         String p_height = request.getParameter("height");
         int width = 180;
