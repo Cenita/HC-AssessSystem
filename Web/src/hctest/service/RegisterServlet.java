@@ -45,7 +45,7 @@ public class RegisterServlet extends HttpServlet {
         }
         else
         {
-            if(!reuser.getCode().equals((String)MailCode)||!reuser.getEmail().equals((String)MailAccount))
+            if(!reuser.getCode().toLowerCase().equals((String)MailCode)||!reuser.getEmail().equals((String)MailAccount))
             {
                 jo.put("status","600");
                 jo.put("message","验证码错误");

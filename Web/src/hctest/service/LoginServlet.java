@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
         String code = request.getParameter("code");
         Object VCode= session.getAttribute("VCode");
         jo.put("ip",realIp);
-        if(VCode==null||code==null||!code.equals((String)VCode))
+        if(VCode==null||code==null||!code.toLowerCase().equals((String)VCode))
         {
             jo.put("message","验证码错误");
             jo.put("status",400);

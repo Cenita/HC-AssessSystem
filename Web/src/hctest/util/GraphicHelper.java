@@ -57,7 +57,7 @@ public class GraphicHelper {
                 s=s.toLowerCase();
             }
             graphic.setColor(colors[random.nextInt(colors.length)]);
-            graphic.drawString(s, width/8+i * (width / 4), height - (height / 3));
+            graphic.drawString(s, width/16+i * (width / 4), height - (height / 4));
         }
         graphic.dispose();
 
