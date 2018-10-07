@@ -58,7 +58,7 @@ public class RegisterServlet extends HttpServlet {
                     String content = FileUitl.getFileToString(path);
                     MailUtil.sendMail(reuser.getEmail(),"欢迎使用环创答题系统",content);
                     jo.put("status","200");
-                    jo.put("message","邮件发送成功");
+                    jo.put("message","注册成功");
                 } catch (SQLException e) {
                     e.printStackTrace();
                     jo.put("status","600");
@@ -66,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
                 } catch (Exception e) {
                     e.printStackTrace();
                     jo.put("status","200");
-                    jo.put("message","邮件发送失败");
+                    jo.put("message","注册成功");
                 }
             }
 

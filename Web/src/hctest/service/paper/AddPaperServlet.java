@@ -1,5 +1,6 @@
 package hctest.service.paper;
 
+import hctest.util.HeaderUitl;
 import net.sf.json.JSONObject;
 
 import javax.servlet.ServletException;
@@ -15,6 +16,8 @@ import java.util.Map;
 public class AddPaperServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
+        HeaderUitl.setHeaderAccess(response);
+
         Map<String,String[]> map = request.getParameterMap();
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();

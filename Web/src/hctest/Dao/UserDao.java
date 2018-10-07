@@ -36,8 +36,14 @@ public class UserDao{
        return user;
     }
 
-    public static User getUserByEmail(String email) {
-        return null;
+    public static User getUserByEmail(String email) throws SQLException {
+        String sql = "select *from user where email = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        User user =  qr.query(sql , new BeanHandler<User>(User.class),email);
+
+        return user;
     }
 
     public static void addUser(User user) throws SQLException {
@@ -77,6 +83,24 @@ public class UserDao{
 
     public static List<User> getAllUsers() {
         return null;
+    }
+
+    public static boolean isEmailExist(String email)
+    {
+        try {
+            User user = UserDao.getUserByEmail(email);
+            if(user==null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
 }

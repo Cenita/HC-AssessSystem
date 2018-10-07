@@ -2,6 +2,7 @@ package hctest.service.question;
 
 import hctest.Dao.QuestionDao;
 import hctest.domain.Question;
+import hctest.util.HeaderUitl;
 import net.sf.json.JSONObject;
 
 import javax.servlet.ServletException;
@@ -19,6 +20,8 @@ import java.util.Map;
 public class getQuestionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
+        HeaderUitl.setHeaderAccess(response);
+
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
 

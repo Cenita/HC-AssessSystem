@@ -40,33 +40,42 @@ public class RequestMailToRegister extends HttpServlet {
         }
         long nowtime = new Date().getTime()/1000;
         Object mailtime = session.getAttribute("MailTimes");
-        if(mailtime==null||nowtime-(long)mailtime>=60)
+        if((mailtime==null||nowtime-(long)mailtime>=60))
         {
-            VerifyCode vcode = GraphicHelper.randRomVerifyCode(180,40);
-            String path = "temp/"+email+".jpeg";
-//            String networkPath = "http://120.79.91.253:8080/HCTest/"+path;
-            String realpath = getServletContext().getRealPath(path);
-            OutputStream out = new FileOutputStream(realpath);
-            ImageIO.write(vcode.getImage(),"jpeg",out);
-            out.close();
 
-            try {
-                String linkPath = getServletContext().getRealPath("registerVerify.html");
-                String content = FileUitl.getFileToString(linkPath);
-                content = content.replace("@@thereISsrc@@",vcode.getCode());
-                MailUtil.sendMail(email,"注册验证码，来自环创答题系统",content);
-                session.setAttribute("MailTimes",new Date().getTime()/1000);
-                session.setAttribute("MailCode",vcode.getCode());
-                session.setAttribute("MailAccount",email);
-                jo.put("status","200");
-                jo.put("message","邮件发送成功");
-                jo.put("wait","60");
-            } catch (Exception e) {
-                jo.put("status","500");
-                jo.put("message","邮件发送失败");
-                jo.put("wait","-1");
-                e.printStackTrace();
+            if(UserDao.isEmailExist(email))
+            {
+                jo.put("status","400");
+                jo.put("message","邮箱已被使用");
             }
+            else
+            {
+                VerifyCode vcode = GraphicHelper.randRomVerifyCode(180,40);
+                String path = "temp/"+email+".jpeg";
+                String realpath = getServletContext().getRealPath(path);
+                OutputStream out = new FileOutputStream(realpath);
+                ImageIO.write(vcode.getImage(),"jpeg",out);
+                out.close();
+
+                try {
+                    String linkPath = getServletContext().getRealPath("registerVerify.html");
+                    String content = FileUitl.getFileToString(linkPath);
+                    content = content.replace("@@thereISsrc@@",vcode.getCode());
+                    MailUtil.sendMail(email,"注册验证码，来自环创答题系统",content);
+                    session.setAttribute("MailTimes",new Date().getTime()/1000);
+                    session.setAttribute("MailCode",vcode.getCode());
+                    session.setAttribute("MailAccount",email);
+                    jo.put("status","200");
+                    jo.put("message","邮件发送成功");
+                    jo.put("wait","60");
+                } catch (Exception e) {
+                    jo.put("status","500");
+                    jo.put("message","邮件发送失败");
+                    jo.put("wait","-1");
+                    e.printStackTrace();
+                }
+            }
+
         }
         else
         {
