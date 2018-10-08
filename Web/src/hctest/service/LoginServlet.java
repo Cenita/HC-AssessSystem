@@ -24,17 +24,16 @@ import java.util.Map;
 )
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
-        String realIp = request.getHeader("X-Real-IP");
-        System.out.println(realIp);
-        HeaderUitl.setHeaderAccess(response);
+        HeaderUitl.setHeaderAccess(request,response);
+
         HttpSession session = request.getSession();
         JSONObject jo = new JSONObject();
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String code = request.getParameter("code");
         Object VCode= session.getAttribute("VCode");
-        jo.put("ip",realIp);
         if(VCode==null||code==null||!code.toLowerCase().equals((String)VCode))
         {
             jo.put("message","验证码错误");
@@ -69,18 +68,13 @@ public class LoginServlet extends HttpServlet {
                     jo.put("user",juser.toString());
 
                 }
-
-
             } catch (SQLException e) {
                 jo.put("status",400);
+                jo.put("message","服务器发生异常");
                 e.printStackTrace();
             }
         }
 
         response.getWriter().write(jo.toString());
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println();
     }
 }

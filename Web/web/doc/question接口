@@ -35,6 +35,10 @@ grade 题目的难度等级
 type 题目的类型
 direction 题目的方向
 
+返回
+status
+message
+
 #修改题目----------------------------------------------
 /question/alter
 
@@ -51,6 +55,10 @@ grade 题目的难度等级
 type 题目的类型
 direction 题目的方向
 
+返回
+status
+message
+
 #删除题目-----------------------------------------------
 /question/detele
 
@@ -58,6 +66,10 @@ direction 题目的方向
 
 参数
 id 题目的数据库id编号
+
+返回
+status
+message
 
 #查询题目------------------------------------------------
 /question/get
@@ -70,3 +82,33 @@ args
 
 aim=all args=all 时为查询全部题目
 aim=id args=题目的数据库id时 为查询单条题目
+
+
+返回
+精确查询
+status
+message
+question{
+    id
+    title
+    number
+    grade
+    direction
+    content
+    selection
+    answer
+    createtime
+    updatetime 
+}
+
+全部查询
+status
+message
+size list有多少个user包
+list{
+    0:{第一个user的信息}
+    1:...
+}
+
+
+*********************************以上接口已经部署************************************************

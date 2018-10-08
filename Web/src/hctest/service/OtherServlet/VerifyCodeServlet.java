@@ -24,9 +24,10 @@ public class VerifyCodeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        HeaderUitl.setHeaderAccess(response);
+        request.setCharacterEncoding("utf-8");
+        HeaderUitl.setHeaderAccess(request,response);
 
+        HttpSession session = request.getSession();
         String p_width = request.getParameter("width");
         String p_height = request.getParameter("height");
         int width = 180;

@@ -19,8 +19,9 @@ import java.util.Map;
 @WebServlet(name = "getQuestionServlet",urlPatterns = "/question/get")
 public class getQuestionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
-        HeaderUitl.setHeaderAccess(response);
+        HeaderUitl.setHeaderAccess(request,response);
 
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
@@ -58,7 +59,7 @@ public class getQuestionServlet extends HttpServlet {
                 }catch (Exception e)
                 {
                     jo.put("status","400");
-                    jo.put("message","Ex查找失败");
+                    jo.put("message","查找失败");
                 }
             }
             else if("id".equals((String)aim))

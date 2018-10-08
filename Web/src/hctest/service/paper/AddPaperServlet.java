@@ -15,8 +15,7 @@ import java.util.Map;
 @WebServlet(name = "AddPaperServlet",urlPatterns = "/paper/add")
 public class AddPaperServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("application/json;charset=utf-8");
-        HeaderUitl.setHeaderAccess(response);
+        HeaderUitl.setHeaderAccess(request,response);
 
         Map<String,String[]> map = request.getParameterMap();
         JSONObject jo = new JSONObject();

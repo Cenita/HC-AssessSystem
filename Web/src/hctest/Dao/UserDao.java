@@ -4,6 +4,7 @@ import hctest.domain.User;
 import hctest.util.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -81,8 +82,12 @@ public class UserDao{
         qr.update(sql, new Timestamp(date.getTime()),username);
     }
 
-    public static List<User> getAllUsers() {
-        return null;
+    public static List<User> getAllUsers() throws SQLException {
+        String sql = "select * from user";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        return qr.query(sql, new BeanListHandler<User>(User.class));
     }
 
     public static boolean isEmailExist(String email)
@@ -101,6 +106,14 @@ public class UserDao{
             e.printStackTrace();
             return false;
         }
+    }
+
+    public static void updateUserPassword(String password,String id) throws SQLException {
+        String sql = "update user set password = ? where id = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        qr.update(sql,password,id);
     }
 
 }

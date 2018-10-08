@@ -24,8 +24,9 @@ import java.util.Map;
 )
 public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       response.setContentType("application/json;charset=utf-8");
-        HeaderUitl.setHeaderAccess(response);
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("application/json;charset=utf-8");
+        HeaderUitl.setHeaderAccess(request,response);
 
         Map<String,String[]>map = request.getParameterMap();
         JSONObject jo = new JSONObject();
@@ -38,8 +39,11 @@ public class RegisterServlet extends HttpServlet {
         }
         Object MailCode = session.getAttribute("MailCode");
         Object MailAccount = session.getAttribute("MailAccount");
-        if(reuser.getEmail()==null||reuser.getUsername()==null||reuser.getPassword()==null||MailCode==null||reuser.getCode()==null||reuser.getTruename()==null)
-        {
+        if(reuser.getEmail()==null||
+                reuser.getUsername()==null ||
+                reuser.getPassword()==null||
+                reuser.getCode()==null||
+                reuser.getTruename()==null||MailCode==null) {
             jo.put("status","600");
             jo.put("message","注册失败");
         }
@@ -62,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
                 } catch (SQLException e) {
                     e.printStackTrace();
                     jo.put("status","600");
-                    jo.put("message","账户已存在");
+                    jo.put("message","账户已存在或sql错误");
                 } catch (Exception e) {
                     e.printStackTrace();
                     jo.put("status","200");
@@ -73,9 +77,5 @@ public class RegisterServlet extends HttpServlet {
         }
 
         response.getWriter().write(jo.toString());
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 }

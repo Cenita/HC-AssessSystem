@@ -17,8 +17,9 @@ import java.sql.SQLException;
 public class DeleteQuestionServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
-        HeaderUitl.setHeaderAccess(response);
+        HeaderUitl.setHeaderAccess(request,response);
 
         HttpSession session = request.getSession();
         JSONObject jo = new JSONObject();

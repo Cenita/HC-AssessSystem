@@ -8,19 +8,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Title</title>
 </head>
 <body>
 <form action="register" method="post">
-    <input type="text" name="username"><br>
-    <input type="password" name="password"><br>
-    <input type="text" name="email"><br>
-    <input type="text" name="motto"><br>
-    <input type="text" name="profession"><br>
-    <input type="text" name="college"><br>
-    <input type="text" name="grade"><br>
-    <input type="text" name="truename"><br>
-    <input type="text" name="code"><br>
+    用户名<input type="text" name="username"><br>
+    密码<input type="password" name="password"><br>
+    邮件<input type="text" name="email"><br>
+    <%--格言<input type="text" name="motto"><br>--%>
+    专业<input type="text" name="profession"><br>
+    学院<input type="text" name="college"><br>
+    年级<input type="text" name="grade"><br>
+    姓名<input type="text" name="truename"><br>
+    验证码<input type="text" name="code"><br>
     <input type="submit" value="注册">
 </form>
 </body>

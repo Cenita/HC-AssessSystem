@@ -23,11 +23,11 @@ import java.util.Date;
 
 @WebServlet(name = "RequestMailToRegister",urlPatterns = "/sendMail")
 public class RequestMailToRegister extends HttpServlet {
-
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    @Override
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
-        HeaderUitl.setHeaderAccess(response);
+        HeaderUitl.setHeaderAccess(request,response);
 
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
@@ -85,9 +85,5 @@ public class RequestMailToRegister extends HttpServlet {
         }
 
         response.getWriter().write(jo.toString());
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 }

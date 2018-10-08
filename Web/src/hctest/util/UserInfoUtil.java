@@ -1,5 +1,8 @@
 package hctest.util;
 
+import hctest.domain.User;
+import net.sf.json.JSONObject;
+
 public class UserInfoUtil {
 
     public static String getPremitMessage(int premit)
@@ -17,5 +20,29 @@ public class UserInfoUtil {
             case 9:ps="超级管理员";break;
         }
         return ps;
+    }
+
+    public static JSONObject getUserMessageToJson(User user)
+    {
+        if(user==null)
+        {
+            return null;
+        }
+        else
+        {
+            JSONObject jo = new JSONObject();
+            jo.put("username",user.getUsername());
+            jo.put("lasttime",user.getUpdatetime().toString());
+            jo.put("motto",user.getMotto());
+            jo.put("id",user.getId());
+            jo.put("profession",user.getProfession());
+            jo.put("college",user.getCollege());
+            jo.put("registertime",user.getCreatetime().toString());
+            jo.put("grade",user.getGrade());
+            jo.put("email",user.getEmail());
+            jo.put("permit",UserInfoUtil.getPremitMessage(user.getPermit()));
+            jo.put("permitInt",user.getPermit());
+            return jo;
+        }
     }
 }
