@@ -3,6 +3,7 @@ $(
   {
     var time=60;
     var timeId;
+    var url="http://120.79.91.253:8080/HCTest/";
     var rw=new Vue(
       {
         el:"#loginWindows .registerPart",
@@ -16,6 +17,7 @@ $(
           confirmPasswordError:false,
           emailError:false,
           emailCodeError:false,
+          emailisExsit:false,
           studentNumInput:"",
           realNameInput:"",
           passwordInput:"",
@@ -43,19 +45,114 @@ $(
         rw.emailCodeError=rw.emailCodeInput==""?true:false;
         // $(this).find(".fa-spinner").toggle();
         // $(this).find("span").toggle();
+        if(!rw.studentNumError&&!rw.realNameError&&!rw.graderError&&!rw.acError&&!rw.majorError&&!rw.passwordError&&!rw.confirmPasswordError&&!rw.emailError&&!rw.emailCodeError)
+        {
+          sendRegister(graderInput,acInput,majorInput);
+        }
       }
     )
+      function sendRegister(grade,college,profession)
+      {
+        rw.emailisExsit=false;
+        $.ajax(
+            {
+                type:"POST",
+                dataType:"json",
+                url:url+"register",
+                data:{
+                    username:rw.studentNumInput,
+                    password:rw.passwordInput,
+                    email:rw.emailInput,
+                    truename:rw.realNameInput,
+                    code:rw.emailCodeInput,
+                    grade:grade,
+                    college:college,
+                    profession:profession
+                },
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true,
+                success:function (re) {
+                    if(re.status==200)
+                    {
+                      alert("注册成功");
+                      location.reload();
+                    }
+                    else if(re.status==400)
+                    {
+                        if(re.message=="邮箱已被使用")
+                        {
+                            rw.emailisExsit=true;
+                        }
+                        else
+                        {
+                            alert("注册失败："+re.message);
+                        }
+
+                    }
+                    else
+                    {
+                        alert(re.status+" "+re.message)
+                    }
+                }
+            }
+        )
+      }
     $("#loginWindows .registerPart .getEmailCore").click(
       function()
       {
         rw.emailError=rw.emailInput==""||rw.emailInput.indexOf(".com")==-1?true:false;
+        rw.emailisExsit=false;
         if(!rw.emailError&&$(this).text()=="获取验证码")
         {
-          $(this).removeClass("green").addClass("grey");
+          var $here=$(this);
           time=60;
-          $(this).text("发送中("+time+")");
+          $here.removeClass("green").addClass("grey");
+          $here.text("发送中("+time+")");
           timeId=window.setInterval(delayGetCore,1000);
+          $.ajax(
+              {
+                  type:"GET",
+                  url:url+"sendMail",
+                  dataType: 'json',
+                  data:{
+                    email:rw.emailInput
+                  },
+                  xhrFields: {
+                      withCredentials: true
+                  },
+                  crossDomain: true,
+                  success:function (re) {
+                      if(re.status==200)
+                      {
 
+                      }
+                      else if(re.status==400)
+                      {
+                          if(re.message=="邮箱已被使用")
+                          {
+                            rw.emailisExsit=true;
+                            time=0;
+                            $("#loginWindows .registerPart .getEmailCore").removeClass("grey").addClass("green").text("获取验证码");
+                            window.clearInterval(timeId);
+                          }
+                          else
+                          {
+                              alert("发送失败："+re.message);
+                          }
+
+                      }
+                      else
+                      {
+                          alert(re.status+" "+re.message)
+                      }
+                  },
+                  error:function (re) {
+                    // alert(rw.emailInput);
+                  }
+              }
+          )
         }
       }
     )
@@ -336,7 +433,7 @@ $(
     {
       time--;
       $("#loginWindows .registerPart .getEmailCore").text("发送中("+time+")");
-      if(time==0)
+      if(time<=0)
       {
         $("#loginWindows .registerPart .getEmailCore").removeClass("grey").addClass("green").text("获取验证码");
         window.clearInterval(timeId);

@@ -1,14 +1,11 @@
 $(
   function()
   {
-    var verResult;
+    var url="http://120.79.91.253:8080/HCTest/";
     var log=new Vue(
       {
         el:"#loginWindows .loginPart",
         data:{
-          ver1:"1",
-          sym:"+",
-          ver2:"2",
           passwordError:false,
           verCordError:false,
           verCordInput:"",
@@ -21,9 +18,58 @@ $(
     $("#loginWindows .loginPart .loginInButtom").click(
       function()
       {
-        log.verCordError=!(log.verCordInput==verResult);
-        if(!log.passwordError&&!log.verCordError)
+        log.passwordError=false;
+        log.verCordError=false;
+        if(!log.passwordError)
         {
+
+            $.ajax({
+              type:"POST",
+              url:url+"login",
+              dataType:"json",
+              data:{
+                 username:log.eAndStuNumInput,
+                 password:log.passwordInput,
+                 code:log.verCordInput
+              },
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true,
+                success:function (re) {
+                    if(re.status==200)
+                    {
+                        location.reload();
+                    }
+                    else if(re.status==400)
+                    {
+                        if(re.message=="验证码错误")
+                        {
+                          log.verCordError=true;
+                            getVer();
+                        }
+                        else if(re.message=="账号或密码不存在")
+                        {
+                          log.passwordError=true;
+                            getVer();
+                        }
+                    else
+                    {
+                            alert("登陆失败："+re.message);
+                    }
+
+                    }
+                    else
+                    {
+                        alert(re.status+" "+re.message)
+                    }
+                },
+                error:function (re) {
+                    alert("发生错误");
+                }
+
+            }
+          )
         }
         else {
           getVer();
@@ -38,23 +84,26 @@ $(
     )
     function getVer()
     {
-      var symbol=new Array("+","-","*");
-      var frist=Math.floor(Math.random()*99+1);
-      var sym=Math.floor(Math.random()*3);
-      var two=Math.floor(Math.random()*99+1);
-      if(sym==2)
-      {
-        frist=Math.floor(Math.random()*10+1);
-        two=Math.floor(Math.random()*10+1);
-        verResult=frist*two;
-      }
-      log.ver1=frist;
-      log.sym=symbol[sym];
-      log.ver2=two;
-      if(sym==1)
-      {verResult=frist-two;}
-      if(sym==0)
-      {verResult=frist+two;}
+        var d=new Date();
+        $.ajax({
+                type:"POST",
+                url:url+"status",
+                dataType:"json",
+                data:{
+                },
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true,
+                success:function (re) {
+
+                },
+                error:function (re) {
+                    alert("发生错误");
+                }
+            }
+        )
+        $("#verifCode").attr("src",url+"verifyCode?width=100&height=40&time="+d.getTime())
     }
   }
 )

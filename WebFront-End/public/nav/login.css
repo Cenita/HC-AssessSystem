@@ -69,8 +69,6 @@
 }
 #loginWindows .mainPart .loginPart .verificationCode .verification
 {
-  margin-left: 15px;
-  margin-top: 10px;
   font-size: 15px;
 }
 #loginWindows .mainPart .loginPart .verificationCode .verification:hover

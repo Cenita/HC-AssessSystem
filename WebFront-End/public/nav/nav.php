@@ -20,7 +20,7 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
     <link rel="stylesheet" href="../nav/login.css">
 </head>
 <body>
-  <nav class="navbar navbar-default" >
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="../index/index.php">
@@ -28,23 +28,23 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
         </a>
       </div>
       <div class="navbar-collapse collapse" id="navUser">
-        <ul v-show="noLogin" v-if="noLogin" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
-          <li><a class="loginButtom ">登录</a></li>
-        </ul>
-        <ul v-show="logined" v-if="logined" style="display:none"  class="nav navbar-nav navbar-right getUser">
+        <ul v-show="login" style="display:none"  class="nav navbar-nav navbar-right getUser">
           <img id="img_tou" src="../../lib/img/1.jpg" alt="">
-          <span>楚留香</span>
+          <span>{{userName}}</span>
           <img id="img_sanjiao" src="../../lib/img/sanjiao.png" alt="">
           <div class="dropdownSan"></div>
           <div class="dropdown" id="dropdown" style="display:none">
             <div class="personalImformation" id="dropdown">
-              <a href="personal_select.php?page=myInformation">个人信息</a>
+              <a href="">个人信息</a>
             </div>
             <div class="exit" id="dropdown">
-              <a href="javascript:;">退出登录</a>
+              <a href="">退出登录</a>
             </div>
           </div>
          </ul>
+          <ul v-show="!login" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
+              <li><a class="loginButtom ">登录</a></li>
+          </ul>
       </div>
     </div>
   </nav>
@@ -65,7 +65,7 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
 		<div class="mainPart">
 			<div class="loginPart">
 				<div class="ui left icon input">
-				  <input type="text" v-model="eAndStuNumInput" placeholder="学号/邮箱">
+				  <input type="text" v-model="eAndStuNumInput" placeholder="学号">
 				  <i class="user icon"></i>
 				</div>
 				<div class="ui left icon input">
@@ -75,13 +75,10 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
 				</div>
 				<div class="ui left input verificationCode">
 					<input type="text" placeholder="验证码" v-model="verCordInput" style="width:200px">
-					<span class="occurError" style="left:130px" v-if="verCordError"><i class="remove icon"></i>错误!</span>
+					<span class="occurError" style="width: 55px;left:130px;" v-if="verCordError"><i class="remove icon"></i>错误!</span>
 					<img src="" alt="">
 					<div class="verification" onclick="javascript:;">
-						<span class="V1">{{ver1}}</span>
-						<span class="symbol">{{sym}}</span>
-						<span class="V2">{{ver2}}</span>
-						<span>= ?</span>
+                        <img style="width:100px;height: 40px;" id="verifCode" src="" alt="">
 					</div>
 				</div>
 				<div class="forgetPassword" style="margin-top:10px">
@@ -117,24 +114,24 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
 				  <input type="hidden" name="gender">
 				  <div class="default text">学院</div>
 				  <div class="menu">
-						<div class="item" data-value="0">外语学院</div>
+					<div class="item" data-value="0">外语学院</div>
 				    <div class="item" data-value="1">文学院</div>
-						<div class="item" data-value="2">信息科学与工程学院</div>
-						<div class="item" data-value="3">物理与机电工程学院</div>
-						<div class="item" data-value="4">经济管理学院</div>
-						<div class="item" data-value="5">法学院</div>
-						<div class="item" data-value="6">政治与公共事务管理学院</div>
-						<div class="item" data-value="7">化学与环境工程学院</div>
-						<div class="item" data-value="8">数学与统计学院</div>
-						<div class="item" data-value="9">旅游与地理学院</div>
-						<div class="item" data-value="10">教育学院</div>
-						<div class="item" data-value="11">音乐学院</div>
-						<div class="item" data-value="12">美术与设计学院</div>
-						<div class="item" data-value="13">英东农业科学与工程学院</div>
-						<div class="item" data-value="14">英东生命科学学院</div>
-						<div class="item" data-value="15">英东食品科学与工程学院</div>
-						<div class="item" data-value="16">体育学院</div>
-						<div class="item" data-value="17">土木工程学院</div>
+					<div class="item" data-value="2">信息科学与工程学院</div>
+					<div class="item" data-value="3">物理与机电工程学院</div>
+					<div class="item" data-value="4">经济管理学院</div>
+					<div class="item" data-value="5">法学院</div>
+					<div class="item" data-value="6">政治与公共事务管理学院</div>
+					<div class="item" data-value="7">化学与环境工程学院</div>
+					<div class="item" data-value="8">数学与统计学院</div>
+					<div class="item" data-value="9">旅游与地理学院</div>
+					<div class="item" data-value="10">教育学院</div>
+					<div class="item" data-value="11">音乐学院</div>
+					<div class="item" data-value="12">美术与设计学院</div>
+					<div class="item" data-value="13">英东农业科学与工程学院</div>
+                    <div class="item" data-value="14">英东生命科学学院</div>
+					<div class="item" data-value="15">英东食品科学与工程学院</div>
+					<div class="item" data-value="16">体育学院</div>
+					<div class="item" data-value="17">土木工程学院</div>
 				  </div>
 					<span class="occurError" v-if="acError" style="top:0px"><i class="remove icon"></i>请选择学院!</span>
 				</div>
@@ -159,10 +156,11 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
 				  <input type="text" v-model="emailInput" placeholder="邮箱">
 				  <i class="mail icon"></i>
 					<span class="occurError" v-if="emailError"><i class="remove icon"></i>邮箱格式错误!</span>
+                    <span class="occurError" v-if="emailisExsit"><i class="remove icon"></i>邮箱已经存在!</span>
 				</div>
 				<div class="ui left input emailCode">
-					<input type="number" v-model="emailCodeInput" placeholder="邮箱验证码" style="width:160px">
-					<button class="ui green button getEmailCore" style="font-size: 12px;margin-left: 10px;margin-top:0px!important;color: white;margin-top:5px">获取验证码</button>
+					<input type="text" v-model="emailCodeInput" placeholder="邮箱验证码" style="width:160px">
+					<button class="ui green button getEmailCore" style="font-size: 12px;width: 130px;margin-left: 10px;margin-top:0px!important;color: white;">获取验证码</button>
 					<span class="occurError" v-if="emailCodeError" style="right:140px"><i class="remove icon"></i>错误!</span>
 				</div>
 				<button class="ui red button registerButtom" style="width:300px">

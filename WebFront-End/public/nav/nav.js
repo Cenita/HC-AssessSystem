@@ -2,16 +2,18 @@ $(
   function()
   {
     var is_xiala_down=false;
-    new Vue(
+    var url="http://120.79.91.253:8080/HCTest/";
+    var nav=new Vue(
       {
         el:"#navUser",
         data:
         {
-          logined:false,
-          noLogin:true
+            login:false,
+            userName:"",
         }
       }
     );
+    getStatus();
     $(".loginButtom").click(
       function()
       {
@@ -106,8 +108,59 @@ $(
     $(".dropdown .exit").click(
       function()
       {
-        window.location.href=$(this).find("a").attr("href");
+        $.ajax(
+            {
+                type:"POST",
+                url:url+"login/exit",
+                dataType:"json",
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true,
+                success:function (re) {
+                    location.reload();
+                },
+                error:function (re) {
+                    alert("发生错误");
+                }
+            }
+        )
       }
     )
+
+      function getStatus() {
+          $.ajax({
+                  type:"POST",
+                  url:url+"status",
+                  dataType:"json",
+                  xhrFields: {
+                      withCredentials: true
+                  },
+                  crossDomain: true,
+                  success:function (re) {
+                      if(re.status==200)
+                      {
+                          nav.login=true;
+                          nav.userName=re.user.username;
+                      }
+                      else if(re.status==400)
+                      {
+                          if(re.message==".")
+                          {
+                            nav.login=false;
+                          }
+                      }
+                      else
+                      {
+                          nav.login=false;
+                          alert(re.status+" "+re.message)
+                      }
+                  },
+                  error:function (re) {
+                      alert("发生错误");
+                  }
+              }
+          )
+      }
   }
 )

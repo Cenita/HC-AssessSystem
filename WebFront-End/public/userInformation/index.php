@@ -23,11 +23,11 @@
           <i class="fa fa-bank"></i>
           <span>我的考试</span>
         </a>
-        <a href="?page=simulate" class="simulate <?php if($page=="simulate")echo "haveSelect";else echo "canSelect"; ?>">
+        <a href="?page=mySimulate" class="simulate <?php if($page=="mySimulate")echo "haveSelect";else echo "canSelect"; ?>">
           <i class="fa fa-balance-scale"></i>
           <span>模拟考试</span>
         </a>
-        <a href="?page=leaveMessage" class="leaveMessage <?php if($page=="leaveMessage")echo "haveSelect";else echo "canSelect"; ?>">
+        <a href="?page=myMessage" class="leaveMessage <?php if($page=="myMessage")echo "haveSelect";else echo "canSelect"; ?>">
           <i class="fa fa-envelope-open-o"></i>
           <span>留言板块</span>
         </a>
@@ -37,8 +37,12 @@
         </a>
       </div>
       <div class="rightPart">
-        <?php if($page=="myInformation")include "page/myInformation/myInformation.php";?>
-        <iframe src="myExam.html" style="width:100%;height:1000px;border:0px"></iframe>
+        <?php if($page=="myInformation")include "page/myInformation/myInformation.php";
+              else if($page=="myExam")include "page/myExam/myExam.php";
+              else if($page=="mySimulate")include "page/mySimulate/mySimulate.php";
+              else if($page=="myMessage")include "page/myMessage/myMessage.php";
+              else include "page/myInformation/myInformation.php";
+        ?>
       </div>
     </div>
   </div>
