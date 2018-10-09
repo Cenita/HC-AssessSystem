@@ -68,7 +68,21 @@ public class UserDao{
                 user.getTruename());
     }
 
-    public static void updateUser(User user) {
+    public static void updateUser(User user) throws SQLException {
+
+        String sql = "update user set " +
+                "profession = ?," +
+                "college = ?," +
+                "motto=?," +
+                "truename=?," +
+                "grade=? ," +
+                "updatetime = ? where id = ? ";
+
+        Timestamp ts = new Timestamp(new Date().getTime());
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        qr.update(sql,user.getProfession(),user.getCollege(),user.getMotto(),user.getTruename(),user.getGrade(),ts,user.getId());
 
     }
 
@@ -114,6 +128,14 @@ public class UserDao{
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
 
         qr.update(sql,password,id);
+    }
+
+    public static void updateUserPermit(int permit,String id) throws SQLException {
+        String sql = "update user set permit = ? where id = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        qr.update(sql,permit,id);
     }
 
 }

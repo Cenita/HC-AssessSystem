@@ -11,8 +11,12 @@
     <title>测试</title>
 </head>
 <body>
-<a href="">注册</a><br>
+<a href="login.jsp">登录</a><br>
+<a href="register.jsp">注册</a><br>
 <a href="test/question_get.jsp">题目查询</a><br>
 <a href="test/user_get.jsp">用户查询</a><br>
+<a href="test/changePermit.jsp">更改权限</a><br>
+<a href="test/User_Change.jsp">修改信息</a><br>
+
 </body>
 </html>
