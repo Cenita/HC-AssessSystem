@@ -3,6 +3,7 @@ package hctest.Dao;
 import hctest.domain.Paper;
 import hctest.util.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.sql.SQLException;
@@ -19,10 +20,12 @@ public class PaperDao {
 
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
         Timestamp ts = new Timestamp(new Date().getTime());
+        Timestamp starttime = new Timestamp(paper.getStarttime().getTime());
+        Timestamp endtime = new Timestamp(paper.getEndtime().getTime());
 
         qr.update(sql,
                 JdbcUtil.getUUID(), paper.getTitle(), paper.getNumber(), paper.getGrade(), paper.getPermit(),
-                paper.getDirection(), ts, ts, paper.getStarttime(), paper.getEndtime());
+                paper.getDirection(), ts, ts,starttime ,endtime );
     }
 
     public static void updatePaper(Paper paper) throws SQLException {
@@ -93,6 +96,20 @@ public class PaperDao {
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
 
         qr.update(sql,paperid);
+    }
+
+    public static List<Paper> getAllPaper() throws SQLException {
+        String sql = "select * from paper";
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        return qr.query(sql,new BeanListHandler<Paper>(Paper.class));
+    }
+
+    public static Paper getPaperByPaperId(String paperid) throws SQLException {
+        String sql = "select * from paper where id = ? ";
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        return qr.query(sql,new BeanHandler<Paper>(Paper.class),paperid);
     }
 
 }

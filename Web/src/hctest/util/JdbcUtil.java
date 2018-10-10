@@ -37,4 +37,5 @@ public class JdbcUtil {
     {
         return UUID.randomUUID().toString().replace("-","");
     }
+
 }

@@ -17,6 +17,8 @@
 <a href="test/user_get.jsp">用户查询</a><br>
 <a href="test/changePermit.jsp">更改权限</a><br>
 <a href="test/User_Change.jsp">修改信息</a><br>
+<a href="test/Add_Paper.jsp">增加试卷</a><br>
+<a href="test/Paper_Get.jsp">查询试卷</a><br>
 
 </body>
 </html>

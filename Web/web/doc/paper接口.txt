@@ -1,13 +1,53 @@
 
-*********************************以上接口已经部署************************************************
 #创建试卷接口---------------------------------------
 /paper/add
+
+访问POST
+
+参数
+title
+number
+direction
+grade
+permit
+starttimeInt 毫秒级时间戳
+endtimeInt
+
+返回值
+status
+message
 
 #删除试卷接口---------------------------------------
 /paper/delete
 
+访问POST
+
+参数
+paperid
+
+返回
+status
+message
+
 #修改试卷接口---------------------------------------
 /paper/alter
+
+访问POST
+
+参数
+
+id
+title
+number
+direction
+grade
+permit
+starttimeInt 毫秒级时间戳
+endtimeInt
+
+返回
+status
+message
 
 #获取试卷接口--------------------------------------
 /paper/get
@@ -16,11 +56,39 @@
 
 参数:
 aim
+args
 
-aim=list 返回试卷的信息列表，不会有题目的具体信息
-aim=question 返回某张试卷信息和全部题目的具体内容
+aim=all&args=all 返回试卷的信息列表，不会有题目的具体信息
+aim=id&args=试卷id 返回某张试卷信息和全部题目的具体内容
 
+返回值
+列表查询
+status
+message
+list{
+    0:...试卷信息
+    1:
+}
 
+全部查询
+status
+message
+paper{
+    id
+    title
+    number
+    direction
+    grade
+    permit
+    starttime 时间格式字符串
+    starttimeInt 毫秒级时间戳
+    endtime
+    endtimeInt
+    createtime
+    updatetime
+}
+
+*********************************以上接口已经部署************************************************
 
 #从试卷中增加试题接口-------------------------------------
 /paper/question/add

@@ -1,13 +1,10 @@
-package hctest.service.paper;
+package hctest.service.user;
 
-import hctest.Dao.PaperDao;
 import hctest.Dao.UserDao;
-import hctest.domain.Paper;
 import hctest.domain.User;
-import hctest.dto.PaperInfo;
 import hctest.util.HeaderUitl;
+import hctest.util.ReturnUtil;
 import net.sf.json.JSONObject;
-import org.apache.commons.beanutils.BeanUtils;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,12 +13,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
-import java.util.Map;
 
-@WebServlet(name = "AlterPaperServlet",urlPatterns = "/paper/alter")
-public class AlterPaperServlet extends HttpServlet {
+@WebServlet(name = "ChangeMailServlet",urlPatterns = "/user/changeMail")
+public class ChangeMailServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
@@ -31,34 +26,37 @@ public class AlterPaperServlet extends HttpServlet {
         JSONObject jo = new JSONObject();
 
         Object login = session.getAttribute("login");
+
         if(login==null) return;
 
         try {
             User user = UserDao.getUserById((String)login);
 
-            PaperInfo paperInfo = new PaperInfo();
+            String mail = request.getParameter("mail");
+            String code = request.getParameter("code");
+            Object MailCode = session.getAttribute("MailCode");
+            Object MailAccount = session.getAttribute("MailAccount");
 
-            Map<String,String[]>map  = request.getParameterMap();
+            if(mail==null||code==null||MailAccount==null||MailCode==null)
+            {
+                ReturnUtil.ToReturn("600","更改失败",response);return;
+            }
 
-            BeanUtils.populate(paperInfo,map);
+            if(!mail.equals((String)MailAccount)||!code.equals((String)MailCode))
+            {
+                ReturnUtil.ToReturn("400","验证码错误",response);return;
+            }
 
-            Paper paper = paperInfo.toPaper();
-
-            PaperDao.updatePaper(paper);
+            UserDao.updateUserEmail(mail,user.getId());
 
             jo.put("status","200");
-            jo.put("message","修改成功");
+            jo.put("message","更改成功");
 
         } catch (SQLException e) {
             e.printStackTrace();
             jo.put("status","500");
             jo.put("message","发生sql错误");
-        } catch (Exception e) {
-            e.printStackTrace();
-            jo.put("sattus","600");
-            jo.put("message","参数非法");
         }
-
 
         response.getWriter().write(jo.toString());
     }

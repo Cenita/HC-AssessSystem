@@ -138,4 +138,11 @@ public class UserDao{
         qr.update(sql,permit,id);
     }
 
+    public static void updateUserEmail(String email,String id) throws SQLException {
+        String sql = "update user set email = ? where id = ? " ;
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        qr.update(sql,email,id);
+    }
+
 }
