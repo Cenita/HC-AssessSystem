@@ -36,8 +36,10 @@
                 <span>批量删除</span>
             </div>
             <div class="addPaper" style="float: right;">
-                <i class="fa fa-file-text-o fa-lg"></i>
-                <span>添加</span>
+                <a href="addQuestion.php">
+                    <i class="fa fa-file-text-o fa-lg"></i>
+                    <span>添加</span>
+                </a>
             </div>
         </div>
         <table class="table table-bordered table-hover table-striped">

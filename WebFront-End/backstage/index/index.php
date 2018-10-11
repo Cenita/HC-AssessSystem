@@ -12,12 +12,11 @@
 </head>
 <body>
   <?php include "../nav/index.php"?>
-  <div id="topicNav">
+      <div id="topicNav">
     <div class="navBackground">
       <div class="topicNavBody">
           <div class="bigTopic" data-content="G">G</div>
         <div class="topic">Index</div>
-
       </div>
     </div>
   </div>

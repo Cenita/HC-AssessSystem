@@ -35,7 +35,7 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
           <div class="dropdownSan"></div>
           <div class="dropdown" id="dropdown" style="display:none">
             <div class="personalImformation" id="dropdown">
-              <a href="">个人信息</a>
+              <a href="../userInformation/index.php">个人信息</a>
             </div>
             <div class="exit" id="dropdown">
               <a href="">退出登录</a>

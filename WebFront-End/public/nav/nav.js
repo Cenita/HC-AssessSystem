@@ -141,7 +141,7 @@ $(
                       if(re.status==200)
                       {
                           nav.login=true;
-                          nav.userName=re.user.username;
+                          nav.userName=re.user.truename;
                       }
                       else if(re.status==400)
                       {

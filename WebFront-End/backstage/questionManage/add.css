@@ -1,0 +1,58 @@
+#edit {
+
+}
+#edit .content
+{
+    border: 1px solid #ccc;
+    border-top: 0px;
+    height: 200px;
+}
+#edit .top
+{
+    border: 1px solid #ccc;
+}
+#edit
+{
+    margin: auto;
+    width: 100%;
+}
+#topHead
+{
+    margin-bottom: 30px;
+}
+.w-e-text-container
+{
+    z-index: 0!important;
+}
+.endLine
+{
+    margin-top: 50px;
+}
+.endLine .button
+{
+    width: 100px;
+}
+.property
+{
+    margin-left: 20px;
+}
+.addFile
+{
+    height: 60px;
+    border:1px dashed dodgerblue;
+    margin-top: 40px;
+}
+.addFile .uploadTitle
+{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: white;
+}
+.addFile .uplodeFile
+{
+    width: 200px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}

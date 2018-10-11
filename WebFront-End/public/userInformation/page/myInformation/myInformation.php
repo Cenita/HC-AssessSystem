@@ -12,7 +12,7 @@
       <span>我的资料</span>
     </div>
     <div class="headPart">
-      <img src="img/1.jpg" alt="">
+      <img src="../../../../lib/img/1.jpg" alt="">
       <div class="headRightPart">
         <div class="name">楚留香</div>
         <div class="major">计算机科学与技术</div>

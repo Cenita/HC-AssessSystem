@@ -5,6 +5,10 @@
     margin: auto;
 
 }
+a,a:hover,a:link,a:visited,a:active
+{
+    text-decoration: none;
+}
 #mainPart .topNav
 {
     height: 50px;
