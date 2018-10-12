@@ -255,7 +255,7 @@
 						<li><a href="http://www.hclab.cn/hclab/index.php">环创官网</a></li><span>|</span>
 						<li>联系我们</li><span>|</span>
 						<li>关于我们</li><span>|</span>
-						<li><a href="../../backstage/index/index.php">管理登录</a></li>
+						<li><a href="../../backstage/login/">管理登录</a></li>
 					</ul>
 				</div>
 			</div>

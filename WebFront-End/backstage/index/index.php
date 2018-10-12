@@ -7,11 +7,11 @@
   <title>考核系统后台管理</title>
   <script src="../../lib/tool/jquery.min.js"></script>
   <script src="../../lib/tool/vue.min.js"></script>
-  <script src="index.js"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <?php include "../nav/index.php"?>
+  <script src="index.js"></script>
       <div id="topicNav">
     <div class="navBackground">
       <div class="topicNavBody">

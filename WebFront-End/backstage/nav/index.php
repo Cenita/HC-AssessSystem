@@ -8,6 +8,7 @@ $page=$_GET["page"];?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../../lib/tool/vue.min.js"></script>
+    <script src="../nav/nav.js"></script>
     <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
     <link rel="stylesheet" href="../nav/nav.css">
 </head>
@@ -58,7 +59,7 @@ $page=$_GET["page"];?>
                 <li role="presentation" v-bind:class="{ active: page3 }"><a href="../paperManage/index.php">试卷管理</a></li>
                 <li role="presentation" v-bind:class="{ active: page4 }"><a href="../messageManage/index.php">留言动态</a></li>
                 <li role="presentation" v-bind:class="{ active: page5 }"><a href="../oprationDiary/index.php">操作日志</a></li>
-                <li role="presentation" v-bind:class="{ active: page6 }"><a href="">退出</a></li>
+                <li role="presentation" v-bind:class="{ active: page6 }"><a href="../login" id="exitLogin">退出</a></li>
             </ul>
         </div>
     </div>
