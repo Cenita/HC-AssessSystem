@@ -56,16 +56,7 @@ public class LoginServlet extends HttpServlet {
                     session.setAttribute("login",user.getId());
                     jo.put("status",200);
                     jo.put("message","登录成功");
-                    JSONObject juser = new JSONObject();
-                    juser.put("username",user.getUsername());
-                    juser.put("motto",user.getMotto());
-                    juser.put("profession",user.getProfession());
-                    juser.put("college",user.getCollege());
-                    juser.put("permit", UserInfoUtil.getPremitMessage(user.getPermit()));
-                    juser.put("truename",user.getTruename());
-                    juser.put("grade",user.getGrade());
-                    juser.put("lasttime",user.getUpdatetime().toString());
-                    jo.put("user",juser.toString());
+                    jo.put("user",UserInfoUtil.getUserMessageToJson(user));
 
                 }
             } catch (SQLException e) {

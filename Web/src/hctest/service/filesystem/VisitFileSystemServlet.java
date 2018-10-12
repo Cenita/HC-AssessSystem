@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "VisitFileSystemServlet",urlPatterns = {"/fileSystem","/file"})
+@WebServlet(name = "VisitFileSystemServlet")
 public class VisitFileSystemServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

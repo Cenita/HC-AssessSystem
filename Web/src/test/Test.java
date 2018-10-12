@@ -5,6 +5,7 @@ import hctest.domain.User;
 import hctest.util.FileUitl;
 import hctest.util.JdbcUtil;
 import hctest.util.MailUtil;
+import hctest.util.PropertiesUitl;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 
@@ -33,10 +34,11 @@ public class Test extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Date date = new Date();
-        System.out.println(date.getTime());
-        Timestamp timestamp = new Timestamp(date.getTime());
-        System.out.println(date.getTime());
-        System.out.println(timestamp.getTime());
+        try {
+            System.out.println(PropertiesUitl.getWebUrl());
+            System.out.println(PropertiesUitl.getHeadImagePath());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

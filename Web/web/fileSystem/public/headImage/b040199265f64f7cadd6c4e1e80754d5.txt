@@ -1,0 +1,2 @@
+pscp -r ./web/ root@120.79.91.253:/usr/tomcat/apache-tomcat-9.0.12/webapps/HCTest
+cd /usr/tomcat/apache-tomcat-9.0.12/webapps/HCTest

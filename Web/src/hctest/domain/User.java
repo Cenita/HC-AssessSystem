@@ -15,6 +15,16 @@ public class User {
     private String profession;
     private int grade;
 
+    public String getHeadimage() {
+        return headimage;
+    }
+
+    public void setHeadimage(String headimage) {
+        this.headimage = headimage;
+    }
+
+    private String headimage;
+
     public String getTruename() {
         return truename;
     }
@@ -115,23 +125,5 @@ public class User {
 
     public static String getRandonUUID(){
         return UUID.randomUUID().toString().replace("-","");
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id='" + id + '\'' +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", motto='" + motto + '\'' +
-                ", createtime=" + createtime +
-                ", updatetime=" + updatetime +
-                ", permit=" + permit +
-                ", college='" + college + '\'' +
-                ", profession='" + profession + '\'' +
-                ", grade=" + grade +
-                ", truename='" + truename + '\'' +
-                '}';
     }
 }

@@ -68,6 +68,8 @@ public class UserDao{
                 user.getTruename());
     }
 
+
+
     public static void updateUser(User user) throws SQLException {
 
         String sql = "update user set " +
@@ -143,6 +145,14 @@ public class UserDao{
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
 
         qr.update(sql,email,id);
+    }
+
+    public static void updateUserHeadImage(String url,String userid) throws SQLException {
+        String sql = "update user set headimage = ? where id = ?";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        qr.update(sql,url,userid);
     }
 
 }

@@ -44,8 +44,6 @@ public class AddPaperServlet extends HttpServlet {
 
             Paper paper = paperInfo.toPaper();
 
-            System.out.println("传入但还没转化的时间搓:"+paperInfo.getStarttimeInt());
-
             PaperDao.addPaper(paper);
 
             jo.put("status","200");
