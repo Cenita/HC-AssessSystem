@@ -42,7 +42,8 @@ public class UserInfoUtil {
             jo.put("email",user.getEmail());
             jo.put("permit",UserInfoUtil.getPremitMessage(user.getPermit()));
             jo.put("permitInt",user.getPermit());
-            jo.put("headImage",user.getHeadimage());
+            jo.put("headimage",user.getHeadimage());
+            jo.put("truename",user.getTruename());
             return jo;
         }
     }

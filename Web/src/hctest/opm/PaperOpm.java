@@ -1,7 +1,11 @@
 package hctest.opm;
 
 import hctest.Dao.PaperDao;
+import hctest.Dao.PaperQuestionDao;
+import hctest.Dao.QuestionDao;
 import hctest.domain.Paper;
+import hctest.domain.PaperQuestion;
+import hctest.domain.Question;
 import hctest.dto.PaperInfo;
 
 import java.sql.SQLException;
@@ -35,5 +39,20 @@ public class PaperOpm {
         Paper paper = PaperDao.getPaperByPaperId(paperid);
 
         return new PaperInfo(paper);
+    }
+
+    public static boolean addQuestionInPaper(String paperid,String questionid) throws SQLException {
+
+        Paper paper = PaperDao.getPaperByPaperId(paperid);
+        Question question = QuestionDao.getQuestionByid(questionid);
+
+        if(question == null||paper==null) return false;
+
+        List<PaperQuestion> pqList = PaperQuestionDao.getPaperQuestionByChoose(questionid,paperid);
+
+        if(pqList.size()>0) return true;
+
+        PaperQuestionDao.addPaperQuestion(questionid,paperid);
+        return true;
     }
 }

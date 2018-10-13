@@ -88,13 +88,33 @@ paper{
     updatetime
 }
 
+
+
+#从试卷中增删改查试题接口-------------------------------------
+/paper/question/
+
+访问POST
+
+参数
+method {add}{delete}{equal}
+
+paperid
+questionid 可以有多个
+questionid
+questionid
+
+返回
+status
+message
+
+method=add 题目添加
+将所有的questionid 添加到paper上
+
+method=delete 题目删除
+将所有的questionid 从paper中删除
+
+method=equal 赋予
+先删掉paper上的所有题目
+在将所有的question添加到paper上
+
 *********************************以上接口已经部署************************************************
-
-#从试卷中增加试题接口-------------------------------------
-/paper/question/add
-
-#从试卷删除试题接口---------------------------------------
-/paper/question/delete
-
-#将一些题目赋予试卷接口------------------------------------
-/paper/question/equal

@@ -22,6 +22,7 @@
 <a href="test/Add_Paper.jsp">增加试卷</a><br>
 <a href="test/Paper_Get.jsp">查询试卷</a><br>
 <a href="test/uploadFile.jsp">上传文件</a><br>
+<a href="test/PaperQuestionAdd.jsp">添加试题</a><br>
 
 </body>
 </html>

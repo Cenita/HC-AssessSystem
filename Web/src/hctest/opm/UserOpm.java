@@ -11,6 +11,7 @@ import java.io.InputStream;
 import java.sql.SQLException;
 
 public class UserOpm {
+
     public static void updateHeadImage(User user, FileItem item, ServletContext context) throws Exception {
         String Name = item.getName();
         String suffixname = Name.substring(Name.lastIndexOf("."));

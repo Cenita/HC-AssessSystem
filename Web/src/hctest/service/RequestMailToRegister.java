@@ -51,7 +51,7 @@ public class RequestMailToRegister extends HttpServlet {
             else
             {
                 VerifyCode vcode = GraphicHelper.randRomVerifyCode(180,40);
-                String path = "temp/"+email+".jpeg";
+                String path = "fileSystem/public/temp/"+email+".jpeg";
                 String realpath = getServletContext().getRealPath(path);
                 OutputStream out = new FileOutputStream(realpath);
                 ImageIO.write(vcode.getImage(),"jpeg",out);
