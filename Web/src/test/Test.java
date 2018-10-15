@@ -2,6 +2,7 @@ package test;
 
 import hctest.Dao.UserDao;
 import hctest.domain.User;
+import hctest.opm.PaperOpm;
 import hctest.util.FileUitl;
 import hctest.util.JdbcUtil;
 import hctest.util.MailUtil;
@@ -34,10 +35,10 @@ public class Test extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         try {
-            System.out.println(PropertiesUitl.getWebUrl());
-            System.out.println(PropertiesUitl.getHeadImagePath());
-        } catch (Exception e) {
+            PaperOpm.getPaperInfoByPaperId("06a8c02996474397abda52dc3a5f35d3");
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

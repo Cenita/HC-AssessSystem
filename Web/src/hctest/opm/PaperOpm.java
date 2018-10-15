@@ -7,6 +7,8 @@ import hctest.domain.Paper;
 import hctest.domain.PaperQuestion;
 import hctest.domain.Question;
 import hctest.dto.PaperInfo;
+import hctest.dto.QuestionInfo;
+import org.apache.commons.collections4.list.TreeList;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -15,6 +17,8 @@ import java.util.List;
 public class PaperOpm {
 
     public static void deletePaperWithAll(String paperid) throws SQLException {
+
+        PaperQuestionDao.deleteAllQuestionInPaper(paperid);
         PaperDao.deletePaper(paperid);
     }
 
@@ -38,7 +42,24 @@ public class PaperOpm {
     public static PaperInfo getPaperInfoByPaperId(String paperid) throws SQLException {
         Paper paper = PaperDao.getPaperByPaperId(paperid);
 
-        return new PaperInfo(paper);
+        PaperInfo paperInfo = new PaperInfo(paper);
+
+        List<String>questionlist = PaperQuestionDao.getAllQuestionByPaperid(paperid);
+
+        List<Question>questions = new ArrayList<>();
+        System.out.println(questionlist.size());
+        System.out.println(questionlist.toArray()[0]);
+        for(String questionid:questionlist)
+        {
+            System.out.println(questionid);
+            Question t = QuestionDao.getQuestionByid(questionid);
+            if(t==null) continue;
+            questions.add(t);
+        }
+
+        paperInfo.setQuestionInfoList(questions);
+
+        return paperInfo;
     }
 
     public static boolean addQuestionInPaper(String paperid,String questionid) throws SQLException {

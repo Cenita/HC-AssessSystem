@@ -1,9 +1,11 @@
 package hctest.dto;
 
 import hctest.domain.Paper;
+import hctest.domain.Question;
 import net.sf.json.JSONObject;
 
 import java.util.Date;
+import java.util.List;
 
 public class PaperInfo {
     private String id;
@@ -20,6 +22,16 @@ public class PaperInfo {
     private long updatetimeInt;
     private long starttimeInt;
     private long endtimeInt;
+
+    public List<Question> getQuestionInfoList() {
+        return questionInfoList;
+    }
+
+    public void setQuestionInfoList(List<Question> questionInfoList) {
+        this.questionInfoList = questionInfoList;
+    }
+
+    private List<Question>questionInfoList;
 
 
     public Paper toPaper(){
@@ -68,6 +80,16 @@ public class PaperInfo {
         jo.put("endtime",endtime);
         jo.put("starttimeInt",starttimeInt);
         jo.put("endtimeInt",endtimeInt);
+
+        JSONObject qlist = new JSONObject();
+        int i = 0;
+        for (Question question : questionInfoList)
+        {
+            qlist.put(String.valueOf(i++),QuestionInfo.toJson(question));
+        }
+
+        jo.put("questionlist",qlist);
+
         return jo;
     }
 

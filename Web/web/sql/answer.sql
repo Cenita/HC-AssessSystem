@@ -7,13 +7,17 @@ create table answer (
     updatetime datetime,
     index(`paperid`),
     index(`userid`)
-)engine=Innodb default character utf8;
+)engine=Innodb;
 
 
 create table answer_questions (
     id varchar(32) not null primary key,
-    questionid varchar(32) not null,
-    answer text,
-    score int default 0,
-    index(`questionid`)
-)engine=Innodb default character utf8;
+    answerid varchar(32) not null,
+    number int default 0,
+    content text not null,
+    type int(11) default 0,
+    selection text not null,
+    answer text not null,
+    score int default -1,
+    index(`answerid`)
+)engine=Innodb;
