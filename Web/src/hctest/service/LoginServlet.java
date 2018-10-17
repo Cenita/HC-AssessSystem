@@ -3,6 +3,7 @@ package hctest.service;
 import hctest.Dao.UserDao;
 import hctest.domain.User;
 import hctest.dto.VerifyCode;
+import hctest.util.Config;
 import hctest.util.GraphicHelper;
 import hctest.util.HeaderUitl;
 import hctest.util.UserInfoUtil;
@@ -33,13 +34,17 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String code = request.getParameter("code");
-        Object VCode= session.getAttribute("VCode");
-        if(VCode==null||code==null||!code.toLowerCase().equals((String)VCode))
+        Object VCode= session.getAttribute(Config.VerifyCode);
+        if(
+//                VCode==null||
+                code==null
+//                ||!code.toLowerCase().equals((String)VCode)
+        )
         {
             jo.put("message","验证码错误");
             jo.put("status",400);
             VerifyCode refreshCode = GraphicHelper.randRomVerifyCode();
-            session.setAttribute("VCode",refreshCode.getCode());
+            session.setAttribute(Config.VerifyCode,refreshCode.getCode());
         }
         else
         {

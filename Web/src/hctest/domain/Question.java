@@ -17,6 +17,34 @@ public class Question {
     private Date createtime;
     private Date updatetime;
 
+    public JSONObject toJson() {
+        JSONObject jo = new JSONObject();
+        jo.put("id",id);
+        jo.put("title",title);
+        jo.put("number",number);
+        jo.put("content",content);
+        jo.put("type",type);
+        jo.put("selection",selection);
+        jo.put("answer",answer);
+        jo.put("direction",direction);
+        jo.put("grade",grade);
+        jo.put("createtime",createtime.toString());
+        jo.put("updatetime",updatetime.toString());
+        return jo;
+    }
+
+    public AnswerQuestion toAnswerQuestion()
+    {
+        AnswerQuestion as = new AnswerQuestion();
+        as.setType(type);
+        as.setContent(content);
+        as.setSelection(selection);
+        as.setAnswer(answer);
+        as.setGrade(grade);
+
+        return as;
+    }
+
 
     public String getId() {
         return id;
@@ -105,21 +133,6 @@ public class Question {
     public void setUpdatetime(Date updatetime) {
         this.updatetime = updatetime;
     }
-    public JSONObject toJSONObject()
-    {
-        JSONObject jo = new JSONObject();
-        jo.put("id",id);
-        jo.put("title",title);
-        jo.put("number",number);
-        jo.put("content",content);
-        jo.put("type",type);
-        jo.put("selection",selection);
-        jo.put("answer",answer);
-        jo.put("direction",direction);
-        jo.put("grade",grade);
-        jo.put("createtime",createtime.getTime());
-        jo.put("updatetime",updatetime.getTime());
 
-        return jo;
-    }
+
 }

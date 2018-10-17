@@ -1,5 +1,7 @@
 package hctest.domain;
 
+import net.sf.json.JSONObject;
+
 public class AnswerQuestion {
     private String id;
     private String answerid;
@@ -7,8 +9,48 @@ public class AnswerQuestion {
     private String content;
     private int type;
     private String selection;
+    private String uanswer;
     private String answer;
     private int score;
+    private int grade;
+    private String userid;
+
+    public JSONObject toJson()
+    {
+        JSONObject jo = new JSONObject();
+        jo.put("id",id);
+        jo.put("answerid",answerid);
+        jo.put("number",number);
+        jo.put("content",content);
+        jo.put("type",type);
+        jo.put("selection",selection);
+        jo.put("uanswer",uanswer);
+        jo.put("answer",answer);
+        jo.put("score",score);
+        jo.put("grade",grade);
+        jo.put("userid",userid);
+        return jo;
+    }
+
+
+    public String getUanswer() {
+        return uanswer;
+    }
+
+    public void setUanswer(String uanswer) {
+        this.uanswer = uanswer;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+
+
 
     public String getUserid() {
         return userid;
@@ -17,8 +59,6 @@ public class AnswerQuestion {
     public void setUserid(String userid) {
         this.userid = userid;
     }
-
-    private String userid;
 
     public String getId() {
         return id;

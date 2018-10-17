@@ -50,7 +50,6 @@ public class PaperQuestionDao {
         for (PaperQuestion pq:list)
         {
             s.add(pq.getQuestionid());
-            System.out.println(pq.getQuestionid());
         }
 
         return s;

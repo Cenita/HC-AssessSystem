@@ -20,9 +20,7 @@ public class AnswerDao {
         Timestamp ts = new Timestamp(new Date().getTime());
 
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
-
-        qr.update(sql,JdbcUtil.getUUID(),answer.getPaperid(),answer.getUserid(),0,ts,ts);
-
+        qr.update(sql,answer.getId(),answer.getPaperid(),answer.getUserid(),0,ts,ts);
     }
 
     public static void alterStatus(int status,String id) throws SQLException {
@@ -89,6 +87,17 @@ public class AnswerDao {
         return qr.query(sql,new BeanListHandler<AnswerQuestion>(AnswerQuestion.class),answerid,userid);
     }
 
+    //修改答卷的更新时间为当前时间
+    public static void updateAnswerTime(String id) throws SQLException {
+        String sql = "update answer set updatetime = ? where id = ? ";
+        Timestamp ts = new Timestamp(new Date().getTime());
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+        qr.update(sql,ts,id);
+    }
 
-
+    public static Answer getAnswerById(String id) throws SQLException {
+        String sql = "select * from answer where id = ?";
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+        return qr.query(sql,new BeanHandler<Answer>(Answer.class),id);
+    }
 }

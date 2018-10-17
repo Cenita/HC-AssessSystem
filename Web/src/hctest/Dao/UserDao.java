@@ -55,7 +55,7 @@ public class UserDao{
         Timestamp timestamp = new Timestamp(date.getTime());
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
         qr.update(sql,
-                User.getRandonUUID(),
+                JdbcUtil.getUUID(),
                 user.getUsername(),
                 user.getPassword(),
                 user.getEmail(),

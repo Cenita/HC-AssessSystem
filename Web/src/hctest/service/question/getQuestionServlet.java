@@ -48,7 +48,7 @@ public class getQuestionServlet extends HttpServlet {
                     for (Question qs:questions
                          ) {
 
-                        questionlist.put(String.valueOf(i++),qs.toJSONObject());
+                        questionlist.put(String.valueOf(i++),qs.toJson());
 
                     }
                     jo.put("list",questionlist);
@@ -68,7 +68,7 @@ public class getQuestionServlet extends HttpServlet {
                     Question question = QuestionDao.getQuestionByid((String)args);
                     jo.put("status","200");
                     jo.put("message","查找成功");
-                    jo.put("question",question.toJSONObject());
+                    jo.put("question",question.toJson());
 
                 } catch (SQLException e) {
                     e.printStackTrace();

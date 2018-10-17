@@ -1,4 +1,7 @@
 package hctest.domain;
+
+import net.sf.json.JSONObject;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -14,34 +17,28 @@ public class User {
     private String college;
     private String profession;
     private int grade;
-
-    public String getHeadimage() {
-        return headimage;
-    }
-
-    public void setHeadimage(String headimage) {
-        this.headimage = headimage;
-    }
-
+    private String truename;
     private String headimage;
 
-    public String getTruename() {
-        return truename;
+    public JSONObject toJson()
+    {
+        JSONObject jo = new JSONObject();
+        jo.put("id",id);
+        jo.put("username",username);
+        jo.put("password",password);
+        jo.put("email",email);
+        jo.put("motto",motto);
+        jo.put("createtime",createtime.toString());
+        jo.put("updatetime",updatetime.toString());
+        jo.put("permit",permit);
+        jo.put("college",college);
+        jo.put("profession",profession);
+        jo.put("grade",grade);
+        jo.put("truename",truename);
+        jo.put("headimage",headimage);
+        return jo;
     }
 
-    public void setTruename(String truename) {
-        this.truename = truename;
-    }
-
-    private String truename;
-
-    public int getGrade() {
-        return grade;
-    }
-
-    public void setGrade(int grade) {
-        this.grade = grade;
-    }
 
     public String getId() {
         return id;
@@ -123,7 +120,27 @@ public class User {
         this.profession = profession;
     }
 
-    public static String getRandonUUID(){
-        return UUID.randomUUID().toString().replace("-","");
+    public int getGrade() {
+        return grade;
+    }
+
+    public void setGrade(int grade) {
+        this.grade = grade;
+    }
+
+    public String getTruename() {
+        return truename;
+    }
+
+    public void setTruename(String truename) {
+        this.truename = truename;
+    }
+
+    public String getHeadimage() {
+        return headimage;
+    }
+
+    public void setHeadimage(String headimage) {
+        this.headimage = headimage;
     }
 }

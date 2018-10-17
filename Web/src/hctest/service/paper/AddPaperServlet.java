@@ -59,8 +59,6 @@ public class AddPaperServlet extends HttpServlet {
             jo.put("status","600");
             jo.put("message","参数错误");
         }
-
-
         response.getWriter().write(jo.toString());
     }
 }

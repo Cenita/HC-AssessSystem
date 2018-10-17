@@ -1,5 +1,7 @@
 package hctest.domain;
 
+import net.sf.json.JSONObject;
+
 import java.util.Date;
 
 public class Answer {
@@ -9,6 +11,30 @@ public class Answer {
     private int status;
     private Date createtime;
     private Date updatetime;
+
+    public JSONObject tojson()
+    {
+        JSONObject jo = new JSONObject();
+        jo.put("id",id);
+        jo.put("paperid",paperid);
+        jo.put("userid",userid);
+        jo.put("status",getStatusMean(status));
+        jo.put("statusInt",status);
+        jo.put("createtime",createtime.toString());
+        jo.put("updatetime",updatetime.toString());
+        return jo;
+    }
+
+    public static String getStatusMean(int status){
+        switch (status)
+        {
+            case 0:return "未提交";
+            case 1:return "待批改";
+            case 2:return "被撤回";
+            case 3:return "已批改";
+        }
+        return "未知";
+    }
 
     public String getId() {
         return id;

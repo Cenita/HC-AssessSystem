@@ -48,7 +48,7 @@ public class LoginBaseServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
             jo.put("status","500");
-            jo.put("message","账号异常");
+            jo.put("message","发生sql错误");
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
             jo.put("status","600");

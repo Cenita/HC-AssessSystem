@@ -5,6 +5,7 @@ import hctest.util.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -112,4 +113,11 @@ public class PaperDao {
         return qr.query(sql,new BeanHandler<Paper>(Paper.class),paperid);
     }
 
+    public static long getPaperSizeByPaperId(String id) throws SQLException {
+
+        String sql = "select count(*) from paper_questions where paperid= ?";
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+
+        return qr.query(sql,new ScalarHandler<>(),id);
+    }
 }

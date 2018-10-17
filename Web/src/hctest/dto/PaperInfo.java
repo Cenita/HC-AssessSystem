@@ -22,17 +22,7 @@ public class PaperInfo {
     private long updatetimeInt;
     private long starttimeInt;
     private long endtimeInt;
-
-    public List<Question> getQuestionInfoList() {
-        return questionInfoList;
-    }
-
-    public void setQuestionInfoList(List<Question> questionInfoList) {
-        this.questionInfoList = questionInfoList;
-    }
-
-    private List<Question>questionInfoList;
-
+    private List<Question>questionList;
 
     public Paper toPaper(){
         Paper paper = new Paper();
@@ -80,15 +70,16 @@ public class PaperInfo {
         jo.put("endtime",endtime);
         jo.put("starttimeInt",starttimeInt);
         jo.put("endtimeInt",endtimeInt);
+        jo.put("size",questionList.size());
 
-        JSONObject qlist = new JSONObject();
+        JSONObject list = new JSONObject();
         int i = 0;
-        for (Question question : questionInfoList)
+        for (Question question : questionList)
         {
-            qlist.put(String.valueOf(i++),QuestionInfo.toJson(question));
+            list.put(String.valueOf(i++),question.toJson());
         }
 
-        jo.put("questionlist",qlist);
+        jo.put("questionlist",list);
 
         return jo;
     }
@@ -208,5 +199,12 @@ public class PaperInfo {
 
     public void setEndtimeInt(long endtimeInt) {
         this.endtimeInt = endtimeInt;
+    }
+
+    public List<Question> getQuestionList() {
+        return questionList;
+    }
+    public void setQuestionList(List<Question> questions) {
+        this.questionList = questions;
     }
 }

@@ -3,6 +3,7 @@ package hctest.service;
 import hctest.Dao.UserDao;
 import hctest.domain.User;
 import hctest.dto.RegisterUser;
+import hctest.util.Config;
 import hctest.util.FileUitl;
 import hctest.util.HeaderUitl;
 import hctest.util.MailUtil;
@@ -37,8 +38,8 @@ public class RegisterServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Object MailCode = session.getAttribute("MailCode");
-        Object MailAccount = session.getAttribute("MailAccount");
+        Object MailCode = session.getAttribute(Config.MailCode);
+        Object MailAccount = session.getAttribute(Config.MailAccount);
         if(reuser.getEmail()==null||
                 reuser.getUsername()==null ||
                 reuser.getPassword()==null||
