@@ -49,8 +49,8 @@ public class UserDao{
 
     public static void addUser(User user) throws SQLException {
         String sql = "insert into user " +
-                "(id,username,password,email,motto,college,profession,createtime,updatetime,grade,truename) " +
-                "values (?,?,?,?,?,?,?,?,?,?,?)";
+                "(id,username,password,email,motto,college,profession,createtime,updatetime,grade,truename,headimage) " +
+                "values (?,?,?,?,?,?,?,?,?,?,?,?)";
         Date date = new Date();
         Timestamp timestamp = new Timestamp(date.getTime());
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
@@ -65,7 +65,8 @@ public class UserDao{
                 timestamp,
                 timestamp,
                 user.getGrade(),
-                user.getTruename());
+                user.getTruename(),
+                "#");
     }
 
 

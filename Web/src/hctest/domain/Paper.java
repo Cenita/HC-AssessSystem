@@ -7,7 +7,7 @@ public class Paper {
     private String id;
     private String title;
     private String number;
-    private String direction;;
+    private String direction;
     private int grade;
     private int permit;
     private Date createtime;

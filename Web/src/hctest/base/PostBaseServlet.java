@@ -14,13 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.SQLException;
-import java.util.Map;
 
-public class LoginBaseServlet extends HttpServlet {
-
+@WebServlet(name = "PostBaseServlet")
+public class PostBaseServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("application/json;charset=utf-8");
@@ -29,16 +27,9 @@ public class LoginBaseServlet extends HttpServlet {
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
 
-        Object login = session.getAttribute(Config.LoginID);
         String action = request.getParameter(Config.Action);
-        if(login==null||action==null) return;
+        if(action==null) return;
         try {
-            User user = UserDao.getUserById((String)login);
-
-            if(user==null) return;
-
-            request.setAttribute(Config.User,user);
-
             Class clazz = this.getClass();
             Method method = clazz.getMethod(action,HttpServletRequest.class,HttpServletResponse.class);
 
@@ -47,18 +38,14 @@ public class LoginBaseServlet extends HttpServlet {
                 request.setAttribute("jo",jo);
                 method.invoke(this,request,response);
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-            jo.put(Config.Status, Status.ServerFail);
-            jo.put(Config.Message,"发生sql错误");
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
             jo.put(Config.Status,Status.RequestFail);
-            jo.put("message","没有找到该方法");
+            jo.put(Config.Message,"没有找到该方法");
         } catch (Exception e) {
             e.printStackTrace();
-            jo.put("status","500");
-            jo.put("message","发生了未知错误");
+            jo.put(Config.Status,Status.RequestFail);
+            jo.put(Config.Message,"数据获取失败");
         }
         response.getWriter().write(jo.toString());
     }

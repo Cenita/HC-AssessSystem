@@ -11,6 +11,14 @@ public class Config {
     static public final String Status = "status";
     static public final String Message = "message";
 
+    static public final String LoginID = "LoginID";
 
+    static public final String User = "user";
+    static public final String Paper = "paper";
+    static public final String Answer = "answer";
+    static public final String Question = "question";
+    static public final String Log = "log";
+
+    static public final String Action = "action";
 
 }

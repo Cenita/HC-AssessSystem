@@ -25,12 +25,13 @@ public class User {
         JSONObject jo = new JSONObject();
         jo.put("id",id);
         jo.put("username",username);
-        jo.put("password",password);
         jo.put("email",email);
         jo.put("motto",motto);
         jo.put("createtime",createtime.toString());
         jo.put("updatetime",updatetime.toString());
-        jo.put("permit",permit);
+        jo.put("updatetimeInt",updatetime.getTime());
+        jo.put("permitInt",permit);
+        jo.put("permit",User.getPremitMessage(permit));
         jo.put("college",college);
         jo.put("profession",profession);
         jo.put("grade",grade);
@@ -142,5 +143,22 @@ public class User {
 
     public void setHeadimage(String headimage) {
         this.headimage = headimage;
+    }
+
+    public static String getPremitMessage(int premit)
+    {
+        String ps = "";
+        switch (premit)
+        {
+            case 0:ps="游客";break;
+            case 1:ps="用户";break;
+            case 2:ps="活跃用户";break;
+            case 3:ps="考核成员";break;
+            case 4:ps="正式成员";break;
+            case 5:ps="管理员";break;
+            case 6:ps="负责人";break;
+            case 9:ps="超级管理员";break;
+        }
+        return ps;
     }
 }

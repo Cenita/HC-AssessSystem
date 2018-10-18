@@ -8,6 +8,7 @@ import hctest.domain.AnswerQuestion;
 import hctest.domain.User;
 import hctest.dto.AnswerInfo;
 import hctest.opm.AnswerOpm;
+import hctest.util.Config;
 import hctest.util.JdbcUtil;
 import net.sf.json.JSONObject;
 
@@ -27,7 +28,7 @@ import java.util.jar.JarEntry;
 public class AnswerServlet extends LoginBaseServlet{
     public void add(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException, SQLException {
         JSONObject jo = (JSONObject)request.getAttribute("jo");
-        User user = (User)request.getAttribute("user");
+        User user = (User)request.getAttribute(Config.User);
         String paperid = request.getParameter("paperid");
         if(paperid==null) return;
         String answerid = JdbcUtil.getUUID();
