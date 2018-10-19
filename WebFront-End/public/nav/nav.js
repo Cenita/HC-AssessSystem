@@ -18,7 +18,15 @@ $(
       function()
       {
         $("#loginWindows").modal('show');
+        $("#loginWindows .loginTitle").click();
       }
+    )
+    $(".regButton").click(
+          function()
+          {
+              $("#loginWindows").modal('show');
+              $("#loginWindows .registeredTitle").click();
+          }
     )
     $("#loginWindows .loginTitle").click(
       function()

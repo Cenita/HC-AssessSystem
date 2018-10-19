@@ -1,0 +1,19 @@
+#TestExplanation .content
+{
+    border: 1px solid #ccc;
+    border-top: 0px;
+    height: 200px;
+}
+#TestExplanation .top
+{
+    border: 1px solid #ccc;
+}
+.w-e-text-container
+{
+    z-index: 0!important;
+}
+.endLan
+{
+    margin-top: 20px;
+    height: 100px;
+}

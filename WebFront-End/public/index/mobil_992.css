@@ -1,0 +1,19 @@
+#culture .row .col-md-6:first-child
+,#awards .row .col-md-6:first-child
+{
+    border-right:solid 0px white;
+}
+#cup,.topicTitle,.toHC
+{
+    display: none;
+}
+.QRcode,.aboutUs
+{
+    text-align: center;
+}
+#footer .row .col-md-6 ul
+{
+    margin-top: -90px;
+    float:none;
+    text-align: center;
+}

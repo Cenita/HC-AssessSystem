@@ -1,34 +1,34 @@
-.col-md-10
-{
-	margin-left: 10%;
-	width: 100%;
-}
-.ui .dimmer
-{
-	background-color: rgba(0, 0, 0,0.25) !important;
-}
-.col-md-12
-{
-	width: 100%;
-	float: left;
-}
-.col-md-2
-{
-	width: 16.666666667%;
-}
-.col-md-offset-1
-{
-	margin-left: 8.333333333%;
-}
-.container
-{
-	width:1170px;
-}
-.col-md-6
-{
-	width:50%;
-	float:left;
-}
+﻿/*.col-md-10*/
+/*{*/
+	/*margin-left: 10%;*/
+	/*width: 100%;*/
+/*}*/
+/*.ui .dimmer*/
+/*{*/
+	/*background-color: rgba(0, 0, 0,0.25) !important;*/
+/*}*/
+/*.col-md-12*/
+/*{*/
+	/*width: 100%;*/
+	/*float: left;*/
+/*}*/
+/*.col-md-2*/
+/*{*/
+	/*width: 16.666666667%;*/
+/*}*/
+/*.col-md-offset-1*/
+/*{*/
+	/*margin-left: 8.333333333%;*/
+/*}*/
+/*.container*/
+/*{*/
+	/*width:1170px;*/
+/*}*/
+/*.col-md-6*/
+/*{*/
+	/*width:50%;*/
+	/*float:left;*/
+/*}*/
 ﻿* {
 	margin: 0;
 	padding: 0;
@@ -58,8 +58,8 @@ h1,h2,h3,h4 {
 }
 #portfolio .container .row h2,#awards .container .row h2{
 	text-align: center;
-	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-bottom: 2em;
+	padding-top: 2em;
 }
 #portfolio .portfolio-thumb .portfolio-overlay {
     background: #FFFFFF;
@@ -85,9 +85,11 @@ h1,h2,h3,h4 {
 #portfolio .portfolio-thumb h4{
 	font-weight: bold;
 }
-
+#portfolio .introduction .detail
+{
+	display: none;
+}
 /*考核方向*/
-
 #portfolio {
 	/*height: 340px;*/
 	background-color: #f0f5f5;
@@ -95,7 +97,8 @@ h1,h2,h3,h4 {
 #portfolio .introduction {
 	background-color: #f0f5f5;
 	text-align: center;
-	height: 250px;
+	padding: 0 10px;
+	padding-bottom: 20px;
 	margin:20px 0 77px 0;
 	transition: box-shadow 100ms;
 	border-radius:20px;

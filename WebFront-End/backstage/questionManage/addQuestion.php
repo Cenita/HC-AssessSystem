@@ -9,6 +9,7 @@
     <script src="../../lib/tool/jquery.min.js"></script>
     <script src="../../lib/tool/Semantic/semantic.min.js"></script>
     <script src="../../lib/tool/wangEditor-3.1.1/release/wangEditor.js"></script>
+    <link rel="stylesheet" href="../../lib/tool/chenframe.css">
     <link rel="stylesheet" href="../../lib/tool/wangEditor-3.1.1/release/wangEditor.css">
     <link rel="stylesheet" href="../../lib/tool/Semantic/semantic.min.css">
     <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
@@ -67,6 +68,11 @@
             <div class="ui input" >
                 <input type="text" style="width: 450px"placeholder="请输入本题的摘要标题">
             </div>
+        </div>
+    </div>
+    <div class="topic chen">
+        <div class="content">
+            题目内容
         </div>
     </div>
     <div id="edit">

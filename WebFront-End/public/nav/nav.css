@@ -1,37 +1,10 @@
-.col-md-10
-{
-	margin-left: 10%;
-	width: 100%;
-}
-.ui .dimmer
-{
-	background-color: rgba(0, 0, 0,0.25) !important;
-}
-.col-md-12
-{
-	width: 100%;
-	float: left;
-}
-.col-md-2
-{
-	width: 16.666666667%;
-}
-.col-md-offset-1
-{
-	margin-left: 8.333333333%;
-}
-.container
-{
-	width:1170px;
-}
-.col-md-6
-{
-	width:50%;
-	float:left;
-}
-﻿* {
+* {
 	margin: 0;
 	padding: 0;
+}
+.regButton
+{
+	display: none;
 }
 .navbar-header .navbar-brand img{
 	height: 2.5em;
@@ -46,7 +19,7 @@
 	width: auto;
 	height: auto;
 }
-.loginButtom:hover
+.loginButtom:hover,.regButton:hover
 {
 	color: rgb(91, 164, 255)!important;
 	transition: color 200ms;
@@ -57,9 +30,6 @@
 }
 .navbar{
 	margin-bottom: 0;
-}
-.navbar-right{
-	margin-right: 40px;
 }
 
 #img_tou

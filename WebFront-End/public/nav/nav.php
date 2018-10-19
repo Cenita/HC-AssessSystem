@@ -27,7 +27,7 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
           <img src="../../lib/img/logo2.png">
         </a>
       </div>
-      <div class="navbar-collapse collapse" id="navUser">
+      <div class="navbar-collapse" id="navUser">
         <ul v-show="login" style="display:none"  class="nav navbar-nav navbar-right getUser">
           <img id="img_tou" src="../../lib/img/1.jpg" alt="">
           <span>{{userName}}</span>
@@ -43,7 +43,8 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
           </div>
          </ul>
           <ul v-show="!login" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
-              <li><a class="loginButtom ">登录</a></li>
+              <li><a class="loginButtom">登录</a></li>
+              <li><a class="regButton" style="display: none;">注册</a></li>
           </ul>
       </div>
     </div>

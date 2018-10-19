@@ -18,6 +18,7 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/backstage/questionManage/add.css" />
       <change beforePath="" afterPath="$PROJECT_DIR$/backstage/questionManage/add.js" />
       <change beforePath="" afterPath="$PROJECT_DIR$/backstage/questionManage/addQuestion.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/tool/chenframe.css" />
       <change beforePath="" afterPath="$PROJECT_DIR$/public/userInformation/page/myExam/myExam.php" />
       <change beforePath="" afterPath="$PROJECT_DIR$/public/userInformation/page/myMessage/myMessage.php" />
       <change beforePath="" afterPath="$PROJECT_DIR$/public/userInformation/page/mySimulate/mySimulate.php" />
@@ -50,12 +51,46 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="addPaper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backstage/paperManage/addPaper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="37" />
+            <state relative-caret-position="467">
+              <caret line="137" column="18" lean-forward="false" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backstage/paperManage/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-458">
+              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chenframe.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tool/chenframe.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -64,28 +99,38 @@
       <file leaf-file-name="addQuestion.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backstage/questionManage/addQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="62" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backstage/nav/nav.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="add.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.css">
+        <entry file="file://$PROJECT_DIR$/backstage/questionManage/add.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            <state relative-caret-position="375">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -122,6 +167,7 @@
       <find>delayGetCore</find>
       <find>exit</find>
       <find>添加</find>
+      <find>z-index</find>
     </findStrings>
     <replaceStrings>
       <replace>../lib/tool</replace>
@@ -143,7 +189,6 @@
         <option value="$PROJECT_DIR$/backstage/oprationDiary/main.css" />
         <option value="$PROJECT_DIR$/backstage/oprationDiary/index.php" />
         <option value="$PROJECT_DIR$/backstage/questionManage/main.js" />
-        <option value="$PROJECT_DIR$/backstage/nav/nav.css" />
         <option value="$PROJECT_DIR$/backstage/messageManage/index.php" />
         <option value="$PROJECT_DIR$/backstage/crewManage/main.css" />
         <option value="$PROJECT_DIR$/backstage/crewManage/index.php" />
@@ -164,7 +209,6 @@
         <option value="$PROJECT_DIR$/backstage/questionManage/add.js" />
         <option value="$PROJECT_DIR$/backstage/questionManage/main.css" />
         <option value="$PROJECT_DIR$/backstage/questionManage/add.css" />
-        <option value="$PROJECT_DIR$/backstage/questionManage/addQuestion.php" />
         <option value="$PROJECT_DIR$/backstage/paperManage/main.css" />
         <option value="$PROJECT_DIR$/backstage/paperManage/index.php" />
         <option value="$PROJECT_DIR$/backstage/login/login.php" />
@@ -176,8 +220,12 @@
         <option value="$PROJECT_DIR$/backstage/index/index.js" />
         <option value="$PROJECT_DIR$/backstage/nav/index.php" />
         <option value="$PROJECT_DIR$/backstage/nav/nav.js" />
-        <option value="$PROJECT_DIR$/backstage/paperManage/addPaper.php" />
         <option value="$PROJECT_DIR$/backstage/paperManage/add.js" />
+        <option value="$PROJECT_DIR$/backstage/nav/nav.css" />
+        <option value="$PROJECT_DIR$/lib/tool/chenframe.css" />
+        <option value="$PROJECT_DIR$/backstage/questionManage/addQuestion.php" />
+        <option value="$PROJECT_DIR$/backstage/paperManage/addPaper.php" />
+        <option value="$PROJECT_DIR$/backstage/paperManage/add.css" />
       </list>
     </option>
   </component>
@@ -188,11 +236,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="285" />
-    <option name="y" value="173" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="516" />
+    <option name="y" value="-8" />
     <option name="width" value="1660" />
-    <option name="height" value="764" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -213,7 +261,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,6 +272,18 @@
               <item name="WebFront-End" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backstage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="WebFront-End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backstage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="WebFront-End" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backstage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="paperManage" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="WebFront-End" type="b2602c69:ProjectViewProjectNode" />
@@ -252,6 +311,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,18 +358,19 @@
       <workItem from="1539097639781" duration="5203000" />
       <workItem from="1539144546838" duration="4532000" />
       <workItem from="1539184435247" duration="691000" />
-      <workItem from="1539319098569" duration="11861000" />
+      <workItem from="1539319098569" duration="13061000" />
+      <workItem from="1539335845147" duration="2146000" />
+      <workItem from="1539401766083" duration="6172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89165000" />
+    <option name="totallyTimeSpent" value="98683000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="285" y="173" width="1660" height="764" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18491484" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15833333" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -342,7 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/userInformation/personal_select.php" />
     <entry file="file://$PROJECT_DIR$/public/userInformation/page/myInformation.php" />
     <entry file="file://$PROJECT_DIR$/public/nav/nav.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -497,13 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/paperManage/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backstage/questionManage/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -518,33 +571,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/questionManage/add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/questionManage/add.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="49" column="21" lean-forward="false" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/login/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/login/login.php" />
     <entry file="file://$PROJECT_DIR$/public/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3238">
           <caret line="256" column="51" lean-forward="true" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,9 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -570,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="68" column="17" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="68" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="87" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,15 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/nav/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="79" column="84" lean-forward="false" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -618,23 +632,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/HZ$D.750.3982/HZ$D.750.3984/borain-timeChoice/css/borain-timeChoice.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/HZ$D.750.3982/HZ$D.750.3984/borain-timeChoice/css/borain-timeChoice.css" />
     <entry file="file://$PROJECT_DIR$/backstage/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,38 +654,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="61" column="105" lean-forward="false" selection-start-line="61" selection-start-column="96" selection-end-line="61" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/questionManage/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/questionManage/add.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/paperManage/addPaper.php">
+    <entry file="file://$PROJECT_DIR$/backstage/nav/nav.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/questionManage/addQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="48" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="54" column="13" lean-forward="false" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        <state relative-caret-position="375">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/questionManage/addQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="62" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tool/chenframe.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/paperManage/addPaper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="137" column="18" lean-forward="false" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/paperManage/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-458">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backstage/paperManage/add.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
         </state>
       </provider>

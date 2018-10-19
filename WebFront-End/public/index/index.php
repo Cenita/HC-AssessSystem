@@ -15,62 +15,64 @@
 		<!--轮播图-->
 		<?php include '../nav/nav.php'; ?>
         <script src="index.js"></script>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" media="screen and (max-width: 991px)" href="mobil_992.css">
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobil_768.css">
 	<!-- 考核方向 -->
-		<div id="portfolio" class="section">
+	<div id="portfolio" class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-sm-12">
 					<h2 class="wow bounce">
 						方向介绍
 						<br /><img src="../../lib/img/level_line.png" />
 					</h2>
 				</div>
-				<div class="col-md-2 col-xs-4 wow fadeInUp animated col-md-offset-1" data-wow-delay="0.6s" style=" animation-delay: 1s; ">
+				<div class="col-sm-2 wow fadeInUp animated col-sm-offset-1" data-wow-delay="0.6s" style=" animation-delay: 1s; ">
 						<div class="introduction md-trigger" data-content="学习PS、AI、AE等，关注产品设计趋势以及互联网动态，学习平面相关及网页设计规范、网页设计、UI设计，了解排版设计知识等 ，完成设计工作。" data-position="bottom center">
 							<img src="../../lib/img/sort/ps1.png"  class="img-responsive" alt="portfolio img">
-							<span>学习PS、AI、AE等</span>
-							<span>学习网页设计、UI设计</span>
-                </div>
+                            <span>学习PS、AI、AE等</span>
+                            <span>学习网页设计、UI设计</span>
+                            <div class="detail">学习PS、AI、AE等，关注产品设计趋势以及互联网动态，学习平面相关及网页设计规范、网页设计、UI设计，了解排版设计知识等 ，完成设计工作。</div>
+                        </div>
 
 				</div>
-				<div class="col-md-2 col-xs-4 wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 						<div class="introduction md-trigger" data-content="Web前端开发，主要学习HTML/CSS/JavaScript等各种web技术，学习Vue、React等流行框架，深入研究JavaScript技术。后端开发，学习C/S,B/S架构，主流web框架，缓存技术。研究sql，MySQL语言，了解MVC开发框架。" data-position="bottom center">
 							<img src="../../lib/img/sort/web1.png" class="img-responsive" alt="portfolio img">
-							<span>主要学习HTML/CSS/JavaScript</span>
+                            <span>主要学习HTML/CSS/</span>
+                            <span>JavaScript</span>
+                            <div class="detail">Web前端开发，主要学习HTML/CSS/JavaScript等各种web技术，学习Vue、React等流行框架，深入研究JavaScript技术。后端开发，学习C/S,B/S架构，主流web框架，缓存技术。研究sql，MySQL语言，了解MVC开发框架。</div>
 						</div>
 
 				</div>
-				<div class="col-md-2 col-xs-4 wow fadeInUp animated" data-wow-delay="1.4s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="1.4s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
 						<div class="introduction md-trigger" data-content="学习开发桌面应用和游戏，包括学习Qt、C#等技术，研究算法和数据结构， 具有扎实的编程基本功，学习常用的机器学习和数据挖掘原理与算法，如模拟退火算法、遗传算法、蚁群算法等；" data-position="bottom center">
 							<img src="../../lib/img/sort/zhuo1.png" class="img-responsive" alt="portfolio img">
-
 							<span>学习开发桌面应用和游戏</span>
 							<span>研究算法和数据结构</span>
+                            <div class="detail">学习开发桌面应用和游戏，包括学习Qt、C#等技术，研究算法和数据结构， 具有扎实的编程基本功，学习常用的机器学习和数据挖掘原理与算法，如模拟退火算法、遗传算法、蚁群算法等；</div>
 						</div>
 
 				</div>
-				<div class="col-md-2 col-xs-6 wow fadeInUp animated" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
 						<div class="introduction md-trigger" data-content="学习Android/iOS手机应用或游戏开发，研究移动端产品的设计、推进、研究分析等。对Android各方面的技术进行深层理解与应用。" data-position="bottom center">
 							<img src="../../lib/img/sort/phone1.png" class="img-responsive" alt="portfolio img">
-
 							<span>学习Android/IOS手机应用</span>
 							<span>或游戏开发</span>
+                            <div class="detail">学习Android/iOS手机应用或游戏开发，研究移动端产品的设计、推进、研究分析等。对Android各方面的技术进行深层理解与应用。</div>
 						</div>
 
 				</div>
-				<div class="col-md-2 col-xs-6 wow fadeInUp animated" data-wow-delay="2.2s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-
-
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="2.2s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 						<div class="introduction md-trigger" data-content="学习Office办公软件，新媒体平台以及产品运营；分析IT等话题热点， 了解项目的市场运作和管理，用户运营、渠道运营管理；具有良好的数 据分析能力，学习新媒体运营方法论，运用规则、运营算法等。" data-position="bottom center">
 							<img src="../../lib/img/sort/yun1.png" class="img-responsive" alt="portfolio img">
-
 							<span>新媒体平台以及产品运营</span>
 							<span>项目的运营管理</span>
+                            <div class="detail">学习Office办公软件，新媒体平台以及产品运营；分析IT等话题热点， 了解项目的市场运作和管理，用户运营、渠道运营管理；具有良好的数 据分析能力，学习新媒体运营方法论，运用规则、运营算法等。</div>
 						</div>
 
 				</div>
@@ -92,8 +94,8 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.6s" data-wow-duration="2s">
-					<h3>环创日常</h3>
-					<div style="margin-left:86px;width:375px;text-align:left;font-weight:400;">
+					<h3 class="topicTitle">环创日常</h3>
+					<div style="height: 100%;width:100%;margin: auto;text-align:left;font-weight:400;">
 						&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp成员之间在饭
 						点之时会一起组队去第二饭堂吃饭，路上有说有笑，小打小闹；
 						娱乐时间，我们会一起组队玩游戏；为了促进成员间的关系和感情，
@@ -102,11 +104,11 @@
 						这些也不失为增进团队凝聚力的好活动。在这个舒适的学习氛围,
 						环创的成员不断成长，环创文化亦会源远流长。
 					</div>
-					<img src="../../lib/img/hc1.png" style="width:375px;height:235px;margin-bottom:20px;"/>
+					<img src="../../lib/img/hc1.jpg" style="width:90%;height:auto;margin-top: 20px;margin-bottom:20px;"/>
 				</div>
 				<div class="col-md-6 wow fadeInRight animated" data-wow-delay="0.6s" data-wow-duration="2s">
-					<h3>致环创</h3>
-					<span style="color: #747474;">
+					<h3 class="topicTitle">致环创</h3>
+					<span class="toHC" style="color: #747474;">
 						岁月悠悠，往事如昔，四年同创，二十别离。<br />
 						相聚环创，追忆华期。难抒己怀，文以记之。<br />
 						二十年的四年，二十年的牵挂<br />
@@ -149,8 +151,8 @@
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<h3 class="wow fadeInDown animated">环创拔尖方向</h3>
-					<div class="wow fadeInLeft animated" data-wow-delay="0.6s" data-wow-duration="2s" style="line-height:26px;margin-bottom:50px;width:500px; color: #747474; font-weight: 800;">
+					<h3 class="wow fadeInDown animated topicTitle">环创拔尖方向</h3>
+					<div class="wow fadeInLeft animated" data-wow-delay="0.6s" data-wow-duration="2s" style="margin: auto;padding-bottom:30px;line-height:26px; color: #747474; font-weight: 800;">
 						&emsp;&emsp;工作室具有自主研发软件、游戏、网站的能力。同时专注
 						于各类大型校级、省级、国家级信息技术类比赛，在蓝桥杯、计算机
 						博弈锦标赛、机器人竞赛、软件应用设计大赛等方面屡创佳绩。<br />
@@ -240,7 +242,7 @@
 	<div id="footer" class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 QRcode">
 					<div class="wow" data-wow-delay="0.3s" data-wow-delay="0.6s" style="padding-right: 20px;">
 						<img src="../../lib/img/wechat_code.jpg" /><br />
 						<span>公众号</span>
@@ -250,7 +252,7 @@
 						<span>QQ群</span>
 					</div>
 				</div>
-				<div class="col-md-6" data-wow-delay="0.9s">
+				<div class="col-md-6 aboutUs" data-wow-delay="0.9s">
 					<ul id="footSelect">
 						<li><a href="http://www.hclab.cn/hclab/index.php">环创官网</a></li><span>|</span>
 						<li>联系我们</li><span>|</span>

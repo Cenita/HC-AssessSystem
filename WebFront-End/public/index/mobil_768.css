@@ -1,0 +1,27 @@
+.img-responsive
+{
+    display: inline-block;
+}
+#portfolio .introduction .detail
+{
+    display: block;
+}
+#portfolio .introduction span
+{
+    display: none;
+}
+.loginandregister
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 0px !important;
+}
+.regButton
+{
+    display: block!important;
+}
+.loginandregister a
+{
+    margin-top: -10px;
+}
