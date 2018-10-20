@@ -93,7 +93,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.6s" data-wow-duration="2s">
+				<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.4s" data-wow-duration="1s">
 					<h3 class="topicTitle">环创日常</h3>
 					<div style="height: 100%;width:100%;margin: auto;text-align:left;font-weight:400;">
 						&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp成员之间在饭
@@ -106,7 +106,7 @@
 					</div>
 					<img src="../../lib/img/hc1.jpg" style="width:90%;height:auto;margin-top: 20px;margin-bottom:20px;"/>
 				</div>
-				<div class="col-md-6 wow fadeInRight animated" data-wow-delay="0.6s" data-wow-duration="2s">
+				<div class="col-md-6 wow fadeInRight animated" data-wow-delay="0.4s" data-wow-duration="1s">
 					<h3 class="topicTitle">致环创</h3>
 					<span class="toHC" style="color: #747474;">
 						岁月悠悠，往事如昔，四年同创，二十别离。<br />
@@ -152,7 +152,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h3 class="wow fadeInDown animated topicTitle">环创拔尖方向</h3>
-					<div class="wow fadeInLeft animated" data-wow-delay="0.6s" data-wow-duration="2s" style="margin: auto;padding-bottom:30px;line-height:26px; color: #747474; font-weight: 800;">
+					<div class="wow fadeInUp animated" data-wow-delay="0.3s" data-wow-duration="1s" style="margin: auto;padding-bottom:30px;line-height:26px; color: #747474; font-weight: 800;">
 						&emsp;&emsp;工作室具有自主研发软件、游戏、网站的能力。同时专注
 						于各类大型校级、省级、国家级信息技术类比赛，在蓝桥杯、计算机
 						博弈锦标赛、机器人竞赛、软件应用设计大赛等方面屡创佳绩。<br />
@@ -172,7 +172,7 @@
 				</div>
 				<div  id="cup" class="col-md-6" >
 					<h3 class="wow fadeInDown animated">近年获奖情况</h3>
-					<div class="row wow fadeInRight animated" data-wow-delay="1s" data-wow-duration="2s">
+					<div class="row wow fadeInRight animated" data-wow-delay="0.5s" data-wow-duration="1s">
 						<div class="col-md-3 col-xs-3 "></div>
 						<div class="col-md-3 col-xs-3 ">
 							<img src="../../lib/img/one_price.png" /><br />
@@ -187,7 +187,7 @@
 							<span>三等奖</span>
 						</div>
 					</div>
-					<div class="row wow fadeInRight animated" data-wow-delay="1s">
+					<div class="row wow fadeInRight animated"data-wow-delay="0.7s" data-wow-duration="1s">
 						<div class="col-md-2 col-xs-3 col-md-offset-1">
 							<img src="../../lib/img/nation_price.png" />
 						</div>
@@ -201,7 +201,7 @@
 							<h4>20</h4>
 						</div>
 					</div>
-					<div class="row wow fadeInRight animated" data-wow-delay="1.3s">
+					<div class="row wow fadeInRight animated"data-wow-delay="0.9s" data-wow-duration="1s">
 						<div class="col-md-2 col-xs-3 col-md-offset-1">
 							<img src="../../lib/img/province_price.png" />
 						</div>
@@ -215,7 +215,7 @@
 							<h4>21</h4>
 						</div>
 					</div>
-					<div class="row wow fadeInRight animated" data-wow-delay="1.6s">
+					<div class="row wow fadeInRight animated" data-wow-delay="1.1s" data-wow-duration="1s">
 						<div class="col-md-2 col-xs-3 col-md-offset-1">
 							<img src="../../lib/img/school_price.png" />
 						</div>
@@ -229,7 +229,7 @@
 							<h4>14</h4>
 						</div>
 					</div>
-					<h3 class="wow fadeInUp animated" data-wow-delay="1.5s" style="color: #747474;">共获得奖项114项</h3>
+					<h3 class="wow fadeInUp animated" data-wow-delay="1.3s" style="color: #747474;">共获得奖项114项</h3>
 				</div>
 
 		</div>
@@ -243,16 +243,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 QRcode">
-					<div class="wow" data-wow-delay="0.3s" data-wow-delay="0.6s" style="padding-right: 20px;">
+					<div class="wow fadeInUp" data-wow-delay="0.3s" data-wow-delay="0.6s" style="padding-right: 20px;">
 						<img src="../../lib/img/wechat_code.jpg" /><br />
 						<span>公众号</span>
 					</div>
-					<div class="wow" data-wow-delay="0.6s">
+					<div class="wow fadeInUp" data-wow-delay="0.6s">
 						<img src="../../lib/img/QQ_code.jpg" /><br />
 						<span>QQ群</span>
 					</div>
 				</div>
-				<div class="col-md-6 aboutUs" data-wow-delay="0.9s">
+				<div class="col-md-6 aboutUs wow fadeInUp" data-wow-delay="0.9s">
 					<ul id="footSelect">
 						<li><a href="http://www.hclab.cn/hclab/index.php">环创官网</a></li><span>|</span>
 						<li>联系我们</li><span>|</span>

@@ -58,7 +58,6 @@ h1,h2,h3,h4 {
 }
 #portfolio .container .row h2,#awards .container .row h2{
 	text-align: center;
-	padding-bottom: 2em;
 	padding-top: 2em;
 }
 #portfolio .portfolio-thumb .portfolio-overlay {

@@ -12,8 +12,13 @@
 }
 #portfolio .introduction
 {
-    margin: 10px 0;
-    padding: 0 0;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+#portfolio
+{
+    padding-bottom: 100px;
 }
 .navbar-header .navbar-brand img{
     height: 2.5em;
@@ -34,6 +39,7 @@
 {
     cursor: pointer;
 }
+
 #navUser
 {
     display: none;
