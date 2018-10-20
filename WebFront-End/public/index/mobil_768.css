@@ -4,9 +4,37 @@
 }
 #portfolio .introduction .detail
 {
-    display: block;
+    display: none;
 }
 #portfolio .introduction span
+{
+    display: none;
+}
+#portfolio .introduction
+{
+    margin: 10px 0;
+    padding: 0 0;
+}
+.navbar-header .navbar-brand img{
+    height: 2.5em;
+    width: auto;
+    margin-left: 5%;
+}
+.pakeage
+{
+    float: right;
+    position: relative;
+    top: -44px;
+    color: #bbbbbb;
+    right: 31px;
+    font-size: 20px;
+    display: block;
+}
+.pakeage:hover
+{
+    cursor: pointer;
+}
+#navUser
 {
     display: none;
 }

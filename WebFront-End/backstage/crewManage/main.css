@@ -1,27 +1,18 @@
 #mainPart
 {
-    width: 1200px;
     margin: auto;
     margin-top: 20px;
 }
-#mainPart .leftNav
-{
-    width: 18%;
-    margin-right: 2%;
-    text-align: center;
-    float: left;
-
-}
 #mainPart .leftNav h3
 {
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    height: 50px;
+    border-bottom: 1px solid rgba(84, 97, 199, 0.3);
+    height: 40px;
 }
-#mainPart .rightPart
-{
-    margin-top: 80px;
-    width: 80%;
-    float: left;
+@media (min-width:992px) {
+    #mainPart .rightPart
+    {
+        margin-top: 60px;
+    }
 }
 th,td
 {

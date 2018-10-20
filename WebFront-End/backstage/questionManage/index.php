@@ -17,15 +17,16 @@
 <body>
 <?php include "../nav/index.php"?>
 <script src="main.js"></script>
-<div id="topicNav">
-    <div class="navBackground">
-        <div class="topicNavBody">
-            <div class="bigTopic" data-content="Q">Q</div>
-            <div class="topic">Question</div>
+    <div id="topicNav">
+        <div class="navBackground">
+            <div class="topicNavBody">
+                <div class="bigTopic" data-content="Q">Q</div>
+                <div class="topic">Question</div>
 
+            </div>
         </div>
     </div>
-    <div id="mainPart">
+    <div id="mainPart" class="container">
         <div class="topNav">
             <div class="screen" style="float: left">
                 <i class="fa fa-list-ul fa-lg" ></i>
@@ -85,6 +86,5 @@
             </tbody>
         </table>
     </div>
-</div>
 </body>
 </html>

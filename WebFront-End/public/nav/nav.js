@@ -28,6 +28,11 @@ $(
               $("#loginWindows .registeredTitle").click();
           }
     )
+      $(".pakeage").click(
+          function () {
+              $("#navUser").slideToggle();
+          }
+      )
     $("#loginWindows .loginTitle").click(
       function()
       {
@@ -139,12 +144,8 @@ $(
       function getStatus() {
           $.ajax({
                   type:"POST",
-                  url:url+"status",
+                  url:"../../interface/user/getStatus.php",
                   dataType:"json",
-                  xhrFields: {
-                      withCredentials: true
-                  },
-                  crossDomain: true,
                   success:function (re) {
                       if(re.status==200)
                       {

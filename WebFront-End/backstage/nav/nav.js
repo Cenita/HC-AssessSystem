@@ -6,7 +6,7 @@ $(
                 alert("666");
             }
         )
-        getUserInfor();
+        //getUserInfor();
         function getUserInfor() {
             $.ajax(
                 {

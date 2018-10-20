@@ -27,6 +27,9 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
           <img src="../../lib/img/logo2.png">
         </a>
       </div>
+        <div class="pakeage">
+            <i class="fa fa-align-justify"></i>
+        </div>
       <div class="navbar-collapse" id="navUser">
         <ul v-show="login" style="display:none"  class="nav navbar-nav navbar-right getUser">
           <img id="img_tou" src="../../lib/img/1.jpg" alt="">

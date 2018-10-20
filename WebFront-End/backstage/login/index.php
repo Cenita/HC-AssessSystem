@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../lib/tool/Semantic/semantic.min.css"/>
     <link rel="stylesheet" href="../../lib/tool/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width:425px)" href="mobil.css">
     <title>环创考核系统-后台登录</title>
 </head>
 <body>

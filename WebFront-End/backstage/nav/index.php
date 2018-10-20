@@ -9,6 +9,7 @@ $page=$_GET["page"];?>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../../lib/tool/vue.min.js"></script>
     <script src="../nav/nav.js"></script>
+    <script src="../../lib/tool/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
     <link rel="stylesheet" href="../nav/nav.css">
 </head>
@@ -47,6 +48,33 @@ $page=$_GET["page"];?>
             }
         )
     </script>
+    <nav id="anav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                    <a href="../../public/index/index.php"><img src="../../lib/img/logo2.png" alt=""></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse selectPart" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li role="presentation" v-bind:class="{ active: index }"><a href="../index/index.php">首页</a></li>
+                    <li role="presentation" v-bind:class="{ active: page1 }"><a href="../questionManage/index.php">题库管理</a></li>
+                    <li role="presentation" v-bind:class="{ active: page2 }"><a href="../crewManage/index.php">人员管理</a></li>
+                    <li role="presentation" v-bind:class="{ active: page3 }"><a href="../paperManage/index.php">试卷管理</a></li>
+                    <li role="presentation" v-bind:class="{ active: page4 }"><a href="../messageManage/index.php">留言动态</a></li>
+                    <li role="presentation" v-bind:class="{ active: page5 }"><a href="../oprationDiary/index.php">操作日志</a></li>
+                    <li role="presentation" v-bind:class="{ active: page6 }"><a href="../login" id="exitLogin">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="bnav">
         <div class="logo">
             <a href="../../public/index/index.php"><img src="../../lib/img/logo2.png" alt=""></a>
@@ -63,6 +91,5 @@ $page=$_GET["page"];?>
             </ul>
         </div>
     </div>
-
 </body>
 </html>
