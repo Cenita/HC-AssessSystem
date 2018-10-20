@@ -16,6 +16,10 @@
     margin: auto;
     margin-top: 10px;
 }
+#loginWindows
+{
+    width: 320px;
+}
 #portfolio
 {
     padding-bottom: 100px;

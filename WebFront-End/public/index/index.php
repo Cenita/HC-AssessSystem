@@ -27,7 +27,7 @@
 						<br /><img src="../../lib/img/level_line.png" />
 					</h2>
 				</div>
-				<div class="col-sm-2 wow fadeInUp animated col-sm-offset-1" data-wow-delay="0.2s" style=" animation-delay: 1s; ">
+				<div class="col-sm-2 wow fadeInUp animated col-sm-offset-1"  data-wow-delay="0.2s" data-wow-duration="0.5s" style=" animation-delay: 1s; ">
 						<div class="introduction md-trigger" data-content="学习PS、AI、AE等，关注产品设计趋势以及互联网动态，学习平面相关及网页设计规范、网页设计、UI设计，了解排版设计知识等 ，完成设计工作。" data-position="bottom center">
 							<img src="../../lib/img/sort/ps1.png"  class="img-responsive" alt="portfolio img">
                             <span>学习PS、AI、AE等</span>
@@ -36,7 +36,7 @@
                         </div>
 
 				</div>
-				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.4s" data-wow-duration="0.5s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 						<div class="introduction md-trigger" data-content="Web前端开发，主要学习HTML/CSS/JavaScript等各种web技术，学习Vue、React等流行框架，深入研究JavaScript技术。后端开发，学习C/S,B/S架构，主流web框架，缓存技术。研究sql，MySQL语言，了解MVC开发框架。" data-position="bottom center">
 							<img src="../../lib/img/sort/web1.png" class="img-responsive" alt="portfolio img">
                             <span>主要学习HTML/CSS/</span>
@@ -45,7 +45,7 @@
 						</div>
 
 				</div>
-				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.6s" data-wow-duration="0.5s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
 						<div class="introduction md-trigger" data-content="学习开发桌面应用和游戏，包括学习Qt、C#等技术，研究算法和数据结构， 具有扎实的编程基本功，学习常用的机器学习和数据挖掘原理与算法，如模拟退火算法、遗传算法、蚁群算法等；" data-position="bottom center">
@@ -56,7 +56,7 @@
 						</div>
 
 				</div>
-				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="0.8s" data-wow-duration="0.5s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 
 
 						<div class="introduction md-trigger" data-content="学习Android/iOS手机应用或游戏开发，研究移动端产品的设计、推进、研究分析等。对Android各方面的技术进行深层理解与应用。" data-position="bottom center">
@@ -67,7 +67,7 @@
 						</div>
 
 				</div>
-				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+				<div class="col-sm-2 wow fadeInUp animated" data-wow-delay="1s" data-wow-duration="0.5s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
 						<div class="introduction md-trigger" data-content="学习Office办公软件，新媒体平台以及产品运营；分析IT等话题热点， 了解项目的市场运作和管理，用户运营、渠道运营管理；具有良好的数 据分析能力，学习新媒体运营方法论，运用规则、运营算法等。" data-position="bottom center">
 							<img src="../../lib/img/sort/yun1.png" class="img-responsive" alt="portfolio img">
 							<span>新媒体平台以及产品运营</span>
