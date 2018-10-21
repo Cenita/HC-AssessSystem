@@ -31,6 +31,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String code = request.getParameter("code");
+
         Object VerifyCode = session.getAttribute(Config.VerifyCode);
         if(username==null||password==null||code==null||VerifyCode==null||!code.toLowerCase().equals((String)VerifyCode))
         {

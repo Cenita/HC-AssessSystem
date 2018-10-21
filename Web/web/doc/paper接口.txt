@@ -1,120 +1,66 @@
-
-#创建试卷接口---------------------------------------
-/paper/add
-
-访问POST
-
-参数
-title
-number
-direction
-grade
-permit
-starttimeInt 毫秒级时间戳
-endtimeInt
-
-返回值
-status
-message
-
-#删除试卷接口---------------------------------------
-/paper/delete
-
-访问POST
-
-参数
-paperid
+-----------------------------------------------
+/paper?action=get
+#获取一张试卷信息，包含了试卷的题目内容
+访问:POST
+参数:2
+action
+paperid 试卷的id
 
 返回
-status
-message
+paper 数据包
 
-#修改试卷接口---------------------------------------
-/paper/alter
-
-访问POST
-
-参数
-
-id
-title
-number
-direction
-grade
-permit
-starttimeInt 毫秒级时间戳
-endtimeInt
+-----------------------------------------------
+/paper?action=getAll
+#获取全部试卷的信息，不包含题目
+访问:POST
+参数:1
+action
 
 返回
-status
-message
+paperList 数据包
 
-#获取试卷接口--------------------------------------
-/paper/get
+-----------------------------------------------
+/paper?action=delete
+#删除一张试卷
+访问:POST
+参数:2
+action
+paperid 试卷的id
 
-访问POST
+-----------------------------------------------
+/paper?action=add
+#添加一张新试卷
+访问:POST
+参数:2
+action
+paper 试卷数据包
 
-参数:
-aim
-args
-
-aim=all&args=all 返回试卷的信息列表，不会有题目的具体信息
-aim=id&args=试卷id 返回某张试卷信息和全部题目的具体内容
-
-返回值
-列表查询
-status
-message
-list{
-    0:...试卷信息
-    1:
-}
-
-全部查询
-status
-message
-paper{
-    id
+试卷数据包的内容
+{
     title
-    number
     direction
     grade
-    permit
-    starttime 时间格式字符串
-    starttimeInt 毫秒级时间戳
+    starttime 时间搓 毫秒
     endtime
-    endtimeInt
-    createtime
-    updatetime
+    permit
 }
 
+-----------------------------------------------
+/paper?action=update
+#更新一张试卷的内容，不包括它的题目
+访问:POST
+参数:2
+action
+paper 试卷数据包
 
+试卷数据包的内容
+{
+    id
+    title
+    direction
+    grade
+    starttime 时间搓 毫秒
+    endtime
+    permit
+}
 
-#从试卷中增删改查试题接口-------------------------------------
-/paper/question/
-
-访问POST
-
-参数
-method {add}{delete}{equal}
-
-paperid
-questionid 可以有多个
-questionid
-questionid
-
-返回
-status
-message
-
-method=add 题目添加
-将所有的questionid 添加到paper上
-
-method=delete 题目删除
-将所有的questionid 从paper中删除
-
-method=equal 赋予
-先删掉paper上的所有题目
-在将所有的question添加到paper上
-
-*********************************以上接口已经部署************************************************

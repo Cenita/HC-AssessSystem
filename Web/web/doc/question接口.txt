@@ -1,114 +1,70 @@
-题目模块的增删查改接口
-
-
-type类型
-0 选择题
-1 多选题
-2 填空题
-3 简答题
-4 文件上传题
-
-在选择题和多选题中
-selection 的各个选择内容用'@hctest@'分割开
-answer的答案也用'@hctest@'分割开，其中答案字母大写
-
-在简单题中和文件上传题中
-selection空缺
-
-在填空题中:
-selection 存放一个数字，用于表明有多少个空
-answer中的标准答案用'@hctest@'分割开
-
-
-#新增题目---------------------------------------------
-/question/add
-
-接口方法:POST
-
-参数
-title 题目的标题
-number 题目的自定义编号
-content 题目的内容
-selection 题目的选择模块
-answer 题目的答案模块
-grade 题目的难度等级
-type 题目的类型
-direction 题目的方向
+----------------------------------------------
+/question?action=get
+#获取一道题的内容
+访问:POST
+参数:2
+action
+questionid
 
 返回
-status
-message
+question 题目数据包
 
-#修改题目----------------------------------------------
-/question/alter
-
-接口方法:POST
-
-参数
-id 题目的数据库id编号
-title 题目的标题
-number 题目的自定义编号
-content 题目的内容
-selection 题目的选择模块
-answer 题目的答案模块
-grade 题目的难度等级
-type 题目的类型
-direction 题目的方向
+----------------------------------------------
+/question?action=getAll
+#获取一道题的内容
+访问:POST
+参数:1
+action
 
 返回
-status
-message
+questionList
 
-#删除题目-----------------------------------------------
-/question/detele
+----------------------------------------------
+/question?action=delete
+#获取一道题的内容 
+访问:POST
+参数:2
+action
+questionid
 
-接口方法:POST
+----------------------------------------------
+/question?action=add
+#新建一道题
+访问:POST
+参数:2
+action
+question 题目信息包
 
-参数
-id 题目的数据库id编号
-
-返回
-status
-message
-
-#查询题目------------------------------------------------
-/question/get
-
-接口方法:POST
-
-参数
-aim
-args
-
-aim=all args=all 时为查询全部题目
-aim=id args=题目的数据库id时 为查询单条题目
-
-
-返回
-精确查询
-status
-message
-question{
-    id
+题目信息包的内容
+{
     title
-    number
-    grade
     direction
     content
+    grade
+    type
     selection
-    answer
-    createtime
-    updatetime 
+    answer 默认答案
+    number (自动生成,不用提交)
 }
 
-全部查询
-status
-message
-size list有多少个user包
-list{
-    0:{第一个user的信息}
-    1:...
+----------------------------------------------
+/question?action=update
+#获取一道题的内容
+访问:POST
+参数:2
+action
+question
+
+question 题目数据包
+{
+    id
+    title
+    direction
+    content
+    grade
+    type
+    selection
+    answer 默认答案
+    number 
 }
 
-
-*********************************以上接口已经部署************************************************

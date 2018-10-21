@@ -22,7 +22,7 @@ import java.util.Date;
 
 @WebServlet(name = "VerifyServlet",urlPatterns = "/verify")
 public class VerifyServlet extends ServiceBaseServlet {
-    public void sendMail(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void sendMailToRegister(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("application/json;charset=utf-8");
         JSONObject jo = new JSONObject();
         HttpSession session = request.getSession();
@@ -53,6 +53,7 @@ public class VerifyServlet extends ServiceBaseServlet {
                     e.printStackTrace();
                     jo.put(Config.Status,Status.ServerFail);
                     jo.put(Config.Message,"服务器发生错误");
+                    jo.put("wait",-1);
                 }
             }
         }

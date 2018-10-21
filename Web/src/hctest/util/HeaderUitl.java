@@ -13,7 +13,7 @@ public class HeaderUitl {
 
     public static void setHeaderAccess(HttpServletRequest request,HttpServletResponse response) throws UnsupportedEncodingException {
 
-        response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1");
+        response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Method", "POST,GET");
         response.setHeader("Access-Control-Allow-Credentials","true");
     }

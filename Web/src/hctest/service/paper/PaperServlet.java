@@ -20,12 +20,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-@WebServlet(name = "PaperServlet",urlPatterns = "/paper/v2")
+@WebServlet(name = "PaperServlet",urlPatterns = "/paper")
 public class PaperServlet extends LoginBaseServlet {
     public void get(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         JSONObject jo = (JSONObject) request.getAttribute("jo");
 
-        String id = request.getParameter("id");
+        String id = request.getParameter("paperid");
         if(id==null)return;
 
         PaperInfo paperInfo = PaperOpm.getPaperInfoByPaperId(id);
@@ -55,7 +55,7 @@ public class PaperServlet extends LoginBaseServlet {
     //删除某张试卷
     public void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
         JSONObject jo = (JSONObject) request.getAttribute("jo");
-        String paperid = request.getParameter("request");
+        String paperid = request.getParameter("paperid");
         if(paperid==null) return;
         PaperOpm.deletePaperWithAll(paperid);
         jo.put("status","200");

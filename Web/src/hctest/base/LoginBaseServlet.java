@@ -4,6 +4,7 @@ import hctest.Dao.UserDao;
 import hctest.domain.User;
 import hctest.util.Config;
 import hctest.util.HeaderUitl;
+import hctest.util.ReturnUtil;
 import hctest.util.Status;
 import net.sf.json.JSONObject;
 
@@ -35,7 +36,10 @@ public class LoginBaseServlet extends HttpServlet {
         try {
             User user = UserDao.getUserById((String)login);
 
-            if(user==null) return;
+            if(user==null)
+            {
+                ReturnUtil.ToReturn(Status.Warnning,"用户未登录",response);return;
+            }
 
             request.setAttribute(Config.User,user);
 

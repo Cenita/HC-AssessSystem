@@ -1,0 +1,45 @@
+----------------------------------------------
+/answer?action=add
+#添加一张新答卷
+访问:POST
+参数:2
+action
+paperid
+
+返回
+answer数据包
+
+----------------------------------------------
+/answer?action=save
+#保持答卷的一道题目(不包括文件上传题)
+访问:POST
+参数:4
+action
+saveid 答卷题目的id
+answerid 答卷的id
+uanswer 用户要保存的答案
+
+返回
+answer数据包
+
+----------------------------------------------
+/answer?action=submit
+#提交答卷
+访问:POST
+参数:4
+action
+answerid 答卷的id
+
+提交后用户不可修改
+
+
+----------------------------------------------
+/answer?action=get
+#获取一张答卷，包含全部答题的信息
+访问:POST
+参数:2
+action
+answerid 答卷的id
+
+返回
+answer数据包

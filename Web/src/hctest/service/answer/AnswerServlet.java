@@ -58,7 +58,7 @@ public class AnswerServlet extends LoginBaseServlet{
     }
     public void submit(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException, SQLException{
         JSONObject jo = (JSONObject)request.getAttribute("jo");
-        User user = (User)request.getAttribute("user");
+        User user = (User)request.getAttribute(Config.User);
 
         String answerid = request.getParameter("answerid");
         if(answerid==null) return;

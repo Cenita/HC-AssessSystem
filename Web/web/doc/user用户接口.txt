@@ -1,0 +1,31 @@
+----------------------------------------------
+/user?action=status
+#用于获取已经登录的登录用户信息
+访问POST
+参数:1
+action
+
+----------------------------------------------
+/user?action=exit
+#退出登录状态
+访问POST
+参数:1
+action
+
+----------------------------------------------
+/user?action=update
+#更新用户新接口
+访问POST
+参数:2
+action
+user 用户新数据
+
+user用户数据的内容
+{
+    college
+    truename
+    profession
+    motto
+    grade 
+}
+

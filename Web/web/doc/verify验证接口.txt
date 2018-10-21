@@ -1,0 +1,30 @@
+﻿----------------------------------------------
+/verify?action=sendMailToRegister
+#发送邮件用于注册
+访问:POST,GET
+参数:2
+action
+email
+
+返回
+wait 下一次发送需要等待的时间
+
+
+等待时间wait
+1-60 正常等待时间
+-1 非正常等待时间
+
+----------------------------------------------
+/verify?action=username
+#用于验证username是否可用用于注册
+访问POST,GET
+参数：2
+action
+username
+
+----------------------------------------------
+/verify?action=getCode
+#用于获取一个验证码
+访问POST,GET
+参数：1
+action
