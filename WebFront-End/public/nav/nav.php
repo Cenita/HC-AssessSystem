@@ -1,6 +1,7 @@
 <html lang="en">
 <?php
 error_reporting(E_ALL^E_NOTICE^E_WARNING);
+session_start();
 ?>
 <head>
   <meta charset="UTF-8">
@@ -10,8 +11,6 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
     <script src="../../lib/tool/Semantic/semantic.min.js"></script>
     <script src="../../lib/tool/jquery.rotate.min.js"></script>
     <script src="../nav/nav.js"></script>
-    <script src="../nav/login.js"></script>
-    <script src="../nav/register.js"></script>
     <link rel="stylesheet" href="../../lib/tool/bootstrap.min.css">
     <link rel="stylesheet" href="../../lib/tool/Semantic/semantic.min.css"/>
     <link rel="stylesheet" href="../../lib/tool/font-awesome/css/font-awesome.min.css">
@@ -21,6 +20,10 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
 </head>
 <body>
   <nav class="navbar navbar-default">
+    <information style="display: none">
+        <div id="phpIsLogin"><?php echo $_SESSION["isLogin"]; ?></div>
+        <div id="phpIsUserName"><?php echo $_SESSION["truename"]; ?></div>
+    </information>
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="../index/index.php">
@@ -31,24 +34,22 @@ error_reporting(E_ALL^E_NOTICE^E_WARNING);
             <i class="fa fa-align-justify"></i>
         </div>
       <div class="navbar-collapse" id="navUser">
-        <ul v-show="login" style="display:none"  class="nav navbar-nav navbar-right getUser">
-          <img id="img_tou" src="../../lib/img/1.jpg" alt="">
-          <span>{{userName}}</span>
-          <img id="img_sanjiao" src="../../lib/img/sanjiao.png" alt="">
-          <div class="dropdownSan"></div>
-          <div class="dropdown" id="dropdown" style="display:none">
-            <div class="personalImformation" id="dropdown">
-              <a href="../userInformation/index.php">个人信息</a>
-            </div>
-            <div class="exit" id="dropdown">
-              <a href="">退出登录</a>
-            </div>
-          </div>
-         </ul>
-          <ul v-show="!login" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
+        <ul v-show="login" style="display:none;text-align: center"  class="nav navbar-nav navbar-right getUser">
+            <li>
+                <img id="img_tou" src="../../lib/img/1.jpg" alt="">
+                <span>{{userName}}</span>
+            </li>
+            <li>
+                <a href="">个人主页</a>
+            </li>
+            <li>
+                <a href="">退出登录</a>
+            </li>
+        </ul>
+        <ul v-show="!login" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
               <li><a class="loginButtom">登录</a></li>
               <li><a class="regButton" style="display: none;">注册</a></li>
-          </ul>
+        </ul>
       </div>
     </div>
   </nav>
