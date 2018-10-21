@@ -43,7 +43,7 @@ session_start();
                 <a href="">个人主页</a>
             </li>
             <li>
-                <a href="">退出登录</a>
+                <a href="" id="exitLogin">退出登录</a>
             </li>
         </ul>
         <ul v-show="!login" style="display:none"  class="nav navbar-nav navbar-right loginandregister">
@@ -70,13 +70,14 @@ session_start();
 		<div class="mainPart">
 			<div class="loginPart">
 				<div class="ui left icon input">
-				  <input type="text" v-model="eAndStuNumInput" placeholder="学号">
+				  <input type="text" v-model="eAndStuNumInput" id="stdUsername"  placeholder="学号">
 				  <i class="user icon"></i>
+                    <span class="occurError" v-if="usernameError"><i class="remove icon"></i>账号不存在</span>
 				</div>
 				<div class="ui left icon input">
 				  <input type="password" v-model="passwordInput" placeholder="密码">
 				  <i class="lock icon"></i>
-					<span class="occurError" v-if="passwordError"><i class="remove icon"></i>密码错误!</span>
+					<span class="occurError" v-if="passwordError" style="right: 40px"><i class="remove icon"></i>密码错误</span>
 				</div>
 				<div class="ui left input verificationCode">
 					<input type="text" placeholder="验证码" v-model="verCordInput" style="width:200px">
@@ -97,9 +98,9 @@ session_start();
 			</div>
 			<div class="registerPart"  style="display:none">
 				<div class="ui left icon input">
-				  <input type="number" v-model="studentNumInput" placeholder="学号">
+				  <input type="number" v-model="studentNumInput" id="stnNumber" placeholder="学号">
 				  <i class="write icon"></i>
-					<span class="occurError" v-if="studentNumError"><i class="remove icon"></i>请输入正确的学号!</span>
+					<span class="occurError" v-if="studentNumError"><i class="remove icon"></i>{{hint_stn}}</span>
 				</div>
 				<div class="ui left icon input">
 				  <input type="text" v-model="realNameInput" placeholder="真实姓名">
@@ -153,15 +154,14 @@ session_start();
 					<span class="occurError" v-if="passwordError"><i class="remove icon"></i>请输入六位以上的密码!</span>
 				</div>
 				<div class="ui left icon input confirmPasswordPart">
-				  <input type="password" v-model="confirmPasswordInput" placeholder="确认密码">
+				  <input type="password" id="confirmPassword" v-model="confirmPasswordInput" placeholder="确认密码">
 				  <i class="lock icon"></i>
-					<span class="occurError" v-if="confirmPasswordError"><i class="remove icon"></i>密码错误!</span>
+					<span class="occurError" v-if="confirmPasswordError"><i class="remove icon"></i>{{hint_password}}</span>
 				</div>
 				<div class="ui left icon input emailPart">
 				  <input type="text" v-model="emailInput" placeholder="邮箱">
 				  <i class="mail icon"></i>
-					<span class="occurError" v-if="emailError"><i class="remove icon"></i>邮箱格式错误!</span>
-                    <span class="occurError" v-if="emailisExsit"><i class="remove icon"></i>邮箱已经存在!</span>
+					<span class="occurError" v-if="emailError"><i class="remove icon"></i>{{hint_email}}</span>
 				</div>
 				<div class="ui left input emailCode">
 					<input type="text" v-model="emailCodeInput" placeholder="邮箱验证码" style="width:160px">
@@ -169,8 +169,9 @@ session_start();
 					<span class="occurError" v-if="emailCodeError" style="right:140px"><i class="remove icon"></i>错误!</span>
 				</div>
 				<button class="ui red button registerButtom" style="width:300px">
-					<i class="fa fa-spinner fa-spin" style="display:none;"></i>
-					<span>注册</span>
+					<i class="fa fa-spinner fa-spin" id="registerLoding" style="display:none;"></i>
+                    <i class="fa fa-check" id="registerRight" style="display: none"></i>
+					<span id="registerSpan">注册</span>
 				</button>
 			</div>
 		</div>

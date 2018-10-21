@@ -25,10 +25,11 @@ function deldir($path){
     }
 }
 function send_post($url, $post_data){ // 模拟提交数据函数
+    $sendURL="http://120.79.91.253:8080/HCTest/".$url;
     $cookieName="session_cookie/".session_id().'.txt';
     $curl = curl_init(); // 启动一个CURL会话
     curl_setopt($curl, CURLOPT_POST, 1); // 发送一个常规的Post请求
-    curl_setopt($curl, CURLOPT_URL, $url); // 要访问的地址
+    curl_setopt($curl, CURLOPT_URL, $sendURL); // 要访问的地址
     curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($post_data)); // Post提交的数据包
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); // 获取的信息以文件流的形式返回
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0); // 是否对认证证书来源的检查
@@ -46,6 +47,8 @@ function send_post($url, $post_data){ // 模拟提交数据函数
     $tmpInfo = curl_exec($curl);   //执行操作
     curl_close($curl);   // 关键CURL会话
     $_SESSION["jseSessionId"]=file_get_contents($cookieName);
-    return $tmpInfo;     // 返回数据
+    echo $tmpInfo;     // 返回数据
+    return json_decode($tmpInfo);
+
 }
 ?>

@@ -1,6 +1,5 @@
 <?php
     include "../common/sendPostApi.php";
-    session_start();
     $action=$_POST["action"];
     if($action=="login")//方法为登录时候
     {
@@ -9,8 +8,7 @@
             "password"=>$_POST["password"],
             "code"=>$_POST["code"]
         );
-        $res = send_post('http://120.79.91.253:8080/HCTest/login', $post_data);
-        $backData = json_decode($res);
+        $backData = send_post('login', $post_data);
         if($backData->status==200)
         {
             $_SESSION["isLogin"]="true";
@@ -20,19 +18,16 @@
         {
             $_SESSION["isLogin"]="false";
         }
-        echo $res;
     }
     else if($action=="exit")
     {
         $post_data = array(
             "action"=>"exit"
         );
-        $res = send_post('http://120.79.91.253:8080/HCTest/user', $post_data);
-        $backData = json_decode($res);
+        $backData = send_post('user', $post_data);
         if($backData->status==200)
         {
             $_SESSION["isLogin"]="false";
         }
-        echo $res;
     }
 ?>

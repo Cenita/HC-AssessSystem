@@ -1,7 +1,6 @@
 $(
   function()
   {
-    var is_xiala_down=false;
     var url="../../interface/";
     var nav=new Vue(//导航栏
       {
@@ -19,9 +18,11 @@ $(
        data:{
               passwordError:false,
               verCordError:false,
+              usernameError:false,
               verCordInput:"",
               eAndStuNumInput:"",
-              passwordInput:""
+              passwordInput:"",
+
        }
      }
     )
@@ -37,14 +38,16 @@ $(
               passwordError:false,
               confirmPasswordError:false,
               emailError:false,
-              emailCodeError:false,
-              emailisExsit:false,
+              emailCodeError:-false,
               studentNumInput:"",
               realNameInput:"",
               passwordInput:"",
               confirmPasswordInput:"",
               emailInput:"",
-              emailCodeInput:""
+              emailCodeInput:"",
+              hint_stn:"请输入正确的学号!",
+              hint_email:"邮箱格式错误!",
+              hint_password:"两次密码不符合"
         }
       }
     )
@@ -115,17 +118,16 @@ $(
                               if(re.message=="验证码错误")
                               {
                                   log.verCordError=true;
-                                  getVer();
                               }
-                              else if(re.message=="账号或密码不存在")
+                              else if(re.message=="账户或密码错误")
                               {
                                   log.passwordError=true;
-                                  getVer();
                               }
                               else
                               {
                                   alert("登陆失败："+re.message);
                               }
+                              getVer();
                           }
                           else
                           {
@@ -143,8 +145,9 @@ $(
               getVer();
           }
       }
-      function sendRegisterPost() //发送
+      function sendRegisterPost() //发送注册信息
       {
+          $("#registerSuccess").popup();
           var grade=$("#grader .text").text();
           var college=$("#academic .text").text();
           var profession=$("#majorBack .text").text();
@@ -153,13 +156,15 @@ $(
           // $(this).find("span").toggle();
           if(!rw.studentNumError&&!rw.realNameError&&!rw.graderError&&!rw.acError&&!rw.majorError&&!rw.passwordError&&!rw.confirmPasswordError&&!rw.emailError&&!rw.emailCodeError)
           {
-              rw.emailisExsit=false;
+              $("#registerSpan").hide();
+              $("#registerLoding").show();
               $.ajax(
                   {
                       type:"POST",
                       dataType:"json",
-                      url:url+"register",
+                      url:url+"user/"+"userRegister.php",
                       data:{
+                          action:"register",
                           username:rw.studentNumInput,
                           password:rw.passwordInput,
                           email:rw.emailInput,
@@ -169,32 +174,21 @@ $(
                           college:college,
                           profession:profession
                       },
-                      xhrFields: {
-                          withCredentials: true
-                      },
-                      crossDomain: true,
                       success:function (re) {
+                          $("#registerLoding").hide();
                           if(re.status==200)
                           {
-                              alert("注册成功");
-                              location.reload();
-                          }
-                          else if(re.status==400)
-                          {
-                              if(re.message=="邮箱已被使用")
-                              {
-                                  rw.emailisExsit=true;
-                              }
-                              else
-                              {
-                                  alert("注册失败："+re.message);
-                              }
-
+                              $("#registerRight").show().delay(2000);
+                              setTimeout(function(){ location.reload(); }, 3000);
                           }
                           else
                           {
-                              alert(re.status+" "+re.message)
+                              $("#registerSpan").show();
                           }
+                      },
+                      error:function () {
+                          $("#registerLoding").hide();
+                          $("#registerSpan").show();
                       }
                   }
               )
@@ -203,26 +197,23 @@ $(
       function getEmailCode()//获取邮箱验证码
       {
           rw.emailError=rw.emailInput==""||rw.emailInput.indexOf(".com")==-1?true:false;//判断是否为合法邮箱格式
-          rw.emailisExsit=false;
-          if(!rw.emailError&&$(this).text()=="获取验证码")
+          if(!rw.emailError&&$("#loginWindows .registerPart .getEmailCore").text()=="获取验证码")
           {
-              var $here=$(this);
+              var $here=$("#loginWindows .registerPart .getEmailCore");
               time=60;
               $here.removeClass("green").addClass("grey");
               $here.text("发送中("+time+")");
               timeId=window.setInterval(delayGetCore,1000);
+              rw.emailError=false;
               $.ajax(
                   {
-                      type:"GET",
-                      url:url+"sendMail",
+                      type:"POST",
+                      url:url+"user/"+"userRegister.php",
                       dataType: 'json',
                       data:{
+                          action:"getEmailCode",
                           email:rw.emailInput
                       },
-                      xhrFields: {
-                          withCredentials: true
-                      },
-                      crossDomain: true,
                       success:function (re) {
                           if(re.status==200)
                           {
@@ -230,22 +221,18 @@ $(
                           }
                           else if(re.status==400)
                           {
-                              if(re.message=="邮箱已被使用")
+                              if(re.message=="邮箱已存在")
                               {
-                                  rw.emailisExsit=true;
+                                  rw.emailError=true;
+                                  rw.hint_email="邮箱已存在";
                                   time=0;
                                   $("#loginWindows .registerPart .getEmailCore").removeClass("grey").addClass("green").text("获取验证码");
                                   window.clearInterval(timeId);
                               }
-                              else
-                              {
-                                  alert("发送失败："+re.message);
-                              }
-
                           }
                           else
                           {
-                              alert(re.status+" "+re.message)
+                              rw.hint_email="请求失败";
                           }
                       },
                       error:function (re) {
@@ -298,6 +285,63 @@ $(
               }
           }
           xhr.send();
+      }
+      function RegisterCanUserName(username)
+      {
+          var date={
+              username:username,
+              action:"getUserName"
+          };
+          $.ajax(
+              {
+                  dateType:"json",
+                  url:url+"user/userRegister"+".php",
+                  type:"POST",
+                  data:date,
+                  success:function (result) {
+                      console.log(result.status);
+                      if(result.status==200)
+                      {
+                          rw.studentNumError=false;
+                      }
+                      else if(result.status==400){
+                          rw.studentNumError=true;
+                          rw.hint_stn="账号已被使用";
+                      }
+                  },
+                  error:function () {
+                      alert("服务器出现问题:请求失败");
+                  }
+              }
+          )
+      }
+      function LoginCanUserName(username)
+      {
+          var date={
+              username:username,
+              action:"getUserName"
+          };
+          $.ajax(
+              {
+                  dateType:"json",
+                  url:url+"user/userRegister"+".php",
+                  type:"POST",
+                  data:date,
+                  success:function (result) {
+                      console.log(result.status);
+                      if(result.status==200)
+                      {
+                          log.usernameError=true;
+                      }
+                      else if(result.status==400){
+                          log.usernameError=false;
+                      }
+                  },
+                  error:function () {
+                      alert("服务器出现问题:请求失败");
+                  }
+              }
+          )
       }
 
       $("#loginWindows .loginPart .loginInButtom").click(function() {login();})//登录按钮被点击
@@ -568,18 +612,46 @@ $(
               }
           }
       );//注册窗口-获取学院的专业信息
-      $("#loginWindows .registerPart .confirmPasswordPart input").change(function() {
-              verifyRegister();
-          });//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      $("#stdUsername").change(
+          function () {
+              LoginCanUserName($(this).val());
+          }
+      )
+      $("#confirmPassword").change(
+          function () {
+              rw.confirmPasswordError=rw.confirmPasswordInput==""||rw.confirmPasswordInput!=rw.passwordInput?true:false;
+          }
+      )
+      $("#stnNumber").change(
+          function () {
+              rw.studentNumError=false;
+              RegisterCanUserName($(this).val());
+          }
+      )
+
       $(".registerButtom").click(//注册按钮被点击
           function()
           {
               sendRegisterPost();
           }
       )
-
-
-
     $(".loginButtom").click(
       function()
       {
@@ -632,62 +704,6 @@ $(
       function()
       {
         $("#loginWindows").modal("hide");
-      }
-    )
-    $("#img_sanjiao").rotate({angle:0,animateTo:180});
-    $("#img_sanjiao").click(
-      function()
-      {
-        if(is_xiala_down==false)
-        {
-          $("#img_sanjiao").rotate({angle:180,animateTo:360});
-          $(".dropdownSan").show(100);
-          $(".dropdown").delay(100).slideDown(500);
-          is_xiala_down=true;
-        }
-        else {
-          $("#img_sanjiao").rotate({angle:0,animateTo:180});
-          $(".dropdown").slideUp(500);
-          is_xiala_down=false;
-        }
-      }
-    );
-    $(".dropdownSan").click(
-      function()
-      {
-        $("#img_sanjiao").rotate({angle:0,animateTo:180});
-        $(".dropdown").slideUp(500);
-        $(".dropdownSan").delay(500).hide(3);
-        is_xiala_down=false;
-      }
-    )
-    $(document).mousedown(
-     function(event){
-       if(event.target.id!="dropdown" && is_xiala_down==true)
-       {
-         $("#img_sanjiao").rotate({angle:0,animateTo:180});
-         $(".dropdown").slideUp(500);
-         $(".dropdownSan").delay(500).hide(3);
-         is_xiala_down=false;
-       }
-    }
-    );
-    $(".dropdown .personalImformation").click(
-      function()
-      {
-        window.location.href=$(this).find("a").attr("href");
-      }
-    )
-    $(".dropdown .backstage").click(
-      function()
-      {
-        window.location.href=$(this).find("a").attr("href");
-      }
-    )
-    $(".dropdown .exit").click(
-      function()
-      {
-
       }
     )
   }
