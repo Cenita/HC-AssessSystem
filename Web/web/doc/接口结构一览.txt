@@ -38,6 +38,22 @@ username
 password
 code
 
+返回
+status
+message
+user{
+    username
+    permitInt
+    permit
+    headimage
+    updatetime
+    createtime
+    college
+    profession
+    grade
+    truename
+}
+
 --------------------------------------------
 /register
 #注册接口

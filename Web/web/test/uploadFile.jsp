@@ -9,15 +9,27 @@
 <html>
 <head>
     <title>Title</title>
+    <script src="../lib/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-<form action="../user/upload" method="post" enctype="multipart/form-data" id="form">
-    <input type="file" name="headImage">
-    <input type="text" name="args">
-    <input type="submit" value="上传">
+<form action="../carousel/admin" method="post" enctype="multipart/form-data" id="form">
+    <input type="file" name="image">
+    <input type="submit" value="上传" id="upload">
 </form>
-
 <script>
+    $(function () {
+
+        $("#upload").click(function () {
+
+
+
+
+
+
+        })
+
+
+    })
 </script>
 
 </body>

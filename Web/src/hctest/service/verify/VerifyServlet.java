@@ -28,14 +28,11 @@ public class VerifyServlet extends ServiceBaseServlet {
         HttpSession session = request.getSession();
         //需要发送的邮箱地址
         String email = request.getParameter("email");
-        String reason = request.getParameter("reason");
-        if(email==null||reason==null) return;
+        if(email==null) return;
         long nowtime = new Date().getTime()/1000;
         Object mailtime = session.getAttribute(Config.MailTimes);
         if((mailtime==null||nowtime-(long)mailtime>=60))
         {
-            if(reason.equals("register"))
-            {
                 try {
                     if(VerifyOpm.sendMailToRegister(email,getServletContext(),session))
                     {
@@ -55,7 +52,6 @@ public class VerifyServlet extends ServiceBaseServlet {
                     jo.put(Config.Message,"服务器发生错误");
                     jo.put("wait",-1);
                 }
-            }
         }
         else
         {

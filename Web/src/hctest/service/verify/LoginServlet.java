@@ -35,7 +35,9 @@ public class LoginServlet extends HttpServlet {
         Object VerifyCode = session.getAttribute(Config.VerifyCode);
         if(username==null||password==null||code==null||VerifyCode==null||!code.toLowerCase().equals((String)VerifyCode))
         {
-            ReturnUtil.ToReturn(Status.Fail,"验证码错误",response);return;
+            ReturnUtil.ToReturn(Status.Fail,"验证码错误",response);
+            session.removeAttribute(Config.VerifyCode);
+            return;
         }
 
         try {
@@ -44,6 +46,7 @@ public class LoginServlet extends HttpServlet {
             {
                 UserDao.updateUserUpdateTime(username);
                 jo.put("user",user.toJson());
+                session.setAttribute(Config.LoginID,user.getId());
                 jo.put(Config.Status,Status.Succeed);
                 jo.put(Config.Message,"登录成功");
             }

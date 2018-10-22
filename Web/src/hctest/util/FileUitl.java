@@ -36,6 +36,12 @@ public class FileUitl {
         out.close();
     }
 
+    public static void delFile(String path,String filename){
+        File file=new File(path+"/"+filename);
+        if(file.exists()&&file.isFile())
+            file.delete();
+    }
+
 
 
 

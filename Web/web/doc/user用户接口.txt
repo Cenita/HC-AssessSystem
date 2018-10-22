@@ -5,12 +5,20 @@
 参数:1
 action
 
+返回
+status
+message
+
 ----------------------------------------------
 /user?action=exit
 #退出登录状态
 访问POST
 参数:1
 action
+
+返回
+status
+message
 
 ----------------------------------------------
 /user?action=update
@@ -19,6 +27,10 @@ action
 参数:2
 action
 user 用户新数据
+
+返回
+status
+message
 
 user用户数据的内容
 {
