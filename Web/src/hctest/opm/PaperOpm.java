@@ -3,9 +3,7 @@ package hctest.opm;
 import hctest.Dao.PaperDao;
 import hctest.Dao.PaperQuestionDao;
 import hctest.Dao.QuestionDao;
-import hctest.domain.Paper;
-import hctest.domain.PaperQuestion;
-import hctest.domain.Question;
+import hctest.domain.*;
 import hctest.dto.PaperInfo;
 import hctest.dto.QuestionInfo;
 import net.sf.json.JSONObject;
@@ -86,5 +84,11 @@ public class PaperOpm {
         JSONObject jo = paper.toJson();
         jo.put("size",PaperDao.getPaperSizeByPaperId(paper.getId()));
         return jo;
+    }
+
+    public static List<Paper> getUserPaper(User user) throws SQLException {
+
+        List<Paper> paperList = PaperDao.getUserPaperWitchNotInAnswer(user);
+        return paperList;
     }
 }

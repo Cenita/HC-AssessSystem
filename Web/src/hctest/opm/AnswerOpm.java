@@ -55,24 +55,25 @@ public class AnswerOpm {
 
     }
 
-    public static AnswerInfo getAnswerInfoByAnswerId(User user,String answerid) throws SQLException {
+    //获取指定用户的答卷,这里可以优化
+    public static AnswerInfo getAnswerInfoByAnswerId(String userid,String answerid) throws SQLException {
 
         Answer answer = AnswerDao.getAnswerById(answerid);
 
         AnswerInfo answerInfo = new AnswerInfo(answer);
 
-        List<AnswerQuestion> aqList = AnswerQuestionDao.getAllAnswerQuestionByChoose(user.getId(),answerid);
+        List<AnswerQuestion> aqList = AnswerQuestionDao.getAllAnswerQuestionByChoose(userid,answerid);
 
         answerInfo.setAnswerQuestionList(aqList);
         return  answerInfo;
     }
 
-    public static AnswerInfo getAnswerInfoByChoose(User user,String paperid) throws SQLException {
-        Answer answer = AnswerDao.getAnswerByChoose(paperid, user.getId());
+    public static AnswerInfo getAnswerInfoByChoose(String userid,String paperid) throws SQLException {
+        Answer answer = AnswerDao.getAnswerByChoose(paperid, userid);
 
         if (answer == null) return null;
 
-        return AnswerOpm.getAnswerInfoByAnswerId(user, answer.getId());
+        return AnswerOpm.getAnswerInfoByAnswerId(userid, answer.getId());
     }
 
 }

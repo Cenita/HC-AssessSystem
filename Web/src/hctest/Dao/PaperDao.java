@@ -1,6 +1,7 @@
 package hctest.Dao;
 
 import hctest.domain.Paper;
+import hctest.domain.User;
 import hctest.util.JdbcUtil;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
@@ -119,5 +120,13 @@ public class PaperDao {
         QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
 
         return qr.query(sql,new ScalarHandler<>(),id);
+    }
+
+    //获取所有用户还没创建答卷的试卷
+    public static List<Paper> getUserPaperWitchNotInAnswer(User user) throws SQLException {
+        String sql = "select * from paper where id not in (select paperid from answer where userid = ?)";
+
+        QueryRunner qr = new QueryRunner(JdbcUtil.getDataSource());
+        return qr.query(sql,new BeanListHandler<Paper>(Paper.class),user.getId());
     }
 }

@@ -49,7 +49,8 @@ public class AnswerInfo {
         {
             aqList.put(String.valueOf(i++),aq.toJson());
         }
-        answerinfo.put("list",aqList);
+        answerinfo.put("size",answerQuestionList.size());
+        answerinfo.put("questionList",aqList);
         return  answerinfo;
     }
 

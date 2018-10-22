@@ -1,4 +1,4 @@
-----------------------------------------------
+﻿----------------------------------------------
 /user?action=status
 #用于获取已经登录的登录用户信息
 访问POST
@@ -40,4 +40,29 @@ user用户数据的内容
     motto
     grade 
 }
+
+----------------------------------------------
+/user?action=getAnswer
+访问POST
+参数:2
+action
+answerid 用户的答卷id
+
+返回
+answer{ //答卷信息包
+	createtime
+	updatetime
+	statusInt 题目的状态(数字类型)
+	id
+	updatetime
+	size 题目的数量
+	questionList{//题目列表
+		0:{题目信息包}
+		1:{}
+		...
+	}
+	status 题目的状态
+
+}
+
 

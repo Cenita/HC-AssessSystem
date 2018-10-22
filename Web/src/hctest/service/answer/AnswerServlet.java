@@ -35,7 +35,7 @@ public class AnswerServlet extends LoginBaseServlet{
         boolean succeed = AnswerOpm.createAnswerPaper(user,paperid,answerid);
         if(succeed)
         {
-            AnswerInfo answerInfo = AnswerOpm.getAnswerInfoByAnswerId(user,answerid);
+            AnswerInfo answerInfo = AnswerOpm.getAnswerInfoByAnswerId(user.getId(),answerid);
             jo.put("answer",answerInfo.toJson());
             jo.put("status", "200");
             jo.put("message", "获取成功");
@@ -70,11 +70,13 @@ public class AnswerServlet extends LoginBaseServlet{
 
     public void get(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException, SQLException{
         JSONObject jo = (JSONObject)request.getAttribute("jo");
-        User user = (User)request.getAttribute("user");
-        String answerid = request.getParameter("answerid");
-        if(answerid==null) return;
+        User admin = (User)request.getAttribute("user");
 
-        AnswerInfo answerInfo = AnswerOpm.getAnswerInfoByAnswerId(user,answerid);
+        String userid = request.getParameter("userid");
+        String answerid = request.getParameter("answerid");
+        if(answerid==null||userid==null) return;
+
+        AnswerInfo answerInfo = AnswerOpm.getAnswerInfoByAnswerId(userid,answerid);
         jo.put("answer",answerInfo.toJson());
         jo.put("status", "200");
         jo.put("message", "获取成功");
