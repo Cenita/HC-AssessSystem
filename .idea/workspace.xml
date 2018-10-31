@@ -1,97 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d452b003-6783-4494-b74f-a21ce9a20e3a" name="Default" comment="" />
+    <list default="true" id="d452b003-6783-4494-b74f-a21ce9a20e3a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/adminManage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/correctManage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/writeManage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/login/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/nav/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/addPaper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/addQuestion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/interface/common/sendPostApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/interface/user/getVerifyCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/interface/user/userRegister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/lib/tool/chenframe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/public/userInformation/page/myExam/myExam.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/public/userInformation/page/myMessage/myMessage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebFront-End/public/userInformation/page/mySimulate/mySimulate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/crewManage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/index/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/messageManage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/messageManage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/nav/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/nav/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/nav/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/nav/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/oprationDiary/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/oprationDiary/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/paperManage/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/backstage/questionManage/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/interface/user/session_cookie/5k59raq6qgm9lc58h5hsg54c56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/lib/img/hc1.png" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/lib/img/hc1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/index/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/index/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/nav/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/nav/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/nav/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/nav/nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/nav/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/userInformation/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/userInformation/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebFront-End/public/userInformation/page/myInformation/myInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/WebFront-End/public/userInformation/page/myInformation/myInformation.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="308778082">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="php" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/nav/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobil_768.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobil_992.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_992.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,7 +120,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/WebFront-End" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,7 +130,6 @@
         <option value="$PROJECT_DIR$/WebFront-End/public/nav/nav.php" />
         <option value="$PROJECT_DIR$/WebFront-End/public/nav/nav.css" />
         <option value="$PROJECT_DIR$/WebFront-End/interface/user/login.php" />
-        <option value="$PROJECT_DIR$/WebFront-End/public/nav/nav.js" />
         <option value="$PROJECT_DIR$/WebFront-End/interface/common/sendPostApi.php" />
         <option value="$PROJECT_DIR$/WebFront-End/interface/user/getStatus.php" />
         <option value="$PROJECT_DIR$/WebFront-End/backstage/login/index.css" />
@@ -151,6 +151,7 @@
         <option value="$PROJECT_DIR$/WebFront-End/public/index/index.css" />
         <option value="$PROJECT_DIR$/WebFront-End/public/index/index.php" />
         <option value="$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css" />
+        <option value="$PROJECT_DIR$/WebFront-End/public/nav/nav.js" />
       </list>
     </option>
   </component>
@@ -160,89 +161,71 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/WebFront-End/lib/tool/Semantic/package.json" />
+      <path value="$PROJECT_DIR$/WebFront-End/lib/tool/popup/package.json" />
+      <path value="$PROJECT_DIR$/WebFront-End/lib/tool/wangEditor-3.1.1/example/demo/in-react/package.json" />
+      <path value="$PROJECT_DIR$/WebFront-End/lib/tool/wangEditor-3.1.1/example/demo/in-vue/package.json" />
+      <path value="$PROJECT_DIR$/WebFront-End/lib/tool/wangEditor-3.1.1/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="668" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="163" />
+    <option name="y" value="165" />
     <option name="width" value="1264" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hcAssessSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hcAssessSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="WebFront-End" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backstage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hcAssessSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="WebFront-End" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backstage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nav" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="hcAssessSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcAssessSystem" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WebFront-End" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="hcAssessSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="WebFront-End" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="" />
-    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,9 +238,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -274,34 +254,36 @@
       <workItem from="1539966248503" duration="6464000" />
       <workItem from="1540003987127" duration="9678000" />
       <workItem from="1540023008744" duration="3007000" />
+      <workItem from="1540628085242" duration="651000" />
+      <workItem from="1540628752667" duration="207000" />
+      <workItem from="1540628976872" duration="1116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25273000" />
+    <option name="totallyTimeSpent" value="27247000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="668" y="0" width="1264" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="163" y="165" width="1264" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23157051" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13477738" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23083198" />
+      <window_info id="Structure" order="1" weight="0.24973656" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13477738" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,216 +292,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="103" lean-forward="false" selection-start-line="47" selection-start-column="87" selection-end-line="47" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_992.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="81" column="73" lean-forward="true" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_992.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil-992.css" />
     <entry file="file://$PROJECT_DIR$/WebFront-End/interface">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/interface/user/login.php" />
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/register.js" />
     <entry file="file://$PROJECT_DIR$/WebFront-End/public/userInformation/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/interface/user/getStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/interface/user/getStatus.php" />
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/login.js" />
     <entry file="file://$PROJECT_DIR$/WebFront-End/interface/common/sendPostApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="68" lean-forward="true" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_992.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,7 +321,7 @@
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/login/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -575,21 +363,21 @@
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/paperManage/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/oprationDiary/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="31" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/questionManage/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -610,14 +398,14 @@
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/index/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/crewManage/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -638,47 +426,97 @@
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/paperManage/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="75" column="60" lean-forward="false" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+          <caret line="75" column="60" selection-start-line="75" selection-start-column="60" selection-end-line="75" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8880">
+          <caret line="370" column="43" lean-forward="true" selection-start-line="370" selection-start-column="43" selection-end-line="370" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/backstage/nav/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="64" column="89" lean-forward="false" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="89" />
-          <folding />
+        <state relative-caret-position="47">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.css">
+    <entry file="file://$PROJECT_DIR$/WebFront-End/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="32">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="1400">
+          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#6806#6812#0" expanded="true" />
+            <element signature="e#6812#6818#0" expanded="true" />
+            <element signature="e#6928#6934#0" expanded="true" />
+            <element signature="e#6934#6940#0" expanded="true" />
+            <element signature="e#7230#7236#0" expanded="true" />
+            <element signature="e#7236#7242#0" expanded="true" />
+            <element signature="n#style#0;n#h3#1;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/nav/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_768.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/mobil_992.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebFront-End/public/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
         </state>
       </provider>
     </entry>

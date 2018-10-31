@@ -40,7 +40,7 @@ session_start();
                 <span>{{userName}}</span>
             </li>
             <li>
-                <a href="">个人主页</a>
+                <a href="../userInformation/">个人主页</a>
             </li>
             <li>
                 <a href="" id="exitLogin">退出登录</a>

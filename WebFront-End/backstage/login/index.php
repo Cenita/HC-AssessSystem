@@ -39,7 +39,7 @@
                     <div class="ui left icon input">
                         <input type="text" v-model="verifyCode" placeholder="验证码" style="width: 150px;">
                         <i class="mixcloud  icon"></i>
-                        <img src="" alt="">
+                        <img src="" alt="" id="vcode">
                     </div>
                 </div>
                 <div class="loginInput">
