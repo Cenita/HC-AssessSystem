@@ -7,6 +7,7 @@ import hctest.util.HeaderUitl;
 import hctest.util.ReturnUtil;
 import hctest.util.Status;
 import net.sf.json.JSONObject;
+import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -31,19 +32,22 @@ public class LoginBaseServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         Object login = session.getAttribute(Config.LoginID);
-        String action = request.getParameter(Config.Action);
-        if(login==null||action==null) return;
-        try {
+        String action = "";
+        if(login==null) {ReturnUtil.ToReturn(Status.Warnning,"用户未登录",response);return;}
+        try{
             User user = UserDao.getUserById((String)login);
-
-            if(user==null)
-            {
-                ReturnUtil.ToReturn(Status.Warnning,"用户未登录",response);return;
-            }
-
             request.setAttribute(Config.User,user);
 
             Class clazz = this.getClass();
+            if(!ServletFileUpload.isMultipartContent(request))
+            {
+                action = request.getParameter(Config.Action);
+                if(action==null) return;
+            }
+            else
+            {
+                action = "upload";
+            }
             Method method = clazz.getMethod(action,HttpServletRequest.class,HttpServletResponse.class);
 
             if(method!=null)

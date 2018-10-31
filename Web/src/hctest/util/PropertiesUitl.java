@@ -35,4 +35,9 @@ public class PropertiesUitl {
         return  p.getProperty("headImage");
     }
 
+    public static String getCarouselPath() throws Exception {
+        Properties p = PropertiesUitl.getWebProperties();
+        return p.getProperty("carousel");
+    }
+
 }
