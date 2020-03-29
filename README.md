@@ -1,7 +1,20 @@
-# hcAssessSystem
+# 环创面试答题系统
 
-test
-private
+项目简介
+----
+  基于ThinkPHP5后端的环创面试系统
+  可设置选择题、多选题、填空题、编辑题，并且可看到其在总排行榜的排名。
 
+项目依赖
+----
+Apache
+PHP环境
 
-冲突测试4
+作者
+----
+  前端：ChenHuiTao
+  后端：YangRongGuang
+
+奖项
+----
+  韶关学院网页设计大赛二等奖
